@@ -1,0 +1,52 @@
+<!ELEMENT movie_catalog (movie+, person+, genre_enum?, language_enum?, country_enum?)>
+
+<!ELEMENT movie (title, media, details, production, people)>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT media (cover, trailer, gallery)>
+<!ELEMENT cover (#PCDATA)>
+<!ELEMENT trailer (#PCDATA)>
+<!ELEMENT gallery (image+)>
+<!ELEMENT image (#PCDATA)>
+
+<!ELEMENT details (duration, genre, rating, summary, year, language, country, budget)>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT budget (#PCDATA)>
+
+<!ELEMENT production (studio)>
+<!ELEMENT studio (#PCDATA)>
+
+<!ELEMENT people (creators, cast)>
+<!ELEMENT creators (creator+)>
+<!ELEMENT creator (person_ref, role)>
+<!ELEMENT person_ref (#PCDATA)>
+<!ELEMENT role (#PCDATA)>
+
+<!ELEMENT cast (actor+)>
+<!ELEMENT actor (person_ref, role)>
+
+<!ELEMENT person (id, name, involvement)>
+<!ELEMENT id (#PCDATA)>
+
+<!ELEMENT name (first_name, last_name)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+
+<!ELEMENT involvement (movie_ref+)>
+<!ELEMENT movie_ref (#PCDATA)>
+
+<!ELEMENT genre_enum (genre+)>
+<!ELEMENT genre (#PCDATA)>
+
+<!ELEMENT language_enum (language+)>
+<!ELEMENT language (#PCDATA)>
+
+<!ELEMENT country_enum (country+)>
+<!ELEMENT country (#PCDATA)>
