@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE movie_catalog SYSTEM "channel.dtd">
+<movie_catalog>
+    <movie id="m001">
+        <title>Gundi: Legend of Love</title>
+
+        <media>
+            <!-- adding media types -->
+            <cover>c1</cover>
+            <trailer>tr1</trailer>
+            <gallery>
+                <!-- image е малко по-различно да се оправи в дтд -->
+                <image>im1</image>
+            </gallery>
+        </media>
+
+        <details>
+            <duration>123min</duration>
+            <genre genre_type="Drama"></genre>
+            <rating>9/10</rating>
+            <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, magni.</summary>
+            <year>2024</year>
+            <language>Bulgarian</language>
+            <country>Bulgaria</country>
+            <budget>no info</budget>
+        </details>
+
+        <production>
+            <studio>Medium Station</studio>
+        </production>
+
+        <people>
+
+            <person type="actor">
+                <first_name>Aleksandra</first_name>
+                <last_name>Svilenova</last_name>
+                <age>22</age>
+                <gender>female</gender>
+                <role role_type="character"></role>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </people>
+
+    </movie>
+</movie_catalog>

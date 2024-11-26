@@ -1,6 +1,7 @@
-<!ELEMENT movie_catalog (movie+, person+, genre_enum?, language_enum?, country_enum?)>
-
+<!ELEMENT movie_catalog (movie+)>
+<!-- според мен тук тези са излишни , person+, genre_enum?, language_enum?, country_enum? -->
 <!ELEMENT movie (title, media, details, production, people)>
+<!ATTLIST movie id ID #REQUIRED>
 
 <!ELEMENT title (#PCDATA)>
 
@@ -9,10 +10,12 @@
 <!ELEMENT trailer (#PCDATA)>
 <!ELEMENT gallery (image+)>
 <!ELEMENT image (#PCDATA)>
+<!-- image има source, май трябва да е entity. тези май всички са entities -->
 
 <!ELEMENT details (duration, genre, rating, summary, year, language, country, budget)>
 <!ELEMENT duration (#PCDATA)>
-<!ELEMENT genre (#PCDATA)>
+<!ELEMENT genre EMPTY>
+<!ATTLIST genre genre_type (Action|Adventure|Animation|Biography|Comedy|Crime|Drama|Fantasy|Historical|Horror|Mystery|Music|Romance|Science Fiction|Thriller|War|Western) #REQUIRED>
 <!ELEMENT rating (#PCDATA)>
 <!ELEMENT summary (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
@@ -23,30 +26,15 @@
 <!ELEMENT production (studio)>
 <!ELEMENT studio (#PCDATA)>
 
-<!ELEMENT people (creators, cast)>
-<!ELEMENT creators (creator+)>
-<!ELEMENT creator (person_ref, role)>
-<!ELEMENT person_ref (#PCDATA)>
-<!ELEMENT role (#PCDATA)>
-
-<!ELEMENT cast (actor+)>
-<!ELEMENT actor (person_ref, role)>
-
-<!ELEMENT person (id, name, involvement)>
-<!ELEMENT id (#PCDATA)>
-
-<!ELEMENT name (first_name, last_name)>
+<!ELEMENT people (person+)>
+<!ELEMENT person (first_name, last_name, age, gender, role, involvement)>
+<!ATTLIST person type (creator|actor) #REQUIRED>
 <!ELEMENT first_name (#PCDATA)>
 <!ELEMENT last_name (#PCDATA)>
-
-<!ELEMENT involvement (movie_ref+)>
-<!ELEMENT movie_ref (#PCDATA)>
-
-<!ELEMENT genre_enum (genre+)>
-<!ELEMENT genre (#PCDATA)>
-
-<!ELEMENT language_enum (language+)>
-<!ELEMENT language (#PCDATA)>
-
-<!ELEMENT country_enum (country+)>
-<!ELEMENT country (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT role (#PCDATA)>
+<!ATTLIST role role_type (director|writer|producer|composer|character) #REQUIRED>
+<!ELEMENT involvement EMPTY>
+<!ATTLIST involvement movie_refs IDREFS #REQUIRED>
+<!-- различаване на ролите на creator и actor -->
