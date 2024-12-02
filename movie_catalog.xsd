@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.myFirstXMLSchema.com"
+    xmlns="http://www.myFirstXMLSchema.com" elementFormDefault="qualified">
+    <!-- root описание -->
+    <xs:element name="movie_catalog">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="total_area" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- описание за филмите  -->
+    <xs:element name="movies">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="movie" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="total_area" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

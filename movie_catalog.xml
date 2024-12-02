@@ -1,45 +1,94 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE movie_catalog SYSTEM "channel.dtd">
+<!DOCTYPE movie_catalog SYSTEM "movie_catalog.dtd" [
+    <!-- NOTATIONS -->
+<!NOTATION jpeg SYSTEM "image/jpeg">
+<!NOTATION video SYSTEM "video/mp4">
+
+<!-- IMAGES -->
+<!ENTITY cover_Gundi PUBLIC "cover_Gundi_identifier" "https://m.media-amazon.com/images/M/MV5BYjAyZWVhOTgtMThmMS00Y2Y4LThkZjMtYjkwZjJmYTYwNzQxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" NDATA jpeg>
+<!ENTITY image1_Gundi PUBLIC "image1_Gundi_identifier" "https://goguide.bg/wp-content/uploads/DSCF8171-Boris-Slavkov-1-1600x900.jpg" NDATA jpeg>
+<!ENTITY image2_Gundi PUBLIC "image2_Gundi_identifier" "https://m4.netinfo.bg/media/images/50605/50605182/1024-768-filma-gundi.jpg" NDATA jpeg>
+<!ENTITY image3_Gundi PUBLIC "image3_Gundi_identifier" "https://trud.bg/public/images/articles/2024-09/Gundi_Legenda_za_lubovta_1_3863513163500747480_original.jpg" NDATA jpeg>
+<!ENTITY image4_Gundi PUBLIC "image4_Gundi_identifier" "https://futbolninovini.info/wp-content/uploads/2024/11/Gundi-Legenda-za-lubovta_1.jpg" NDATA jpeg>
+<!ENTITY image5_Gundi PUBLIC "image5_Gundi_identifier" "https://i.actualno.com/actualno_2013/upload/2024/05/09/0263210001715236684_big.webp" NDATA jpeg>
+<!ENTITY image6_Gundi PUBLIC "image6_Gundi_identifier" "https://zavedime.net/wp-content/uploads/2024/05/376792740_260865460260387_761164997363569178_n.jpg" NDATA jpeg>
+
+<!-- TRAILERS -->
+<!ENTITY trailer_Gundi PUBLIC "trailer_Gundi_identifier" "https://youtu.be/1tlNwolYp6k?si=zY8AziDYnBlQzXvC" NDATA video>
+]
+>
+
 <movie_catalog>
-    <movie id="m001">
-        <title>Gundi: Legend of Love</title>
+    <movies>
+        <movie id="m001" genre="g07 g13">
+            <title>Gundi: Legend of Love</title>
 
-        <media>
-            <!-- adding media types -->
-            <cover>c1</cover>
-            <trailer>tr1</trailer>
-            <gallery>
-                <!-- image е малко по-различно да се оправи в дтд -->
-                <image>im1</image>
-            </gallery>
-        </media>
+            <media>
+                <cover source="cover_Gundi"></cover>
+                <trailer source="trailer_Gundi"></trailer>
+                <gallery>
+                    <!-- image е малко по-различно да се оправи в дтд -->
+                    <image source="image1_Gundi"></image>
+                    <image source="image2_Gundi"></image>
+                    <image source="image3_Gundi"></image>
+                    <image source="image4_Gundi"></image>
+                    <image source="image5_Gundi"></image>
+                    <image source="image6_Gundi"></image>
+                </gallery>
+            </media>
 
-        <details>
-            <duration>123min</duration>
-            <genre genre_type="Drama"></genre>
-            <rating>9/10</rating>
-            <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, magni.</summary>
-            <year>2024</year>
-            <language>Bulgarian</language>
-            <country>Bulgaria</country>
-            <budget>no info</budget>
-        </details>
+            <details>
+                <duration>123min</duration>
+                <!-- <genre genre_type="Drama"></genre> -->
+                <rating>9/10</rating>
+                <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, magni.</summary>
+                <year>2024</year>
+                <language>Bulgarian</language>
+                <country>Bulgaria</country>
+                <budget>no info</budget>
+            </details>
 
-        <production>
-            <studio>Medium Station</studio>
-        </production>
+            <production>
+                <studio>Medium Station</studio>
+            </production>
 
-        <people>
+            <people>
 
-            <person type="actor">
-                <first_name>Aleksandra</first_name>
-                <last_name>Svilenova</last_name>
-                <age>22</age>
-                <gender>female</gender>
-                <role role_type="character"></role>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </people>
+                <person type="actor">
+                    <first_name>Aleksandra</first_name>
+                    <last_name>Svilenova</last_name>
+                    <age>22</age>
+                    <gender>female</gender>
+                    <role role_type="character"></role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+            </people>
 
-    </movie>
+        </movie>
+
+    </movies>
+
+    <genres>
+        <genre id="g01" genre_type="Action">Action</genre>
+        <genre id="g02" genre_type="Adventure">Adventure</genre>
+        <genre id="g03" genre_type="Animation">Animation</genre>
+        <genre id="g04" genre_type="Biography">Biography</genre>
+        <genre id="g05" genre_type="Comedy">Comedy</genre>
+        <genre id="g06" genre_type="Crime">Crime</genre>
+        <genre id="g07" genre_type="Drama">Drama</genre>
+        <genre id="g08" genre_type="Fantasy">Fantasy</genre>
+        <genre id="g09" genre_type="Historical">Historical</genre>
+        <genre id="g10" genre_type="Horror">Horror</genre>
+        <genre id="g11" genre_type="Mystery">Mystery</genre>
+        <genre id="g12" genre_type="Musical">Musical</genre>
+        <genre id="g13" genre_type="Romance">Romance</genre>
+        <genre id="g14" genre_type="Sci-Fi">Sci-Fi</genre>
+        <genre id="g15" genre_type="Thriller">Thriller</genre>
+        <genre id="g16" genre_type="War">War</genre>
+        <genre id="g17" genre_type="Western">Western</genre>
+    </genres>
+
+    <movie-series>
+        <series id="harry-potter">Harry Potter</series>
+    </movie-series>
 </movie_catalog>

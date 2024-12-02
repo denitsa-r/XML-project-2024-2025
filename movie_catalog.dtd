@@ -1,21 +1,29 @@
-<!ELEMENT movie_catalog (movie+)>
-<!-- според мен тук тези са излишни , person+, genre_enum?, language_enum?, country_enum? -->
+<!ELEMENT movie_catalog (movies, genres, movie-series)>
+
+<!ELEMENT movies (movie+)>
+<!-- можем да добавим в началото каталогът да бъде разделен на филми, филмови поредици и жанрове -->
 <!ELEMENT movie (title, media, details, production, people)>
 <!ATTLIST movie id ID #REQUIRED>
+<!ATTLIST movie genre IDREFS #REQUIRED>
+<!ATTLIST movie movie-series IDREF #IMPLIED>
 
 <!ELEMENT title (#PCDATA)>
 
 <!ELEMENT media (cover, trailer, gallery)>
-<!ELEMENT cover (#PCDATA)>
-<!ELEMENT trailer (#PCDATA)>
+<!ELEMENT cover EMPTY>
+<!ATTLIST cover source ENTITY #REQUIRED>
+<!ELEMENT trailer EMPTY>
+<!ATTLIST trailer source ENTITY #REQUIRED>
 <!ELEMENT gallery (image+)>
-<!ELEMENT image (#PCDATA)>
+<!ELEMENT image EMPTY>
+<!ATTLIST image source ENTITY #REQUIRED>
 <!-- image има source, май трябва да е entity. тези май всички са entities -->
 
-<!ELEMENT details (duration, genre, rating, summary, year, language, country, budget)>
+<!-- <!ELEMENT details (duration, genre, rating, summary, year, language, country, budget)> -->
+<!ELEMENT details (duration, rating, summary, year, language, country, budget)>
 <!ELEMENT duration (#PCDATA)>
-<!ELEMENT genre EMPTY>
-<!ATTLIST genre genre_type (Action|Adventure|Animation|Biography|Comedy|Crime|Drama|Fantasy|Historical|Horror|Mystery|Music|Romance|Science Fiction|Thriller|War|Western) #REQUIRED>
+<!-- <!ELEMENT genre (#PCDATA)> human readable -->
+<!-- <!ATTLIST genre genre_type (Action|Adventure|Animation|Biography|Comedy|Crime|Drama|Fantasy|Historical|Horror|Mystery|Music|Romance|Sci-Fi|Thriller|War|Western) #REQUIRED> -->
 <!ELEMENT rating (#PCDATA)>
 <!ELEMENT summary (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
@@ -38,3 +46,15 @@
 <!ELEMENT involvement EMPTY>
 <!ATTLIST involvement movie_refs IDREFS #REQUIRED>
 <!-- различаване на ролите на creator и actor -->
+
+<!-- Top-Level Genres Section -->
+<!ELEMENT genres (genre+)>
+<!ELEMENT genre (#PCDATA)>
+<!ATTLIST genre id ID #REQUIRED>
+<!ATTLIST genre genre_type (Action|Adventure|Animation|Biography|Comedy|Crime|Drama|Fantasy|Historical|Horror|Mystery|Musical|Romance|Sci-Fi|Thriller|War|Western) #REQUIRED>
+
+<!-- Top-Level Movie Series Section -->
+<!ELEMENT movie-series (series*)>
+<!ELEMENT series (#PCDATA)>
+<!ATTLIST series id ID #REQUIRED>
+<!ATTLIST series movies-id IDREFS #IMPLIED>
