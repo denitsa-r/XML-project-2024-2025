@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE movie_catalog SYSTEM "movie_catalog.dtd" [
-    <!-- NOTATIONS -->
+<!ATTLIST movie_catalog
+		xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation CDATA #FIXED "movie_catalog.xsd">
+
+<!-- NOTATIONS -->
 <!NOTATION jpeg SYSTEM "image/jpeg">
 <!NOTATION video SYSTEM "video/mp4">
 
@@ -50,7 +54,7 @@
 ]
 >
 
-<movie_catalog>
+<movie_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="movie_catalog.xsd">
     <movies>
         <movie id="m001" genre="g07 g13">
             <title>Gundi: Legend of Love</title>

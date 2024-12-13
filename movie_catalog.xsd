@@ -25,11 +25,11 @@
                         <xs:field xpath="@id" />
                     </xs:key>
                     <xs:keyref name="genreKeyRef" refer="genreKey">
-                        <xs:selector xpath="catalog/movies/movie" />
+                        <xs:selector xpath="movie_catalog/movies/movie" />
                         <xs:field xpath="@genre" />
                     </xs:keyref>
                     <xs:keyref name="seriesKeyRef" refer="seriesKey">
-                        <xs:selector xpath="catalog/movies/movie" />
+                        <xs:selector xpath="movie_catalog/movies/movie" />
                         <xs:field xpath="@movie-series" />
                     </xs:keyref>
                 </xs:element>
@@ -125,45 +125,51 @@
             <xs:element name="first_name" type="nameType"/>
             <xs:element name="last_name" type="nameType"/>
             <xs:element name="age">
-                <simpleType>
+                <xs:simpleType>
                     <xs:restriction base="xs:int">
                         <xs:minInclusive value="1" />
                         <!-- lets be possitive someone may be a hundred and twenty years old :)) -->
                         <xs:maxInclusive value="120" />
                     </xs:restriction>
-                </simpleType>
+                </xs:simpleType>
             </xs:element>
             <xs:element name="gender">
-                <simpleType>
+                <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:enumeration value="male" />
                         <xs:enumeration value="female" />
                     </xs:restriction>
-                </simpleType>
+                </xs:simpleType>
             </xs:element>
-            <xs:element name="role" type="xs:string">
-                <xs:attribute name="role_type" use="required">
-                    <simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="director" />
-                            <xs:enumeration value="production_director" />
-                            <xs:enumeration value="writer" />
-                            <xs:enumeration value="producer" />
-                            <xs:enumeration value="co_producer" />
-                            <xs:enumeration value="executive_producer" />
-                            <xs:enumeration value="composer" />
-                            <xs:enumeration value="cinematographer" />
-                            <xs:enumeration value="editor" />
-                            <xs:enumeration value="concept_artist" />
-                            <xs:enumeration value="character" />
-                        </xs:restriction>
-                    </simpleType>
-                </xs:attribute>
+            <xs:element name="role">
+                <xs:complexType>
+                    <xs:attribute name="role_type" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="director" />
+                                <xs:enumeration value="production_director" />
+                                <xs:enumeration value="writer" />
+                                <xs:enumeration value="producer" />
+                                <xs:enumeration value="co_producer" />
+                                <xs:enumeration value="executive_producer" />
+                                <xs:enumeration value="composer" />
+                                <xs:enumeration value="cinematographer" />
+                                <xs:enumeration value="editor" />
+                                <xs:enumeration value="concept_artist" />
+                                <xs:enumeration value="character" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
             </xs:element>
             <xs:element name="involvement">
-                <xs:keyref name="involvedKeyRef" refer="involvedKey">
-                    <xs:selector xpath="catalog/movies/movie/people/person" />
-                    <xs:field xpath="@movie_refs" />
+                <xs:key name="involvementKey">
+                    <xs:selector xpath="." />
+                    <xs:field xpath="@id" />
+                </xs:key>
+                <xs:keyref name="moviePersonKeyRef" refer="movieKey">
+                    <xs:selector xpath="movie_catalog/movies/movie/people/person/involvement" />
+                    <xs:field xpath="@movie-refs" />
                 </xs:keyref>
             </xs:element>
         </xs:sequence>
@@ -187,37 +193,41 @@
     </xs:simpleType>
 
     <xs:element name="genres">
-        <xs:sequence>
-            <xs:element name="genre">
-                <xs:key name="genreKey">
-                    <xs:selector xpath="." />
-                    <xs:field xpath="@id" />
-                </xs:key>
-                <xs:attribute name="genre_type" use="required">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:enumeration value="Action" />
-                            <xs:enumeration value="Adventure" />
-                            <xs:enumeration value="Animation" />
-                            <xs:enumeration value="Biography" />
-                            <xs:enumeration value="Comedy" />
-                            <xs:enumeration value="Crime" />
-                            <xs:enumeration value="Drama" />
-                            <xs:enumeration value="Fantasy" />
-                            <xs:enumeration value="Historical" />
-                            <xs:enumeration value="Horror" />
-                            <xs:enumeration value="Mystery" />
-                            <xs:enumeration value="Musical" />
-                            <xs:enumeration value="Romance" />
-                            <xs:enumeration value="Sci-Fi" />
-                            <xs:enumeration value="Thriller" />
-                            <xs:enumeration value="War" />
-                            <xs:enumeration value="Western" />
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:attribute>
-            </xs:element>
-        </xs:sequence>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="genre">
+                    <xs:complexType>
+                        <xs:attribute name="genre_type" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Action" />
+                                    <xs:enumeration value="Adventure" />
+                                    <xs:enumeration value="Animation" />
+                                    <xs:enumeration value="Biography" />
+                                    <xs:enumeration value="Comedy" />
+                                    <xs:enumeration value="Crime" />
+                                    <xs:enumeration value="Drama" />
+                                    <xs:enumeration value="Fantasy" />
+                                    <xs:enumeration value="Historical" />
+                                    <xs:enumeration value="Horror" />
+                                    <xs:enumeration value="Mystery" />
+                                    <xs:enumeration value="Musical" />
+                                    <xs:enumeration value="Romance" />
+                                    <xs:enumeration value="Sci-Fi" />
+                                    <xs:enumeration value="Thriller" />
+                                    <xs:enumeration value="War" />
+                                    <xs:enumeration value="Western" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                    <xs:key name="genreKey">
+                        <xs:selector xpath="." />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 
     <xs:element name="movie-series">
@@ -228,8 +238,8 @@
                         <xs:selector xpath="." />
                         <xs:field xpath="@id" />
                     </xs:key>
-                    <xs:keyref name="movieKeyRef" refer="movieKey">
-                        <xs:selector xpath="catalog/movie-series/series" />
+                    <xs:keyref name="movieSeriesKeyRef" refer="movieKey">
+                        <xs:selector xpath="movie_catalog/movie-series/series" />
                         <xs:field xpath="@movies-id" />
                     </xs:keyref>
                 </xs:element>
