@@ -34,7 +34,9 @@
 <!ELEMENT production (studio)>
 <!ELEMENT studio (#PCDATA)>
 
-<!ELEMENT people (person+)>
+<!ELEMENT people (cast, creators)>
+<!ELEMENT cast (person+)>
+<!ELEMENT creators (person+)>
 <!ELEMENT person (first_name, last_name, age, gender, role, involvement)>
 <!ATTLIST person type (creator|actor) #REQUIRED>
 <!ELEMENT first_name (#PCDATA)>
@@ -42,7 +44,7 @@
 <!ELEMENT age (#PCDATA)>
 <!ELEMENT gender (#PCDATA)>
 <!ELEMENT role (#PCDATA)>
-<!ATTLIST role role_type (director|writer|producer|composer|character) #REQUIRED>
+<!ATTLIST role role_type (director|production_director|writer|producer|co_producer|executive_producer|composer|cinematographer|editor|concept_artist|character) #REQUIRED>
 <!ELEMENT involvement EMPTY>
 <!ATTLIST involvement movie_refs IDREFS #REQUIRED>
 <!-- различаване на ролите на creator и actor -->
