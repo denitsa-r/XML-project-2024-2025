@@ -4,20 +4,237 @@
     <!-- root описание -->
     <xs:element name="movie_catalog">
         <xs:complexType>
-            <xs:sequence>
-                <xs:element name="name" type="xs:string"/>
-                <xs:element name="total_area" type="xs:decimal"/>
-            </xs:sequence>
+            <!-- искаме да се появяват в какъвто и да е ред и всеки елемент може да се среша най-много веднъж -->
+            <xs:all>
+                <xs:element name="movies" />
+                <xs:element name="genres" />
+                <xs:element name="movie-series" />
+            </xs:all>
         </xs:complexType>
     </xs:element>
+
+    <!-- movie element -->
 
     <!-- описание за филмите  -->
     <xs:element name="movies">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="movie" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
-                <xs:element name="total_area" type="xs:decimal"/>
+                <xs:element name="movie" type="movieType" minOccurs="1" maxOccurs="unbounded">
+                    <xs:key name="movieKey">
+                        <xs:selector xpath="." />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                    <xs:keyref name="genreKeyRef" refer="genreKey">
+                        <xs:selector xpath="catalog/movies/movie" />
+                        <xs:field xpath="@genre" />
+                    </xs:keyref>
+                    <xs:keyref name="seriesKeyRef" refer="seriesKey">
+                        <xs:selector xpath="catalog/movies/movie" />
+                        <xs:field xpath="@movie-series" />
+                    </xs:keyref>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <xs:complexType name="movieType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string" />
+            <xs:element name="media" type="movieMediaType" />
+            <xs:element name="details" type="movieDetailsType"/>
+            <xs:element name="production" type="xs:string" />
+            <xs:element name="people" type="moviePeopleType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- MOVIE MEDIA TYPE -->
+    <xs:complexType name="movieMediaType">
+        <xs:sequence>
+            <xs:element name="cover" type="imageType" />
+            <xs:element name="trailer" type="videoType" />
+            <xs:element name="gallery"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="gallery">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="image" type="imageType" minOccurs="1" maxOccurs="100" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="imageType">
+        <xs:attribute name="source" type="xs:ENTITY" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="videoType">
+        <xs:attribute name="source" type="xs:ENTITY" use="required" />
+    </xs:complexType>
+
+    <!-- MOVIE DETAILS TYPE -->
+    <xs:complexType name="movieDetailsType">
+        <xs:sequence>
+            <xs:element name="duration">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[0-9]+\smin"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="rating">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[0-9](\.[0-9])?/10"/>
+                        <!-- [0-9](\.[0-9])?/10-->
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="summary" type="xs:string" />
+            <!-- oldest movie was filmed back in 1888 and upper bound 2100 cause there are some movies planned ahead for the future-->
+            <xs:element name="year">
+                <xs:simpleType>
+                    <xs:restriction base="xs:int">
+                        <xs:minInclusive value="1888" />
+                        <xs:maxInclusive value="2100" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="language" type="nameType" />
+            <xs:element name="country">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <!-- ex. to match "Bulgaria, Malta, United States"  -->
+                        <xs:pattern value="([A-Z][a-z]+( [A-Z][a-z]+)*)(, [A-Z][a-z]+( [A-Z][a-z]+)*)*" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="budget" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="moviePeopleType">
+        <xs:sequence>
+            <xs:element name="person" type="personType" minOccurs="1" maxOccurs="100" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="personType">
+        <xs:sequence>
+            <xs:element name="first_name" type="nameType"/>
+            <xs:element name="last_name" type="nameType"/>
+            <xs:element name="age">
+                <simpleType>
+                    <xs:restriction base="xs:int">
+                        <xs:minInclusive value="1" />
+                        <!-- lets be possitive someone may be a hundred and twenty years old :)) -->
+                        <xs:maxInclusive value="120" />
+                    </xs:restriction>
+                </simpleType>
+            </xs:element>
+            <xs:element name="gender">
+                <simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="male" />
+                        <xs:enumeration value="female" />
+                    </xs:restriction>
+                </simpleType>
+            </xs:element>
+            <xs:element name="role" type="xs:string">
+                <xs:attribute name="role_type" use="required">
+                    <simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="director" />
+                            <xs:enumeration value="production_director" />
+                            <xs:enumeration value="writer" />
+                            <xs:enumeration value="producer" />
+                            <xs:enumeration value="co_producer" />
+                            <xs:enumeration value="executive_producer" />
+                            <xs:enumeration value="composer" />
+                            <xs:enumeration value="cinematographer" />
+                            <xs:enumeration value="editor" />
+                            <xs:enumeration value="concept_artist" />
+                            <xs:enumeration value="character" />
+                        </xs:restriction>
+                    </simpleType>
+                </xs:attribute>
+            </xs:element>
+            <xs:element name="involvement">
+                <xs:keyref name="involvedKeyRef" refer="involvedKey">
+                    <xs:selector xpath="catalog/movies/movie/people/person" />
+                    <xs:field xpath="@movie_refs" />
+                </xs:keyref>
+            </xs:element>
+        </xs:sequence>
+
+        <xs:attribute name="type" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="creator" />
+                    <xs:enumeration value="actor" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+
+    <xs:simpleType name="nameType">
+        <xs:restriction base="xs:string">
+            <!-- ex. to match Bulgarian or English, but not 1nglish and so on, matching all types of names -->
+            <xs:pattern value="[A-Z][a-z]+" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="genres">
+        <xs:sequence>
+            <xs:element name="genre">
+                <xs:key name="genreKey">
+                    <xs:selector xpath="." />
+                    <xs:field xpath="@id" />
+                </xs:key>
+                <xs:attribute name="genre_type" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Action" />
+                            <xs:enumeration value="Adventure" />
+                            <xs:enumeration value="Animation" />
+                            <xs:enumeration value="Biography" />
+                            <xs:enumeration value="Comedy" />
+                            <xs:enumeration value="Crime" />
+                            <xs:enumeration value="Drama" />
+                            <xs:enumeration value="Fantasy" />
+                            <xs:enumeration value="Historical" />
+                            <xs:enumeration value="Horror" />
+                            <xs:enumeration value="Mystery" />
+                            <xs:enumeration value="Musical" />
+                            <xs:enumeration value="Romance" />
+                            <xs:enumeration value="Sci-Fi" />
+                            <xs:enumeration value="Thriller" />
+                            <xs:enumeration value="War" />
+                            <xs:enumeration value="Western" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:element>
+        </xs:sequence>
+    </xs:element>
+
+    <xs:element name="movie-series">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="series" minOccurs="0" maxOccurs="unbounded">
+                    <xs:key name="seriesKey">
+                        <xs:selector xpath="." />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                    <xs:keyref name="movieKeyRef" refer="movieKey">
+                        <xs:selector xpath="catalog/movie-series/series" />
+                        <xs:field xpath="@movies-id" />
+                    </xs:keyref>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
 </xs:schema>

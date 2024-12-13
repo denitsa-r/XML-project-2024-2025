@@ -34,9 +34,7 @@
 <!ELEMENT production (studio)>
 <!ELEMENT studio (#PCDATA)>
 
-<!ELEMENT people (cast, creators)>
-<!ELEMENT cast (person+)>
-<!ELEMENT creators (person+)>
+<!ELEMENT people (person+)>
 <!ELEMENT person (first_name, last_name, age, gender, role, involvement)>
 <!ATTLIST person type (creator|actor) #REQUIRED>
 <!ELEMENT first_name (#PCDATA)>

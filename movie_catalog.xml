@@ -28,7 +28,7 @@
 <!ENTITY image3_Hobbit2 PUBLIC "image3_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMjMyMjc2Mjc3NF5BMl5BanBnXkFtZTgwNzk2MDM3MDE@._V1_.jpg" NDATA jpeg>
 <!ENTITY image4_Hobbit2 PUBLIC "image4_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMjM3MjUyNzM5OV5BMl5BanBnXkFtZTgwMzk2MDM3MDE@._V1_.jpg" NDATA jpeg>
 <!ENTITY image5_Hobbit2 PUBLIC "image5_Hobbit2_identifier" "https://images.squarespace-cdn.com/content/v1/5233347fe4b00c95cda9e5d6/1387163581006-JXCXWFGYIV4WZQRB9RGR/The-Hobbit-The-Desolation-of-Smaug-Pics.jpg" NDATA jpeg>
-<!ENTITY image6_Hobbit2 PUBLIC "image6_Hobbit_identifier" "https://m.media-amazon.com/images/M/MV5BODA5MjE4NzgwOF5BMl5BanBnXkFtZTgwNDI2MDgzMzE@._V1_.jpg" NDATA jpeg>2
+<!ENTITY image6_Hobbit2 PUBLIC "image6_Hobbit_identifier" "https://m.media-amazon.com/images/M/MV5BODA5MjE4NzgwOF5BMl5BanBnXkFtZTgwNDI2MDgzMzE@._V1_.jpg" NDATA jpeg>
 <!-- HOBBIT: THE BATTLE OF FIVE ARMIES -->
 <!ENTITY cover_Hobbit3 PUBLIC "cover_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BOWIwNTQzYTQtNzNkOS00Zjc3LTliNTgtMTVlNjM4NTliNmM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" NDATA jpeg>
 <!ENTITY image1_Hobbit3 PUBLIC "image1_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTc1NjYwODIxNV5BMl5BanBnXkFtZTgwMjkzNDM2MzE@._V1_.jpg" NDATA jpeg>
@@ -86,171 +86,171 @@
             </production>
 
             <people>
-                <cast>
-                    <person type="actor">
-                        <first_name>Aleksandra</first_name>
-                        <last_name>Svilenova</last_name>
-                        <age>22</age>
-                        <gender>female</gender>
-                        <role role_type="character">Lita</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Pavel</first_name>
-                        <last_name>Ivanov</last_name>
-                        <age>31</age>
-                        <gender>male</gender>
-                        <role role_type="character">Gundi</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Paraskeva</first_name>
-                        <last_name>Djukelova</last_name>
-                        <age>54</age>
-                        <gender>female</gender>
-                        <role role_type="character">Maria</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Dimiter</first_name>
-                        <last_name>D. Marinov</last_name>
-                        <age>60</age>
-                        <gender>male</gender>
-                        <role role_type="character">Asparuh</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Emil</first_name>
-                        <last_name>Markov</last_name>
-                        <age>61</age>
-                        <gender>male</gender>
-                        <role role_type="character">Architect Markov</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Biliana</first_name>
-                        <last_name>Petrinska</last_name>
-                        <age>50</age>
-                        <gender>female</gender>
-                        <role role_type="character">Marena</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Penko</first_name>
-                        <last_name>Gospodinov</last_name>
-                        <age>54</age>
-                        <gender>male</gender>
-                        <role role_type="character">State Security Agent</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Stoyan</first_name>
-                        <last_name>Radev</last_name>
-                        <age>53</age>
-                        <gender>male</gender>
-                        <role role_type="character">Zoro</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                </cast>
 
-                <creators>
-                    <person type="creator">
-                        <first_name>Dimitar</first_name>
-                        <last_name>Dimitrov</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="director">Director</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Ivan</first_name>
-                        <last_name>Hristov</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="producer">Director</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Andrei</first_name>
-                        <last_name>Arnaudov</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="producer">Director</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Emil</first_name>
-                        <last_name>Bonev</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="writer">Writer</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Velichka</first_name>
-                        <last_name>Markova-Lita</last_name>
-                        <age>38</age>
-                        <gender>female</gender>
-                        <role role_type="writer">Writer</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Georgi</first_name>
-                        <last_name>Strezov</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="composer">Composer</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Tsvetoslav</first_name>
-                        <last_name>Borisov - Tsetso</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="production_director">Production Director</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Jordan</first_name>
-                        <last_name>Markov</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="co_producer">Co-producer</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Alexander</first_name>
-                        <last_name>Zdravkov</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="co_producer">Co-producer</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Vasil</first_name>
-                        <last_name>Bolyarski</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="executive_producer">Executive producer</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Boris</first_name>
-                        <last_name>Slavkov</last_name>
-                        <age>38</age>
-                        <gender>male</gender>
-                        <role role_type="cinematographer">Cinematographer</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Victoria</first_name>
-                        <last_name>Radoslavova</last_name>
-                        <age>38</age>
-                        <gender>female</gender>
-                        <role role_type="editor">Editor</role>
-                        <involvement movie_refs="m001"></involvement>
-                    </person>
-                </creators>
+                <person type="actor">
+                    <first_name>Aleksandra</first_name>
+                    <last_name>Svilenova</last_name>
+                    <age>22</age>
+                    <gender>female</gender>
+                    <role role_type="character">Lita</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Pavel</first_name>
+                    <last_name>Ivanov</last_name>
+                    <age>31</age>
+                    <gender>male</gender>
+                    <role role_type="character">Gundi</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Paraskeva</first_name>
+                    <last_name>Djukelova</last_name>
+                    <age>54</age>
+                    <gender>female</gender>
+                    <role role_type="character">Maria</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Dimiter</first_name>
+                    <last_name>D. Marinov</last_name>
+                    <age>60</age>
+                    <gender>male</gender>
+                    <role role_type="character">Asparuh</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Emil</first_name>
+                    <last_name>Markov</last_name>
+                    <age>61</age>
+                    <gender>male</gender>
+                    <role role_type="character">Architect Markov</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Biliana</first_name>
+                    <last_name>Petrinska</last_name>
+                    <age>50</age>
+                    <gender>female</gender>
+                    <role role_type="character">Marena</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Penko</first_name>
+                    <last_name>Gospodinov</last_name>
+                    <age>54</age>
+                    <gender>male</gender>
+                    <role role_type="character">State Security Agent</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Stoyan</first_name>
+                    <last_name>Radev</last_name>
+                    <age>53</age>
+                    <gender>male</gender>
+                    <role role_type="character">Zoro</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+
+
+
+                <person type="creator">
+                    <first_name>Dimitar</first_name>
+                    <last_name>Dimitrov</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="director">Director</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Ivan</first_name>
+                    <last_name>Hristov</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="producer">Director</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Andrei</first_name>
+                    <last_name>Arnaudov</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="producer">Director</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Emil</first_name>
+                    <last_name>Bonev</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="writer">Writer</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Velichka</first_name>
+                    <last_name>Markova-Lita</last_name>
+                    <age>38</age>
+                    <gender>female</gender>
+                    <role role_type="writer">Writer</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Georgi</first_name>
+                    <last_name>Strezov</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="composer">Composer</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Tsvetoslav</first_name>
+                    <last_name>Borisov - Tsetso</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="production_director">Production Director</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Jordan</first_name>
+                    <last_name>Markov</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="co_producer">Co-producer</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Alexander</first_name>
+                    <last_name>Zdravkov</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="co_producer">Co-producer</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Vasil</first_name>
+                    <last_name>Bolyarski</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="executive_producer">Executive producer</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Boris</first_name>
+                    <last_name>Slavkov</last_name>
+                    <age>38</age>
+                    <gender>male</gender>
+                    <role role_type="cinematographer">Cinematographer</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Victoria</first_name>
+                    <last_name>Radoslavova</last_name>
+                    <age>38</age>
+                    <gender>female</gender>
+                    <role role_type="editor">Editor</role>
+                    <involvement movie_refs="m001"></involvement>
+                </person>
+
             </people>
 
         </movie>
@@ -290,237 +290,237 @@
             </production>
 
             <people>
-                <cast>
-                    <person type="actor">
-                        <first_name>Martin </first_name>
-                        <last_name>Freeman</last_name>
-                        <age>53</age>
-                        <gender>male</gender>
-                        <role role_type="character">Bilbo Baggins</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Ian</first_name>
-                        <last_name>McKellen</last_name>
-                        <age>85</age>
-                        <gender>male</gender>
-                        <role role_type="character">Gandalf the Grey</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Richard </first_name>
-                        <last_name>Armitage </last_name>
-                        <age>53</age>
-                        <gender>male</gender>
-                        <role role_type="character">Thorin Oakenshield II</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Cate </first_name>
-                        <last_name>Blanchett</last_name>
-                        <age>55</age>
-                        <gender>female</gender>
-                        <role role_type="character">Galadriel</role>
-                        <involvement movie_refs="m002 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Hugo</first_name>
-                        <last_name>Weaving</last_name>
-                        <age>64</age>
-                        <gender>male</gender>
-                        <role role_type="character">Elrond</role>
-                        <involvement movie_refs="m002 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Elijah </first_name>
-                        <last_name>Wood</last_name>
-                        <age>43</age>
-                        <gender>male</gender>
-                        <role role_type="character">Frodo Baggins (cameo)</role>
-                        <involvement movie_refs="m002"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Sylvester </first_name>
-                        <last_name>McCoy</last_name>
-                        <age>81</age>
-                        <gender>male</gender>
-                        <role role_type="character">Radagast the Brown</role>
-                        <involvement movie_refs="m002 m003"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Ken </first_name>
-                        <last_name>Stott</last_name>
-                        <age>70</age>
-                        <gender>male</gender>
-                        <role role_type="character">Balin</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Graham</first_name>
-                        <last_name>McTavish</last_name>
-                        <age>63</age>
-                        <gender>male</gender>
-                        <role role_type="character">Dwalin</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Andy </first_name>
-                        <last_name>Serkis</last_name>
-                        <age>60</age>
-                        <gender>male</gender>
-                        <role role_type="character">Gollum</role>
-                        <involvement movie_refs="m002"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Aidan</first_name>
-                        <last_name>Turner</last_name>
-                        <age>41</age>
-                        <gender>male</gender>
-                        <role role_type="character">Kili</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Dean </first_name>
-                        <last_name>O'Gorman</last_name>
-                        <age>48</age>
-                        <gender>male</gender>
-                        <role role_type="character">Fili</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>James </first_name>
-                        <last_name>Nesbitt</last_name>
-                        <age>59</age>
-                        <gender>male</gender>
-                        <role role_type="character">Bofur</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Christopher</first_name>
-                        <last_name>Lee</last_name>
-                        <age>93 (passed away on June 7th, 2015)</age>
-                        <gender>male</gender>
-                        <role role_type="character">Saruman</role>
-                        <involvement movie_refs="m002 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Barry</first_name>
-                        <last_name>Humphries</last_name>
-                        <age>89 (passed away on April 22nd, 2023)</age>
-                        <gender>male</gender>
-                        <role role_type="character">The Great Goblin</role>
-                        <involvement movie_refs="m002"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Manu</first_name>
-                        <last_name>Bennett</last_name>
-                        <age>54</age>
-                        <gender>male</gender>
-                        <role role_type="character">Azog</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                </cast>
 
-                <creators>
-                    <person type="creator">
-                        <first_name>Peter</first_name>
-                        <last_name>Jackson</last_name>
-                        <age>63</age>
-                        <gender>male</gender>
-                        <!-- here he is Director, Producer, Writer -->
-                        <role role_type="director">Director</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Fran</first_name>
-                        <last_name>Walsh</last_name>
-                        <age>65</age>
-                        <gender>female</gender>
-                        <!-- here she is Producer, Writer  -->
-                        <role role_type="producer">Producer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Philippa</first_name>
-                        <last_name>Boyens</last_name>
-                        <age>61</age>
-                        <gender>female</gender>
-                        <role role_type="producer">Director</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Guillermo</first_name>
-                        <last_name>del Toro</last_name>
-                        <age>59</age>
-                        <gender>male</gender>
-                        <role role_type="writer">Writer</role>
-                        <involvement movie_refs="m002"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Howard</first_name>
-                        <last_name>Shore</last_name>
-                        <age>77</age>
-                        <gender>male</gender>
-                        <role role_type="composer">Composer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Andrew</first_name>
-                        <last_name>Lesnie</last_name>
-                        <age>49 (passed away in 2015)</age>
-                        <gender>male</gender>
-                        <role role_type="cinematographer">Cinematographer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Jabez</first_name>
-                        <last_name>Olssen</last_name>
-                        <age>Approx. late 40s/early 50s</age>
-                        <gender>male</gender>
-                        <role role_type="editor">Editor</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Carolynne</first_name>
-                        <last_name>Cunningham</last_name>
-                        <age>62</age>
-                        <gender>female</gender>
-                        <role role_type="producer">Producer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Zane</first_name>
-                        <last_name>Weiner</last_name>
-                        <age>64</age>
-                        <gender>male</gender>
-                        <role role_type="producer">Producer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Rick</first_name>
-                        <last_name>Porras</last_name>
-                        <age>60</age>
-                        <gender>male</gender>
-                        <role role_type="co_producer">Co-producer</role>
-                        <involvement movie_refs="m002"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Alan</first_name>
-                        <last_name>Lee</last_name>
-                        <age>76</age>
-                        <gender>male</gender>
-                        <role role_type="concept_artist">Concept artist</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>John</first_name>
-                        <last_name>Howe</last_name>
-                        <age>66</age>
-                        <gender>female</gender>
-                        <role role_type="concept_artist">Concept artist</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                </creators>
+                <person type="actor">
+                    <first_name>Martin </first_name>
+                    <last_name>Freeman</last_name>
+                    <age>53</age>
+                    <gender>male</gender>
+                    <role role_type="character">Bilbo Baggins</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Ian</first_name>
+                    <last_name>McKellen</last_name>
+                    <age>85</age>
+                    <gender>male</gender>
+                    <role role_type="character">Gandalf the Grey</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Richard </first_name>
+                    <last_name>Armitage </last_name>
+                    <age>53</age>
+                    <gender>male</gender>
+                    <role role_type="character">Thorin Oakenshield II</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Cate </first_name>
+                    <last_name>Blanchett</last_name>
+                    <age>55</age>
+                    <gender>female</gender>
+                    <role role_type="character">Galadriel</role>
+                    <involvement movie_refs="m002 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Hugo</first_name>
+                    <last_name>Weaving</last_name>
+                    <age>64</age>
+                    <gender>male</gender>
+                    <role role_type="character">Elrond</role>
+                    <involvement movie_refs="m002 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Elijah </first_name>
+                    <last_name>Wood</last_name>
+                    <age>43</age>
+                    <gender>male</gender>
+                    <role role_type="character">Frodo Baggins (cameo)</role>
+                    <involvement movie_refs="m002"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Sylvester </first_name>
+                    <last_name>McCoy</last_name>
+                    <age>81</age>
+                    <gender>male</gender>
+                    <role role_type="character">Radagast the Brown</role>
+                    <involvement movie_refs="m002 m003"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Ken </first_name>
+                    <last_name>Stott</last_name>
+                    <age>70</age>
+                    <gender>male</gender>
+                    <role role_type="character">Balin</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Graham</first_name>
+                    <last_name>McTavish</last_name>
+                    <age>63</age>
+                    <gender>male</gender>
+                    <role role_type="character">Dwalin</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Andy </first_name>
+                    <last_name>Serkis</last_name>
+                    <age>60</age>
+                    <gender>male</gender>
+                    <role role_type="character">Gollum</role>
+                    <involvement movie_refs="m002"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Aidan</first_name>
+                    <last_name>Turner</last_name>
+                    <age>41</age>
+                    <gender>male</gender>
+                    <role role_type="character">Kili</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Dean </first_name>
+                    <last_name>O'Gorman</last_name>
+                    <age>48</age>
+                    <gender>male</gender>
+                    <role role_type="character">Fili</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>James </first_name>
+                    <last_name>Nesbitt</last_name>
+                    <age>59</age>
+                    <gender>male</gender>
+                    <role role_type="character">Bofur</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Christopher</first_name>
+                    <last_name>Lee</last_name>
+                    <age>93 (passed away on June 7th, 2015)</age>
+                    <gender>male</gender>
+                    <role role_type="character">Saruman</role>
+                    <involvement movie_refs="m002 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Barry</first_name>
+                    <last_name>Humphries</last_name>
+                    <age>89 (passed away on April 22nd, 2023)</age>
+                    <gender>male</gender>
+                    <role role_type="character">The Great Goblin</role>
+                    <involvement movie_refs="m002"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Manu</first_name>
+                    <last_name>Bennett</last_name>
+                    <age>54</age>
+                    <gender>male</gender>
+                    <role role_type="character">Azog</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+
+
+
+                <person type="creator">
+                    <first_name>Peter</first_name>
+                    <last_name>Jackson</last_name>
+                    <age>63</age>
+                    <gender>male</gender>
+                    <!-- here he is Director, Producer, Writer -->
+                    <role role_type="director">Director</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Fran</first_name>
+                    <last_name>Walsh</last_name>
+                    <age>65</age>
+                    <gender>female</gender>
+                    <!-- here she is Producer, Writer  -->
+                    <role role_type="producer">Producer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Philippa</first_name>
+                    <last_name>Boyens</last_name>
+                    <age>61</age>
+                    <gender>female</gender>
+                    <role role_type="producer">Director</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Guillermo</first_name>
+                    <last_name>del Toro</last_name>
+                    <age>59</age>
+                    <gender>male</gender>
+                    <role role_type="writer">Writer</role>
+                    <involvement movie_refs="m002"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Howard</first_name>
+                    <last_name>Shore</last_name>
+                    <age>77</age>
+                    <gender>male</gender>
+                    <role role_type="composer">Composer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Andrew</first_name>
+                    <last_name>Lesnie</last_name>
+                    <age>49 (passed away in 2015)</age>
+                    <gender>male</gender>
+                    <role role_type="cinematographer">Cinematographer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Jabez</first_name>
+                    <last_name>Olssen</last_name>
+                    <age>Approx. late 40s/early 50s</age>
+                    <gender>male</gender>
+                    <role role_type="editor">Editor</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Carolynne</first_name>
+                    <last_name>Cunningham</last_name>
+                    <age>62</age>
+                    <gender>female</gender>
+                    <role role_type="producer">Producer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Zane</first_name>
+                    <last_name>Weiner</last_name>
+                    <age>64</age>
+                    <gender>male</gender>
+                    <role role_type="producer">Producer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Rick</first_name>
+                    <last_name>Porras</last_name>
+                    <age>60</age>
+                    <gender>male</gender>
+                    <role role_type="co_producer">Co-producer</role>
+                    <involvement movie_refs="m002"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Alan</first_name>
+                    <last_name>Lee</last_name>
+                    <age>76</age>
+                    <gender>male</gender>
+                    <role role_type="concept_artist">Concept artist</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>John</first_name>
+                    <last_name>Howe</last_name>
+                    <age>66</age>
+                    <gender>female</gender>
+                    <role role_type="concept_artist">Concept artist</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+
             </people>
 
         </movie>
@@ -560,229 +560,229 @@
             </production>
 
             <people>
-                <cast>
-                    <person type="actor">
-                        <first_name>Martin </first_name>
-                        <last_name>Freeman</last_name>
-                        <age>53</age>
-                        <gender>male</gender>
-                        <role role_type="character">Bilbo Baggins</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Ian</first_name>
-                        <last_name>McKellen</last_name>
-                        <age>85</age>
-                        <gender>male</gender>
-                        <role role_type="character">Gandalf the Grey</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Richard </first_name>
-                        <last_name>Armitage </last_name>
-                        <age>53</age>
-                        <gender>male</gender>
-                        <role role_type="character">Thorin Oakenshield II</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Evangeline</first_name>
-                        <last_name>Lilly</last_name>
-                        <age>45</age>
-                        <gender>female</gender>
-                        <role role_type="character">Tauriel</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Luke</first_name>
-                        <last_name>Evans</last_name>
-                        <age>45</age>
-                        <gender>male</gender>
-                        <role role_type="character">Bard the Bowman</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Benedict</first_name>
-                        <last_name>Cumberbatch</last_name>
-                        <age>48</age>
-                        <gender>male</gender>
-                        <role role_type="character">Smaug (voice and motion capture), The Necromancer</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Orlando</first_name>
-                        <last_name>Bloom</last_name>
-                        <age>47</age>
-                        <gender>male</gender>
-                        <role role_type="character">Legolas</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Sylvester </first_name>
-                        <last_name>McCoy</last_name>
-                        <age>81</age>
-                        <gender>male</gender>
-                        <role role_type="character">Radagast the Brown</role>
-                        <involvement movie_refs="m002 m003"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Ken </first_name>
-                        <last_name>Stott</last_name>
-                        <age>70</age>
-                        <gender>male</gender>
-                        <role role_type="character">Balin</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Graham</first_name>
-                        <last_name>McTavish</last_name>
-                        <age>63</age>
-                        <gender>male</gender>
-                        <role role_type="character">Dwalin</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Lee</first_name>
-                        <last_name>Pace</last_name>
-                        <age>45</age>
-                        <gender>male</gender>
-                        <role role_type="character">Thranduil</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Aidan</first_name>
-                        <last_name>Turner</last_name>
-                        <age>41</age>
-                        <gender>male</gender>
-                        <role role_type="character">Kili</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Dean </first_name>
-                        <last_name>O'Gorman</last_name>
-                        <age>48</age>
-                        <gender>male</gender>
-                        <role role_type="character">Fili</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>James </first_name>
-                        <last_name>Nesbitt</last_name>
-                        <age>59</age>
-                        <gender>male</gender>
-                        <role role_type="character">Bofur</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Stephen</first_name>
-                        <last_name>Fry</last_name>
-                        <age>67</age>
-                        <gender>male</gender>
-                        <role role_type="character">Master of Laketown</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Manu</first_name>
-                        <last_name>Bennett</last_name>
-                        <age>54</age>
-                        <gender>male</gender>
-                        <role role_type="character">Azog</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                </cast>
 
-                <creators>
-                    <person type="creator">
-                        <first_name>Peter</first_name>
-                        <last_name>Jackson</last_name>
-                        <age>63</age>
-                        <gender>male</gender>
-                        <!-- here he is Director, Producer, Writer -->
-                        <role role_type="director">Director</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Fran</first_name>
-                        <last_name>Walsh</last_name>
-                        <age>65</age>
-                        <gender>female</gender>
-                        <!-- here she is Producer, Writer  -->
-                        <role role_type="producer">Producer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Philippa</first_name>
-                        <last_name>Boyens</last_name>
-                        <age>61</age>
-                        <gender>female</gender>
-                        <role role_type="producer">Director</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Guillermo</first_name>
-                        <last_name>del Toro</last_name>
-                        <age>59</age>
-                        <gender>male</gender>
-                        <role role_type="writer">Writer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Howard</first_name>
-                        <last_name>Shore</last_name>
-                        <age>77</age>
-                        <gender>male</gender>
-                        <role role_type="composer">Composer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Andrew</first_name>
-                        <last_name>Lesnie</last_name>
-                        <age>49 (passed away in 2015)</age>
-                        <gender>male</gender>
-                        <role role_type="cinematographer">Cinematographer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Jabez</first_name>
-                        <last_name>Olssen</last_name>
-                        <age>Approx. late 40s/early 50s</age>
-                        <gender>male</gender>
-                        <role role_type="editor">Editor</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Carolynne</first_name>
-                        <last_name>Cunningham</last_name>
-                        <age>62</age>
-                        <gender>female</gender>
-                        <role role_type="producer">Producer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Zane</first_name>
-                        <last_name>Weiner</last_name>
-                        <age>64</age>
-                        <gender>male</gender>
-                        <role role_type="producer">Producer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Alan</first_name>
-                        <last_name>Lee</last_name>
-                        <age>76</age>
-                        <gender>male</gender>
-                        <role role_type="concept_artist">Concept artist</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>John</first_name>
-                        <last_name>Howe</last_name>
-                        <age>66</age>
-                        <gender>female</gender>
-                        <role role_type="concept_artist">Concept artist</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                </creators>
+                <person type="actor">
+                    <first_name>Martin </first_name>
+                    <last_name>Freeman</last_name>
+                    <age>53</age>
+                    <gender>male</gender>
+                    <role role_type="character">Bilbo Baggins</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Ian</first_name>
+                    <last_name>McKellen</last_name>
+                    <age>85</age>
+                    <gender>male</gender>
+                    <role role_type="character">Gandalf the Grey</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Richard </first_name>
+                    <last_name>Armitage </last_name>
+                    <age>53</age>
+                    <gender>male</gender>
+                    <role role_type="character">Thorin Oakenshield II</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Evangeline</first_name>
+                    <last_name>Lilly</last_name>
+                    <age>45</age>
+                    <gender>female</gender>
+                    <role role_type="character">Tauriel</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Luke</first_name>
+                    <last_name>Evans</last_name>
+                    <age>45</age>
+                    <gender>male</gender>
+                    <role role_type="character">Bard the Bowman</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Benedict</first_name>
+                    <last_name>Cumberbatch</last_name>
+                    <age>48</age>
+                    <gender>male</gender>
+                    <role role_type="character">Smaug (voice and motion capture), The Necromancer</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Orlando</first_name>
+                    <last_name>Bloom</last_name>
+                    <age>47</age>
+                    <gender>male</gender>
+                    <role role_type="character">Legolas</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Sylvester </first_name>
+                    <last_name>McCoy</last_name>
+                    <age>81</age>
+                    <gender>male</gender>
+                    <role role_type="character">Radagast the Brown</role>
+                    <involvement movie_refs="m002 m003"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Ken </first_name>
+                    <last_name>Stott</last_name>
+                    <age>70</age>
+                    <gender>male</gender>
+                    <role role_type="character">Balin</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Graham</first_name>
+                    <last_name>McTavish</last_name>
+                    <age>63</age>
+                    <gender>male</gender>
+                    <role role_type="character">Dwalin</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Lee</first_name>
+                    <last_name>Pace</last_name>
+                    <age>45</age>
+                    <gender>male</gender>
+                    <role role_type="character">Thranduil</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Aidan</first_name>
+                    <last_name>Turner</last_name>
+                    <age>41</age>
+                    <gender>male</gender>
+                    <role role_type="character">Kili</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Dean </first_name>
+                    <last_name>O'Gorman</last_name>
+                    <age>48</age>
+                    <gender>male</gender>
+                    <role role_type="character">Fili</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>James </first_name>
+                    <last_name>Nesbitt</last_name>
+                    <age>59</age>
+                    <gender>male</gender>
+                    <role role_type="character">Bofur</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Stephen</first_name>
+                    <last_name>Fry</last_name>
+                    <age>67</age>
+                    <gender>male</gender>
+                    <role role_type="character">Master of Laketown</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Manu</first_name>
+                    <last_name>Bennett</last_name>
+                    <age>54</age>
+                    <gender>male</gender>
+                    <role role_type="character">Azog</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+
+
+
+                <person type="creator">
+                    <first_name>Peter</first_name>
+                    <last_name>Jackson</last_name>
+                    <age>63</age>
+                    <gender>male</gender>
+                    <!-- here he is Director, Producer, Writer -->
+                    <role role_type="director">Director</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Fran</first_name>
+                    <last_name>Walsh</last_name>
+                    <age>65</age>
+                    <gender>female</gender>
+                    <!-- here she is Producer, Writer  -->
+                    <role role_type="producer">Producer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Philippa</first_name>
+                    <last_name>Boyens</last_name>
+                    <age>61</age>
+                    <gender>female</gender>
+                    <role role_type="producer">Director</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Guillermo</first_name>
+                    <last_name>del Toro</last_name>
+                    <age>59</age>
+                    <gender>male</gender>
+                    <role role_type="writer">Writer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Howard</first_name>
+                    <last_name>Shore</last_name>
+                    <age>77</age>
+                    <gender>male</gender>
+                    <role role_type="composer">Composer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Andrew</first_name>
+                    <last_name>Lesnie</last_name>
+                    <age>49 (passed away in 2015)</age>
+                    <gender>male</gender>
+                    <role role_type="cinematographer">Cinematographer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Jabez</first_name>
+                    <last_name>Olssen</last_name>
+                    <age>Approx. late 40s/early 50s</age>
+                    <gender>male</gender>
+                    <role role_type="editor">Editor</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Carolynne</first_name>
+                    <last_name>Cunningham</last_name>
+                    <age>62</age>
+                    <gender>female</gender>
+                    <role role_type="producer">Producer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Zane</first_name>
+                    <last_name>Weiner</last_name>
+                    <age>64</age>
+                    <gender>male</gender>
+                    <role role_type="producer">Producer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Alan</first_name>
+                    <last_name>Lee</last_name>
+                    <age>76</age>
+                    <gender>male</gender>
+                    <role role_type="concept_artist">Concept artist</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>John</first_name>
+                    <last_name>Howe</last_name>
+                    <age>66</age>
+                    <gender>female</gender>
+                    <role role_type="concept_artist">Concept artist</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+
             </people>
 
         </movie>
@@ -822,245 +822,245 @@
             </production>
 
             <people>
-                <cast>
-                    <person type="actor">
-                        <first_name>Martin </first_name>
-                        <last_name>Freeman</last_name>
-                        <age>53</age>
-                        <gender>male</gender>
-                        <role role_type="character">Bilbo Baggins</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Ian</first_name>
-                        <last_name>McKellen</last_name>
-                        <age>85</age>
-                        <gender>male</gender>
-                        <role role_type="character">Gandalf the Grey</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Richard </first_name>
-                        <last_name>Armitage </last_name>
-                        <age>53</age>
-                        <gender>male</gender>
-                        <role role_type="character">Thorin Oakenshield II</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Evangeline</first_name>
-                        <last_name>Lilly</last_name>
-                        <age>45</age>
-                        <gender>female</gender>
-                        <role role_type="character">Tauriel</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Luke</first_name>
-                        <last_name>Evans</last_name>
-                        <age>45</age>
-                        <gender>male</gender>
-                        <role role_type="character">Bard the Bowman</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Benedict</first_name>
-                        <last_name>Cumberbatch</last_name>
-                        <age>48</age>
-                        <gender>male</gender>
-                        <role role_type="character">Smaug (voice and motion capture), The Necromancer</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Orlando</first_name>
-                        <last_name>Bloom</last_name>
-                        <age>47</age>
-                        <gender>male</gender>
-                        <role role_type="character">Legolas</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Cate </first_name>
-                        <last_name>Blanchett</last_name>
-                        <age>55</age>
-                        <gender>female</gender>
-                        <role role_type="character">Galadriel</role>
-                        <involvement movie_refs="m002 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Hugo</first_name>
-                        <last_name>Weaving</last_name>
-                        <age>64</age>
-                        <gender>male</gender>
-                        <role role_type="character">Elrond</role>
-                        <involvement movie_refs="m002 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Christopher</first_name>
-                        <last_name>Lee</last_name>
-                        <age>93 (passed away on June 7th, 2015)</age>
-                        <gender>male</gender>
-                        <role role_type="character">Saruman</role>
-                        <involvement movie_refs="m002 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Ken </first_name>
-                        <last_name>Stott</last_name>
-                        <age>70</age>
-                        <gender>male</gender>
-                        <role role_type="character">Balin</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Graham</first_name>
-                        <last_name>McTavish</last_name>
-                        <age>63</age>
-                        <gender>male</gender>
-                        <role role_type="character">Dwalin</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Lee</first_name>
-                        <last_name>Pace</last_name>
-                        <age>45</age>
-                        <gender>male</gender>
-                        <role role_type="character">Thranduil</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Aidan</first_name>
-                        <last_name>Turner</last_name>
-                        <age>41</age>
-                        <gender>male</gender>
-                        <role role_type="character">Kili</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Dean </first_name>
-                        <last_name>O'Gorman</last_name>
-                        <age>48</age>
-                        <gender>male</gender>
-                        <role role_type="character">Fili</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>James </first_name>
-                        <last_name>Nesbitt</last_name>
-                        <age>59</age>
-                        <gender>male</gender>
-                        <role role_type="character">Bofur</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Stephen</first_name>
-                        <last_name>Fry</last_name>
-                        <age>67</age>
-                        <gender>male</gender>
-                        <role role_type="character">Master of Laketown</role>
-                        <involvement movie_refs="m003 m004"></involvement>
-                    </person>
-                    <person type="actor">
-                        <first_name>Manu</first_name>
-                        <last_name>Bennett</last_name>
-                        <age>54</age>
-                        <gender>male</gender>
-                        <role role_type="character">Azog</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                </cast>
 
-                <creators>
-                    <person type="creator">
-                        <first_name>Peter</first_name>
-                        <last_name>Jackson</last_name>
-                        <age>63</age>
-                        <gender>male</gender>
-                        <!-- here he is Director, Producer, Writer -->
-                        <role role_type="director">Director</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Fran</first_name>
-                        <last_name>Walsh</last_name>
-                        <age>65</age>
-                        <gender>female</gender>
-                        <!-- here she is Producer, Writer  -->
-                        <role role_type="producer">Producer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Philippa</first_name>
-                        <last_name>Boyens</last_name>
-                        <age>61</age>
-                        <gender>female</gender>
-                        <role role_type="producer">Director</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Guillermo</first_name>
-                        <last_name>del Toro</last_name>
-                        <age>59</age>
-                        <gender>male</gender>
-                        <role role_type="writer">Writer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Howard</first_name>
-                        <last_name>Shore</last_name>
-                        <age>77</age>
-                        <gender>male</gender>
-                        <role role_type="composer">Composer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Andrew</first_name>
-                        <last_name>Lesnie</last_name>
-                        <age>49 (passed away in 2015)</age>
-                        <gender>male</gender>
-                        <role role_type="cinematographer">Cinematographer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Jabez</first_name>
-                        <last_name>Olssen</last_name>
-                        <age>Approx. late 40s/early 50s</age>
-                        <gender>male</gender>
-                        <role role_type="editor">Editor</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Carolynne</first_name>
-                        <last_name>Cunningham</last_name>
-                        <age>62</age>
-                        <gender>female</gender>
-                        <role role_type="producer">Producer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Zane</first_name>
-                        <last_name>Weiner</last_name>
-                        <age>64</age>
-                        <gender>male</gender>
-                        <role role_type="producer">Producer</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Alan</first_name>
-                        <last_name>Lee</last_name>
-                        <age>76</age>
-                        <gender>male</gender>
-                        <role role_type="concept_artist">Concept artist</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>John</first_name>
-                        <last_name>Howe</last_name>
-                        <age>66</age>
-                        <gender>female</gender>
-                        <role role_type="concept_artist">Concept artist</role>
-                        <involvement movie_refs="m002 m003 m004"></involvement>
-                    </person>
-                </creators>
+                <person type="actor">
+                    <first_name>Martin </first_name>
+                    <last_name>Freeman</last_name>
+                    <age>53</age>
+                    <gender>male</gender>
+                    <role role_type="character">Bilbo Baggins</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Ian</first_name>
+                    <last_name>McKellen</last_name>
+                    <age>85</age>
+                    <gender>male</gender>
+                    <role role_type="character">Gandalf the Grey</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Richard </first_name>
+                    <last_name>Armitage </last_name>
+                    <age>53</age>
+                    <gender>male</gender>
+                    <role role_type="character">Thorin Oakenshield II</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Evangeline</first_name>
+                    <last_name>Lilly</last_name>
+                    <age>45</age>
+                    <gender>female</gender>
+                    <role role_type="character">Tauriel</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Luke</first_name>
+                    <last_name>Evans</last_name>
+                    <age>45</age>
+                    <gender>male</gender>
+                    <role role_type="character">Bard the Bowman</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Benedict</first_name>
+                    <last_name>Cumberbatch</last_name>
+                    <age>48</age>
+                    <gender>male</gender>
+                    <role role_type="character">Smaug (voice and motion capture), The Necromancer</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Orlando</first_name>
+                    <last_name>Bloom</last_name>
+                    <age>47</age>
+                    <gender>male</gender>
+                    <role role_type="character">Legolas</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Cate </first_name>
+                    <last_name>Blanchett</last_name>
+                    <age>55</age>
+                    <gender>female</gender>
+                    <role role_type="character">Galadriel</role>
+                    <involvement movie_refs="m002 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Hugo</first_name>
+                    <last_name>Weaving</last_name>
+                    <age>64</age>
+                    <gender>male</gender>
+                    <role role_type="character">Elrond</role>
+                    <involvement movie_refs="m002 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Christopher</first_name>
+                    <last_name>Lee</last_name>
+                    <age>93 (passed away on June 7th, 2015)</age>
+                    <gender>male</gender>
+                    <role role_type="character">Saruman</role>
+                    <involvement movie_refs="m002 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Ken </first_name>
+                    <last_name>Stott</last_name>
+                    <age>70</age>
+                    <gender>male</gender>
+                    <role role_type="character">Balin</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Graham</first_name>
+                    <last_name>McTavish</last_name>
+                    <age>63</age>
+                    <gender>male</gender>
+                    <role role_type="character">Dwalin</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Lee</first_name>
+                    <last_name>Pace</last_name>
+                    <age>45</age>
+                    <gender>male</gender>
+                    <role role_type="character">Thranduil</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Aidan</first_name>
+                    <last_name>Turner</last_name>
+                    <age>41</age>
+                    <gender>male</gender>
+                    <role role_type="character">Kili</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Dean </first_name>
+                    <last_name>O'Gorman</last_name>
+                    <age>48</age>
+                    <gender>male</gender>
+                    <role role_type="character">Fili</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>James </first_name>
+                    <last_name>Nesbitt</last_name>
+                    <age>59</age>
+                    <gender>male</gender>
+                    <role role_type="character">Bofur</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Stephen</first_name>
+                    <last_name>Fry</last_name>
+                    <age>67</age>
+                    <gender>male</gender>
+                    <role role_type="character">Master of Laketown</role>
+                    <involvement movie_refs="m003 m004"></involvement>
+                </person>
+                <person type="actor">
+                    <first_name>Manu</first_name>
+                    <last_name>Bennett</last_name>
+                    <age>54</age>
+                    <gender>male</gender>
+                    <role role_type="character">Azog</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+
+
+
+                <person type="creator">
+                    <first_name>Peter</first_name>
+                    <last_name>Jackson</last_name>
+                    <age>63</age>
+                    <gender>male</gender>
+                    <!-- here he is Director, Producer, Writer -->
+                    <role role_type="director">Director</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Fran</first_name>
+                    <last_name>Walsh</last_name>
+                    <age>65</age>
+                    <gender>female</gender>
+                    <!-- here she is Producer, Writer  -->
+                    <role role_type="producer">Producer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Philippa</first_name>
+                    <last_name>Boyens</last_name>
+                    <age>61</age>
+                    <gender>female</gender>
+                    <role role_type="producer">Director</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Guillermo</first_name>
+                    <last_name>del Toro</last_name>
+                    <age>59</age>
+                    <gender>male</gender>
+                    <role role_type="writer">Writer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Howard</first_name>
+                    <last_name>Shore</last_name>
+                    <age>77</age>
+                    <gender>male</gender>
+                    <role role_type="composer">Composer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Andrew</first_name>
+                    <last_name>Lesnie</last_name>
+                    <age>49 (passed away in 2015)</age>
+                    <gender>male</gender>
+                    <role role_type="cinematographer">Cinematographer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Jabez</first_name>
+                    <last_name>Olssen</last_name>
+                    <age>Approx. late 40s/early 50s</age>
+                    <gender>male</gender>
+                    <role role_type="editor">Editor</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Carolynne</first_name>
+                    <last_name>Cunningham</last_name>
+                    <age>62</age>
+                    <gender>female</gender>
+                    <role role_type="producer">Producer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Zane</first_name>
+                    <last_name>Weiner</last_name>
+                    <age>64</age>
+                    <gender>male</gender>
+                    <role role_type="producer">Producer</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Alan</first_name>
+                    <last_name>Lee</last_name>
+                    <age>76</age>
+                    <gender>male</gender>
+                    <role role_type="concept_artist">Concept artist</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>John</first_name>
+                    <last_name>Howe</last_name>
+                    <age>66</age>
+                    <gender>female</gender>
+                    <role role_type="concept_artist">Concept artist</role>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+                </person>
+
             </people>
 
         </movie>
@@ -1101,45 +1101,45 @@
             </production>
 
             <people>
-                <cast>
-                    <!-- TO DO -->
-                    <person type="actor">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type="character"></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </cast>
 
-                <creators>
-                    <!-- TO DO -->
-                    <person type="creator">
-                        <first_name>Christopher</first_name>
-                        <last_name>Nolan</last_name>
-                        <age>54</age>
-                        <gender>male</gender>
-                        <role role_type="director">Director</role>
-                        <involvement movie_refs="m005"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name>Jonathan</first_name>
-                        <last_name>Nolan</last_name>
-                        <age>53</age>
-                        <gender>male</gender>
-                        <role role_type="writer">Writer</role>
-                        <involvement movie_refs="m005"></involvement>
-                    </person>
-                    <person type="creator">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type=""></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </creators>
+                <!-- TO DO -->
+                <person type="actor">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type="character"></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
+
+
+                <!-- TO DO -->
+                <person type="creator">
+                    <first_name>Christopher</first_name>
+                    <last_name>Nolan</last_name>
+                    <age>54</age>
+                    <gender>male</gender>
+                    <role role_type="director">Director</role>
+                    <involvement movie_refs="m005"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name>Jonathan</first_name>
+                    <last_name>Nolan</last_name>
+                    <age>53</age>
+                    <gender>male</gender>
+                    <role role_type="writer">Writer</role>
+                    <involvement movie_refs="m005"></involvement>
+                </person>
+                <person type="creator">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type=""></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
             </people>
 
         </movie>
@@ -1179,29 +1179,29 @@
             </production>
 
             <people>
-                <cast>
-                    <!-- TO DO -->
-                    <person type="actor">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type="character"></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </cast>
 
-                <creators>
-                    <!-- TO DO -->
-                    <person type="creator">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type=""></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </creators>
+                <!-- TO DO -->
+                <person type="actor">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type="character"></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
+
+
+                <!-- TO DO -->
+                <person type="creator">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type=""></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
             </people>
 
         </movie>
@@ -1241,29 +1241,29 @@
             </production>
 
             <people>
-                <cast>
-                    <!-- TO DO -->
-                    <person type="actor">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type="character"></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </cast>
 
-                <creators>
-                    <!-- TO DO -->
-                    <person type="creator">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type=""></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </creators>
+                <!-- TO DO -->
+                <person type="actor">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type="character"></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
+
+
+                <!-- TO DO -->
+                <person type="creator">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type=""></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
             </people>
 
         </movie>
@@ -1303,29 +1303,29 @@
             </production>
 
             <people>
-                <cast>
-                    <!-- TO DO -->
-                    <person type="actor">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type="character"></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </cast>
 
-                <creators>
-                    <!-- TO DO -->
-                    <person type="creator">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type=""></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </creators>
+                <!-- TO DO -->
+                <person type="actor">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type="character"></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
+
+
+                <!-- TO DO -->
+                <person type="creator">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type=""></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
             </people>
 
         </movie>
@@ -1365,29 +1365,29 @@
             </production>
 
             <people>
-                <cast>
-                    <!-- TO DO -->
-                    <person type="actor">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type="character"></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </cast>
 
-                <creators>
-                    <!-- TO DO -->
-                    <person type="creator">
-                        <first_name></first_name>
-                        <last_name></last_name>
-                        <age></age>
-                        <gender></gender>
-                        <role role_type=""></role>
-                        <involvement movie_refs=""></involvement>
-                    </person>
-                </creators>
+                <!-- TO DO -->
+                <person type="actor">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type="character"></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
+
+
+                <!-- TO DO -->
+                <person type="creator">
+                    <first_name></first_name>
+                    <last_name></last_name>
+                    <age></age>
+                    <gender></gender>
+                    <role role_type=""></role>
+                    <involvement movie_refs=""></involvement>
+                </person>
+
             </people>
 
         </movie>
