@@ -41,7 +41,6 @@
             <xs:element name="title" type="xs:string" />
             <xs:element name="media" type="movieMediaType" />
             <xs:element name="details" type="movieDetailsType"/>
-            <xs:element name="production" type="xs:string" />
             <xs:element name="people" type="moviePeopleType" />
         </xs:sequence>
     </xs:complexType>
@@ -99,6 +98,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
+            <xs:element name="production" type="xs:string" />
             <xs:element name="language" type="nameType" />
             <xs:element name="country">
                 <xs:simpleType>

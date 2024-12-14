@@ -2,7 +2,7 @@
 
 <!ELEMENT movies (movie+)>
 <!-- можем да добавим в началото каталогът да бъде разделен на филми, филмови поредици и жанрове -->
-<!ELEMENT movie (title, media, details, production, people)>
+<!ELEMENT movie (title, media, details, people)>
 <!ATTLIST movie id ID #REQUIRED>
 <!ATTLIST movie genre IDREFS #REQUIRED>
 <!ATTLIST movie movie-series IDREF #IMPLIED>
@@ -20,7 +20,7 @@
 <!-- image има source, май трябва да е entity. тези май всички са entities -->
 
 <!-- <!ELEMENT details (duration, genre, rating, summary, year, language, country, budget)> -->
-<!ELEMENT details (duration, rating, summary, year, language, country, budget)>
+<!ELEMENT details (duration, rating, summary, year, production, language, country, budget)>
 <!ELEMENT duration (#PCDATA)>
 <!-- <!ELEMENT genre (#PCDATA)> human readable -->
 <!-- <!ATTLIST genre genre_type (Action|Adventure|Animation|Biography|Comedy|Crime|Drama|Fantasy|Historical|Horror|Mystery|Music|Romance|Sci-Fi|Thriller|War|Western) #REQUIRED> -->

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="movie_catalog.xsl" type="text/xsl"?>
 <!DOCTYPE movie_catalog SYSTEM "movie_catalog.dtd" [
 <!ATTLIST movie_catalog
 		xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
@@ -60,7 +61,7 @@
             <title>Gundi: Legend of Love</title>
 
             <media>
-                <cover source="cover_Gundi"></cover>
+                <cover source="cover_Gundi" />
                 <trailer source="trailer_Gundi"></trailer>
                 <gallery>
                     <image source="image1_Gundi"></image>
@@ -80,14 +81,14 @@
                     "Gundi: Legend of Love" is a poignant sports drama that chronicles the life of Georgi Asparuhov, Bulgaria's most beloved football icon of the 20th century. From humble beginnings in a Sofia suburb to national stardom, the film unfolds the dual narratives of Georgi's spectacular career and his deep love for his wife, Lita. Set against the backdrop of Bulgaria's political and social turbulence during the 1960s, the story captures Georgi's rise as a footballing legend alongside his struggles within the oppressive regime that sought to control every aspect of his life. At the heart of the narrative is his relationship with Lita, a woman from an affluent family whose love becomes Georgi's anchor amid the challenges of his career and the demands of fame. Their journey is marred by external pressures and personal trials but buoyed by moments of joy and triumph, such as the legendary matches that secured Georgi's place in sports history. Tragically, their shared dreams and hopes are cut short on June 30, 1971, leaving a legacy that transcends generations. The film blends authentic period detail with dynamic football action, brought to life through state-of-the-art VFX, showcasing some of the most pivotal matches in Georgi's career. "Gundi: Legend of Love" not only celebrates the sportsman but also the man behind the legend, whose love story continues to inspire long after his untimely demise.    
                 </summary>
                 <year>2024</year>
+                <production>
+                    <studio>Medium Station</studio>
+                </production>
                 <language>Bulgarian</language>
                 <country>Bulgaria</country>
                 <budget>no info</budget>
             </details>
 
-            <production>
-                <studio>Medium Station</studio>
-            </production>
 
             <people>
 
@@ -284,14 +285,14 @@
                     Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths of guile and courage that surprise even him, he also gains possession of Gollum's "precious" ring that holds unexpected and useful qualities ... A simple, gold ring that is tied to the fate of all Middle-earth in ways Bilbo cannot begin to know
                 </summary>
                 <year>2012</year>
+                <production>
+                    <studio>Warner Bros. Pictures</studio>
+                </production>
                 <language>English</language>
                 <country>New Zealand, United States</country>
                 <budget>$200–315 million</budget>
             </details>
 
-            <production>
-                <studio>Warner Bros. Pictures</studio>
-            </production>
 
             <people>
 
@@ -554,14 +555,14 @@
                     After successfully crossing over (and under) the Misty Mountains, Thorin and Company must seek aid from a powerful stranger before taking on the dangers of Mirkwood Forest--without their Wizard. If they reach the human settlement of Lake-town it will be time for the hobbit Bilbo Baggins to fulfill his contract with the dwarves. The party must complete the journey to Lonely Mountain and burglar Baggins must seek out the Secret Door that will give them access to the hoard of the dragon Smaug. And, where has Gandalf got off to? And what is his secret business to the south?                
                 </summary>
                 <year>2013</year>
+                <production>
+                    <studio>Warner Bros. Pictures</studio>
+                </production>
                 <language>English</language>
                 <country>New Zealand, United States</country>
                 <budget>$217–250 million</budget>
             </details>
 
-            <production>
-                <studio>Warner Bros. Pictures</studio>
-            </production>
 
             <people>
 
@@ -816,14 +817,14 @@
                     After the Dragon leaves the Lonely Mountain, the people of Lake-town see a threat coming. Orcs, dwarves, elves and people prepare for war. Bilbo sees Thorin going mad and tries to help. Meanwhile, Gandalf is rescued from the Necromancer's prison and his rescuers realize who the Necromancer is.
                 </summary>
                 <year>2014</year>
+                <production>
+                    <studio>Warner Bros. Pictures</studio>
+                </production>
                 <language>English</language>
                 <country>New Zealand, United States</country>
                 <budget>$209–300 million</budget>
             </details>
 
-            <production>
-                <studio>Warner Bros. Pictures</studio>
-            </production>
 
             <people>
 
@@ -1095,14 +1096,14 @@
                     Set within a year after the events of Batman Begins (2005), Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City, until a mysterious and sadistic criminal mastermind known only as "The Joker" appears in Gotham, creating a new wave of chaos. Batman's struggle against The Joker becomes deeply personal, forcing him to "confront everything he believes" and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent, and Rachel Dawes.   
                 </summary>
                 <year>2008</year>
+                <production>
+                    <studio>Warner Bros. Pictures</studio>
+                </production>
                 <language>English</language>
                 <country>United Kingdom, United States</country>
                 <budget>$185 million</budget>
             </details>
 
-            <production>
-                <studio>Warner Bros. Pictures</studio>
-            </production>
 
             <people>
 
@@ -1173,14 +1174,14 @@
 
                 </summary>
                 <year></year>
+                <production>
+                    <studio></studio>
+                </production>
                 <language></language>
                 <country></country>
                 <budget>$ million</budget>
             </details>
 
-            <production>
-                <studio></studio>
-            </production>
 
             <people>
 
@@ -1235,14 +1236,14 @@
 
                 </summary>
                 <year></year>
+                <production>
+                    <studio></studio>
+                </production>
                 <language></language>
                 <country></country>
                 <budget>$ million</budget>
             </details>
 
-            <production>
-                <studio></studio>
-            </production>
 
             <people>
 
@@ -1297,14 +1298,14 @@
 
                 </summary>
                 <year></year>
+                <production>
+                    <studio></studio>
+                </production>
                 <language></language>
                 <country></country>
                 <budget>$ million</budget>
             </details>
 
-            <production>
-                <studio></studio>
-            </production>
 
             <people>
 
@@ -1359,14 +1360,14 @@
 
                 </summary>
                 <year></year>
+                <production>
+                    <studio></studio>
+                </production>
                 <language></language>
                 <country></country>
                 <budget>$ million</budget>
             </details>
 
-            <production>
-                <studio></studio>
-            </production>
 
             <people>
 
