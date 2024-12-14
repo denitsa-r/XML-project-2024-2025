@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.myFirstXMLSchema.com"
-    xmlns="http://www.myFirstXMLSchema.com" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <!-- root описание -->
     <xs:element name="movie_catalog">
         <xs:complexType>
@@ -65,7 +64,7 @@
     </xs:element>
 
     <xs:complexType name="imageType">
-        <xs:attribute name="source" type="xs:ENTITY" use="required" />
+        <xs:attribute name="source" type="xs:anyURI" use="required" />
     </xs:complexType>
 
     <xs:complexType name="videoType">
