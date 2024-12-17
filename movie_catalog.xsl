@@ -15,50 +15,74 @@
             </head>
 
             <body>
-                <ul class="menu">
-                    <ul class="filter-by">
-                        <li>Show All</li>
-                        <li>Series</li>
-                        <li>Genre</li>
-                    </ul>
-                    <ul class="series">
-                        <!-- here i want to show all different types of series -->
-                        <li></li>
-                    </ul>
-                    <ul class="genres">
+                <ul class="filter-menu"> Choose filteer:
+                    <ul class="genres"> By genre:
                         <!-- here i want to show all different types of genres -->
-                        <li></li>
+                        <xsl:for-each select="movie_catalog/genres/genre">
+                            <li><xsl:value-of select="."/></li>
+                        </xsl:for-each>
                     </ul>
-                    <ul class="sort-by">
-                        <li>Alphabethicaly</li>
-                        <li>By Year</li>
-                        <li>By Rating</li>
+                    <ul> By Series:
+                        <!-- here i want to show all different types of series -->
+                        <xsl:for-each select="movie_catalog/movie-series/series">
+                            <li><xsl:value-of select="."/></li>
+                        </xsl:for-each>
                     </ul>
+                    <ul> By Country:
+                        <!-- here i want to show all different types of series -->
+                        <!-- TO DO -->
+                        <!-- <xsl:for-each select="movie_catalog/countries/country">
+                            <li><xsl:value-of select="."/></li>
+                        </xsl:for-each> -->
+                    </ul>
+                    <ul> By Topic:
+                        <!-- TO DO -->
+                        <!-- here i want to show all different types of series -->
+                        <!-- <xsl:for-each select="movie_catalog/countries/country">
+                            <li><xsl:value-of select="."/></li>
+                        </xsl:for-each> -->
+                    </ul>
+                    <ul> By Source:
+                        <!-- TO DO -->
+                        <!-- here i want to show all different types of series -->
+                        <!-- <xsl:for-each select="movie_catalog/countries/country">
+                            <li><xsl:value-of select="."/></li>
+                        </xsl:for-each> -->
+                    </ul>
+                    <ul> By Production Company:
+                        <!-- TO DO -->
+                        <!-- here i want to show all different types of series -->
+                        <xsl:for-each select="movie_catalog/movies/movie/production">
+                            <li><xsl:value-of select="."/></li>
+                        </xsl:for-each>
+                    </ul>
+                    <div>
+                        <ul> Order by:
+                            <li>Alphabethicaly</li>
+                            <li>Year</li>
+                            <li>Rating</li>
+                            <li>Lenght</li>
+                            <li>Budget</li>
+                        </ul>
+                    </div>
                 </ul>
                 <div class="container">
 
                     <div class="movie-list">
                         <xsl:for-each select="movie_catalog/movies/movie">
 
-                            <xsl:variable name="coverImage" select="media/cover/@source " />
-                             <xsl:variable name="coverURL">
-                                <xsl:value-of select="key('coverKey', $coverImage)"/>
-                            </xsl:variable>
+                            <xsl:variable name="coverImage" select="unparsed-entity-uri(media/cover/@source)" />
 
                             <!-- movie card for every movie -->
-                            <div class="movie-card">
-                                <a href="movie_details.html?id={@id}">
-                                    <div class="cover" style="width:100px; height:100px; background:url({$coverURL})"></div>
-
-                                    <div class="year-rating-bar">
-                                        <p><xsl:value-of select="details/year"/></p>
-                                        <div class="icon-star"></div>
-                                        <p><xsl:value-of select="details/rating"/></p>
-                                    </div>
-                                    <h3><xsl:value-of select="title"/></h3>
-                                    <p><xsl:value-of select="details/summary"/></p>
-                                </a>
-                            </div>
+                            <a href="movie_details.html?id={@id}" class="movie-card">
+                                <div class="cover" style="background-image:url({$coverImage})"></div>
+                                <h3 class="px-1"><xsl:value-of select="title"/></h3>
+                                <div class="year-rating-bar p-1">
+                                    <p><xsl:value-of select="details/year"/></p>
+                                    <div class="icon-star"></div>
+                                    <p><xsl:value-of select="details/rating"/></p>
+                                </div>
+                            </a>
                         </xsl:for-each>
                     </div>
 
@@ -68,5 +92,5 @@
     </xsl:template>
 
 
-                <!-- селектира преките наследници на message -->
-            </xsl:stylesheet>
+    <!-- селектира преките наследници на message -->
+</xsl:stylesheet>

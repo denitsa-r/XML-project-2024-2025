@@ -1,4 +1,4 @@
-<!ELEMENT movie_catalog (movies, genres, movie-series)>
+<!ELEMENT movie_catalog (movies, genres, movie-series, directors, writers, producers, other_creators, actors, studios, countries, languages)>
 
 <!ELEMENT movies (movie+)>
 <!-- можем да добавим в началото каталогът да бъде разделен на филми, филмови поредици и жанрове -->
@@ -6,6 +6,10 @@
 <!ATTLIST movie id ID #REQUIRED>
 <!ATTLIST movie genre IDREFS #REQUIRED>
 <!ATTLIST movie movie-series IDREF #IMPLIED>
+<!ATTLIST movie studio IDREF #REQUIRED>
+<!ATTLIST movie country IDREFS #REQUIRED>
+<!ATTLIST movie director IDREFS #REQUIRED>
+<!ATTLIST movie language IDREF #REQUIRED>
 
 <!ELEMENT title (#PCDATA)>
 
@@ -20,32 +24,15 @@
 <!-- image има source, май трябва да е entity. тези май всички са entities -->
 
 <!-- <!ELEMENT details (duration, genre, rating, summary, year, language, country, budget)> -->
-<!ELEMENT details (duration, rating, summary, year, production, language, country, budget)>
+<!ELEMENT details (duration, rating, summary, year, budget)>
 <!ELEMENT duration (#PCDATA)>
-<!-- <!ELEMENT genre (#PCDATA)> human readable -->
-<!-- <!ATTLIST genre genre_type (Action|Adventure|Animation|Biography|Comedy|Crime|Drama|Fantasy|Historical|Horror|Mystery|Music|Romance|Sci-Fi|Thriller|War|Western) #REQUIRED> -->
 <!ELEMENT rating (#PCDATA)>
 <!ELEMENT summary (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
-<!ELEMENT language (#PCDATA)>
-<!ELEMENT country (#PCDATA)>
 <!ELEMENT budget (#PCDATA)>
 
-<!ELEMENT production (studio)>
-<!ELEMENT studio (#PCDATA)>
-
-<!ELEMENT people (person+)>
-<!ELEMENT person (first_name, last_name, age, gender, role, involvement)>
-<!ATTLIST person type (creator|actor) #REQUIRED>
-<!ELEMENT first_name (#PCDATA)>
-<!ELEMENT last_name (#PCDATA)>
-<!ELEMENT age (#PCDATA)>
-<!ELEMENT gender (#PCDATA)>
-<!ELEMENT role (#PCDATA)>
-<!ATTLIST role role_type (director|production_director|writer|producer|co_producer|executive_producer|composer|cinematographer|editor|concept_artist|character) #REQUIRED>
-<!ELEMENT involvement EMPTY>
-<!ATTLIST involvement movie_refs IDREFS #REQUIRED>
-<!-- различаване на ролите на creator и actor -->
+<!ELEMENT people EMPTY>
+<!ATTLIST people people_ids IDREFS #REQUIRED>
 
 <!-- Top-Level Genres Section -->
 <!ELEMENT genres (genre+)>
@@ -58,3 +45,54 @@
 <!ELEMENT series (#PCDATA)>
 <!ATTLIST series id ID #REQUIRED>
 <!ATTLIST series movies-id IDREFS #IMPLIED>
+
+<!-- person -->
+<!ELEMENT person (first_name, last_name, age, gender, involvement)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT involvement EMPTY>
+<!ATTLIST involvement movie_refs IDREFS #REQUIRED>
+
+<!-- Top-Level Directors Section -->
+<!ELEMENT directors (director+)>
+<!ELEMENT director (person)>
+<!ATTLIST director id ID #REQUIRED>
+
+<!-- Top-Level Writers Section -->
+<!ELEMENT writers (writer+)>
+<!ELEMENT writer (person)>
+<!ATTLIST writer id ID #REQUIRED>
+
+<!-- Top-Level Producers Section -->
+<!ELEMENT producers (producer+)>
+<!ELEMENT producer (person)>
+<!ATTLIST producer id ID #REQUIRED>
+
+<!-- Top-Level Other Creators Section -->
+<!ELEMENT other_creators (other_creator+)>
+<!ELEMENT other_creator (person)>
+<!ATTLIST other_creator type (composer|cinematographer|editor) #REQUIRED>
+<!ATTLIST other_creator id ID #REQUIRED>
+
+<!-- Top-Level Actors Section -->
+<!ELEMENT actors (actor+)>
+<!ELEMENT actor (character, person)>
+<!ATTLIST actor id ID #REQUIRED>
+<!ELEMENT character (#PCDATA)>
+
+<!-- Top-Level Studio Section -->
+<!ELEMENT studios (studio+)>
+<!ELEMENT studio (#PCDATA)>
+<!ATTLIST studio id ID #REQUIRED>
+
+<!-- Top-Level Countries Section -->
+<!ELEMENT countries (country+)>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country id ID #REQUIRED>
+
+<!-- Top-Level Language Section -->
+<!ELEMENT languages (language+)>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language id ID #REQUIRED>

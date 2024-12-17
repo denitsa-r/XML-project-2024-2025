@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="movie_catalog.xsl" type="text/xsl"?>
 <!DOCTYPE movie_catalog SYSTEM "movie_catalog.dtd" [
-<!ATTLIST movie_catalog
+<!-- <!ATTLIST movie_catalog
 		xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
-		xsi:noNamespaceSchemaLocation CDATA #FIXED "movie_catalog.xsd">
+		xsi:noNamespaceSchemaLocation CDATA #FIXED "movie_catalog.xsd"> -->
 
 <!-- NOTATIONS -->
 <!NOTATION jpeg SYSTEM "image/jpeg">
@@ -55,9 +55,10 @@
 ]
 >
 
-<movie_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="movie_catalog.xsd">
+<!-- <movie_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="movie_catalog.xsd"> -->
+<movie_catalog>
     <movies>
-        <movie id="m001" genre="g07 g13">
+        <movie id="m001" genre="g07 g13" studio="st001" country="c003" language="l003" director="director001" >
             <title>Gundi: Legend of Love</title>
 
             <media>
@@ -81,1319 +82,13 @@
                     "Gundi: Legend of Love" is a poignant sports drama that chronicles the life of Georgi Asparuhov, Bulgaria's most beloved football icon of the 20th century. From humble beginnings in a Sofia suburb to national stardom, the film unfolds the dual narratives of Georgi's spectacular career and his deep love for his wife, Lita. Set against the backdrop of Bulgaria's political and social turbulence during the 1960s, the story captures Georgi's rise as a footballing legend alongside his struggles within the oppressive regime that sought to control every aspect of his life. At the heart of the narrative is his relationship with Lita, a woman from an affluent family whose love becomes Georgi's anchor amid the challenges of his career and the demands of fame. Their journey is marred by external pressures and personal trials but buoyed by moments of joy and triumph, such as the legendary matches that secured Georgi's place in sports history. Tragically, their shared dreams and hopes are cut short on June 30, 1971, leaving a legacy that transcends generations. The film blends authentic period detail with dynamic football action, brought to life through state-of-the-art VFX, showcasing some of the most pivotal matches in Georgi's career. "Gundi: Legend of Love" not only celebrates the sportsman but also the man behind the legend, whose love story continues to inspire long after his untimely demise.    
                 </summary>
                 <year>2024</year>
-                <production>
-                    <studio>Medium Station</studio>
-                </production>
-                <language>Bulgarian</language>
-                <country>Bulgaria</country>
                 <budget>no info</budget>
             </details>
 
 
-            <people>
-
-                <person type="actor">
-                    <first_name>Aleksandra</first_name>
-                    <last_name>Svilenova</last_name>
-                    <age>22</age>
-                    <gender>female</gender>
-                    <role role_type="character">Lita</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Pavel</first_name>
-                    <last_name>Ivanov</last_name>
-                    <age>31</age>
-                    <gender>male</gender>
-                    <role role_type="character">Gundi</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Paraskeva</first_name>
-                    <last_name>Djukelova</last_name>
-                    <age>54</age>
-                    <gender>female</gender>
-                    <role role_type="character">Maria</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Dimiter</first_name>
-                    <last_name>D. Marinov</last_name>
-                    <age>60</age>
-                    <gender>male</gender>
-                    <role role_type="character">Asparuh</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Emil</first_name>
-                    <last_name>Markov</last_name>
-                    <age>61</age>
-                    <gender>male</gender>
-                    <role role_type="character">Architect Markov</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Biliana</first_name>
-                    <last_name>Petrinska</last_name>
-                    <age>50</age>
-                    <gender>female</gender>
-                    <role role_type="character">Marena</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Penko</first_name>
-                    <last_name>Gospodinov</last_name>
-                    <age>54</age>
-                    <gender>male</gender>
-                    <role role_type="character">State Security Agent</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Stoyan</first_name>
-                    <last_name>Radev</last_name>
-                    <age>53</age>
-                    <gender>male</gender>
-                    <role role_type="character">Zoro</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-
-
-
-                <person type="creator">
-                    <first_name>Dimitar</first_name>
-                    <last_name>Dimitrov</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="director">Director</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Ivan</first_name>
-                    <last_name>Hristov</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="producer">Director</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Andrei</first_name>
-                    <last_name>Arnaudov</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="producer">Director</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Emil</first_name>
-                    <last_name>Bonev</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="writer">Writer</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Velichka</first_name>
-                    <last_name>Markova-Lita</last_name>
-                    <age>38</age>
-                    <gender>female</gender>
-                    <role role_type="writer">Writer</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Georgi</first_name>
-                    <last_name>Strezov</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="composer">Composer</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Tsvetoslav</first_name>
-                    <last_name>Borisov - Tsetso</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="production_director">Production Director</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Jordan</first_name>
-                    <last_name>Markov</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="co_producer">Co-producer</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Alexander</first_name>
-                    <last_name>Zdravkov</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="co_producer">Co-producer</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Vasil</first_name>
-                    <last_name>Bolyarski</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="executive_producer">Executive producer</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Boris</first_name>
-                    <last_name>Slavkov</last_name>
-                    <age>38</age>
-                    <gender>male</gender>
-                    <role role_type="cinematographer">Cinematographer</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Victoria</first_name>
-                    <last_name>Radoslavova</last_name>
-                    <age>38</age>
-                    <gender>female</gender>
-                    <role role_type="editor">Editor</role>
-                    <involvement movie_refs="m001"></involvement>
-                </person>
-
-            </people>
-
-        </movie>
-
-        <movie id="m002" genre="g02 g08" movie-series="s001">
-            <title>The Hobbit: An Unexpected Journey</title>
-
-            <media>
-                <cover source="cover_Hobbit1"></cover>
-                <trailer source="trailer_Hobbit1"></trailer>
-                <gallery>
-                    <image source="image1_Hobbit1"></image>
-                    <image source="image2_Hobbit1"></image>
-                    <image source="image3_Hobbit1"></image>
-                    <image source="image4_Hobbit1"></image>
-                    <image source="image5_Hobbit1"></image>
-                    <image source="image6_Hobbit1"></image>
-                </gallery>
-            </media>
-
-            <details>
-                <duration>182min</duration>
-                <!-- <genre genre_type="Biography"></genre> -->
-                <rating>7.8/10</rating>
-                <summary>
-                    A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home and the gold within it from the dragon Smaug.
-                    Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths of guile and courage that surprise even him, he also gains possession of Gollum's "precious" ring that holds unexpected and useful qualities ... A simple, gold ring that is tied to the fate of all Middle-earth in ways Bilbo cannot begin to know
-                </summary>
-                <year>2012</year>
-                <production>
-                    <studio>Warner Bros. Pictures</studio>
-                </production>
-                <language>English</language>
-                <country>New Zealand, United States</country>
-                <budget>$200–315 million</budget>
-            </details>
-
-
-            <people>
-
-                <person type="actor">
-                    <first_name>Martin </first_name>
-                    <last_name>Freeman</last_name>
-                    <age>53</age>
-                    <gender>male</gender>
-                    <role role_type="character">Bilbo Baggins</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Ian</first_name>
-                    <last_name>McKellen</last_name>
-                    <age>85</age>
-                    <gender>male</gender>
-                    <role role_type="character">Gandalf the Grey</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Richard </first_name>
-                    <last_name>Armitage </last_name>
-                    <age>53</age>
-                    <gender>male</gender>
-                    <role role_type="character">Thorin Oakenshield II</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Cate </first_name>
-                    <last_name>Blanchett</last_name>
-                    <age>55</age>
-                    <gender>female</gender>
-                    <role role_type="character">Galadriel</role>
-                    <involvement movie_refs="m002 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Hugo</first_name>
-                    <last_name>Weaving</last_name>
-                    <age>64</age>
-                    <gender>male</gender>
-                    <role role_type="character">Elrond</role>
-                    <involvement movie_refs="m002 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Elijah </first_name>
-                    <last_name>Wood</last_name>
-                    <age>43</age>
-                    <gender>male</gender>
-                    <role role_type="character">Frodo Baggins (cameo)</role>
-                    <involvement movie_refs="m002"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Sylvester </first_name>
-                    <last_name>McCoy</last_name>
-                    <age>81</age>
-                    <gender>male</gender>
-                    <role role_type="character">Radagast the Brown</role>
-                    <involvement movie_refs="m002 m003"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Ken </first_name>
-                    <last_name>Stott</last_name>
-                    <age>70</age>
-                    <gender>male</gender>
-                    <role role_type="character">Balin</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Graham</first_name>
-                    <last_name>McTavish</last_name>
-                    <age>63</age>
-                    <gender>male</gender>
-                    <role role_type="character">Dwalin</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Andy </first_name>
-                    <last_name>Serkis</last_name>
-                    <age>60</age>
-                    <gender>male</gender>
-                    <role role_type="character">Gollum</role>
-                    <involvement movie_refs="m002"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Aidan</first_name>
-                    <last_name>Turner</last_name>
-                    <age>41</age>
-                    <gender>male</gender>
-                    <role role_type="character">Kili</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Dean </first_name>
-                    <last_name>O'Gorman</last_name>
-                    <age>48</age>
-                    <gender>male</gender>
-                    <role role_type="character">Fili</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>James </first_name>
-                    <last_name>Nesbitt</last_name>
-                    <age>59</age>
-                    <gender>male</gender>
-                    <role role_type="character">Bofur</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Christopher</first_name>
-                    <last_name>Lee</last_name>
-                    <age>93 (passed away on June 7th, 2015)</age>
-                    <gender>male</gender>
-                    <role role_type="character">Saruman</role>
-                    <involvement movie_refs="m002 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Barry</first_name>
-                    <last_name>Humphries</last_name>
-                    <age>89 (passed away on April 22nd, 2023)</age>
-                    <gender>male</gender>
-                    <role role_type="character">The Great Goblin</role>
-                    <involvement movie_refs="m002"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Manu</first_name>
-                    <last_name>Bennett</last_name>
-                    <age>54</age>
-                    <gender>male</gender>
-                    <role role_type="character">Azog</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-
-
-
-                <person type="creator">
-                    <first_name>Peter</first_name>
-                    <last_name>Jackson</last_name>
-                    <age>63</age>
-                    <gender>male</gender>
-                    <!-- here he is Director, Producer, Writer -->
-                    <role role_type="director">Director</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Fran</first_name>
-                    <last_name>Walsh</last_name>
-                    <age>65</age>
-                    <gender>female</gender>
-                    <!-- here she is Producer, Writer  -->
-                    <role role_type="producer">Producer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Philippa</first_name>
-                    <last_name>Boyens</last_name>
-                    <age>61</age>
-                    <gender>female</gender>
-                    <role role_type="producer">Director</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Guillermo</first_name>
-                    <last_name>del Toro</last_name>
-                    <age>59</age>
-                    <gender>male</gender>
-                    <role role_type="writer">Writer</role>
-                    <involvement movie_refs="m002"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Howard</first_name>
-                    <last_name>Shore</last_name>
-                    <age>77</age>
-                    <gender>male</gender>
-                    <role role_type="composer">Composer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Andrew</first_name>
-                    <last_name>Lesnie</last_name>
-                    <age>49 (passed away in 2015)</age>
-                    <gender>male</gender>
-                    <role role_type="cinematographer">Cinematographer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Jabez</first_name>
-                    <last_name>Olssen</last_name>
-                    <age>Approx. late 40s/early 50s</age>
-                    <gender>male</gender>
-                    <role role_type="editor">Editor</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Carolynne</first_name>
-                    <last_name>Cunningham</last_name>
-                    <age>62</age>
-                    <gender>female</gender>
-                    <role role_type="producer">Producer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Zane</first_name>
-                    <last_name>Weiner</last_name>
-                    <age>64</age>
-                    <gender>male</gender>
-                    <role role_type="producer">Producer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Rick</first_name>
-                    <last_name>Porras</last_name>
-                    <age>60</age>
-                    <gender>male</gender>
-                    <role role_type="co_producer">Co-producer</role>
-                    <involvement movie_refs="m002"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Alan</first_name>
-                    <last_name>Lee</last_name>
-                    <age>76</age>
-                    <gender>male</gender>
-                    <role role_type="concept_artist">Concept artist</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>John</first_name>
-                    <last_name>Howe</last_name>
-                    <age>66</age>
-                    <gender>female</gender>
-                    <role role_type="concept_artist">Concept artist</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-
-            </people>
-
-        </movie>
-
-        <movie id="m003" genre="g02 g08" movie-series="s001">
-            <title>The Hobbit: The Desolation of Smaug</title>
-
-            <media>
-                <cover source="cover_Hobbit2"></cover>
-                <trailer source="trailer_Hobbit2"></trailer>
-                <gallery>
-                    <image source="image1_Hobbit2"></image>
-                    <image source="image2_Hobbit2"></image>
-                    <image source="image3_Hobbit2"></image>
-                    <image source="image4_Hobbit2"></image>
-                    <image source="image5_Hobbit2"></image>
-                    <image source="image6_Hobbit2"></image>
-                </gallery>
-            </media>
-
-            <details>
-                <duration>161min</duration>
-                <!-- <genre genre_type="Biography"></genre> -->
-                <rating>7.8/10</rating>
-                <summary>
-                    The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim the Lonely Mountain, their homeland, from the dragon Smaug.
-                    After successfully crossing over (and under) the Misty Mountains, Thorin and Company must seek aid from a powerful stranger before taking on the dangers of Mirkwood Forest--without their Wizard. If they reach the human settlement of Lake-town it will be time for the hobbit Bilbo Baggins to fulfill his contract with the dwarves. The party must complete the journey to Lonely Mountain and burglar Baggins must seek out the Secret Door that will give them access to the hoard of the dragon Smaug. And, where has Gandalf got off to? And what is his secret business to the south?                
-                </summary>
-                <year>2013</year>
-                <production>
-                    <studio>Warner Bros. Pictures</studio>
-                </production>
-                <language>English</language>
-                <country>New Zealand, United States</country>
-                <budget>$217–250 million</budget>
-            </details>
-
-
-            <people>
-
-                <person type="actor">
-                    <first_name>Martin </first_name>
-                    <last_name>Freeman</last_name>
-                    <age>53</age>
-                    <gender>male</gender>
-                    <role role_type="character">Bilbo Baggins</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Ian</first_name>
-                    <last_name>McKellen</last_name>
-                    <age>85</age>
-                    <gender>male</gender>
-                    <role role_type="character">Gandalf the Grey</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Richard </first_name>
-                    <last_name>Armitage </last_name>
-                    <age>53</age>
-                    <gender>male</gender>
-                    <role role_type="character">Thorin Oakenshield II</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Evangeline</first_name>
-                    <last_name>Lilly</last_name>
-                    <age>45</age>
-                    <gender>female</gender>
-                    <role role_type="character">Tauriel</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Luke</first_name>
-                    <last_name>Evans</last_name>
-                    <age>45</age>
-                    <gender>male</gender>
-                    <role role_type="character">Bard the Bowman</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Benedict</first_name>
-                    <last_name>Cumberbatch</last_name>
-                    <age>48</age>
-                    <gender>male</gender>
-                    <role role_type="character">Smaug (voice and motion capture), The Necromancer</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Orlando</first_name>
-                    <last_name>Bloom</last_name>
-                    <age>47</age>
-                    <gender>male</gender>
-                    <role role_type="character">Legolas</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Sylvester </first_name>
-                    <last_name>McCoy</last_name>
-                    <age>81</age>
-                    <gender>male</gender>
-                    <role role_type="character">Radagast the Brown</role>
-                    <involvement movie_refs="m002 m003"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Ken </first_name>
-                    <last_name>Stott</last_name>
-                    <age>70</age>
-                    <gender>male</gender>
-                    <role role_type="character">Balin</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Graham</first_name>
-                    <last_name>McTavish</last_name>
-                    <age>63</age>
-                    <gender>male</gender>
-                    <role role_type="character">Dwalin</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Lee</first_name>
-                    <last_name>Pace</last_name>
-                    <age>45</age>
-                    <gender>male</gender>
-                    <role role_type="character">Thranduil</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Aidan</first_name>
-                    <last_name>Turner</last_name>
-                    <age>41</age>
-                    <gender>male</gender>
-                    <role role_type="character">Kili</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Dean </first_name>
-                    <last_name>O'Gorman</last_name>
-                    <age>48</age>
-                    <gender>male</gender>
-                    <role role_type="character">Fili</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>James </first_name>
-                    <last_name>Nesbitt</last_name>
-                    <age>59</age>
-                    <gender>male</gender>
-                    <role role_type="character">Bofur</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Stephen</first_name>
-                    <last_name>Fry</last_name>
-                    <age>67</age>
-                    <gender>male</gender>
-                    <role role_type="character">Master of Laketown</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Manu</first_name>
-                    <last_name>Bennett</last_name>
-                    <age>54</age>
-                    <gender>male</gender>
-                    <role role_type="character">Azog</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-
-
-
-                <person type="creator">
-                    <first_name>Peter</first_name>
-                    <last_name>Jackson</last_name>
-                    <age>63</age>
-                    <gender>male</gender>
-                    <!-- here he is Director, Producer, Writer -->
-                    <role role_type="director">Director</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Fran</first_name>
-                    <last_name>Walsh</last_name>
-                    <age>65</age>
-                    <gender>female</gender>
-                    <!-- here she is Producer, Writer  -->
-                    <role role_type="producer">Producer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Philippa</first_name>
-                    <last_name>Boyens</last_name>
-                    <age>61</age>
-                    <gender>female</gender>
-                    <role role_type="producer">Director</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Guillermo</first_name>
-                    <last_name>del Toro</last_name>
-                    <age>59</age>
-                    <gender>male</gender>
-                    <role role_type="writer">Writer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Howard</first_name>
-                    <last_name>Shore</last_name>
-                    <age>77</age>
-                    <gender>male</gender>
-                    <role role_type="composer">Composer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Andrew</first_name>
-                    <last_name>Lesnie</last_name>
-                    <age>49 (passed away in 2015)</age>
-                    <gender>male</gender>
-                    <role role_type="cinematographer">Cinematographer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Jabez</first_name>
-                    <last_name>Olssen</last_name>
-                    <age>Approx. late 40s/early 50s</age>
-                    <gender>male</gender>
-                    <role role_type="editor">Editor</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Carolynne</first_name>
-                    <last_name>Cunningham</last_name>
-                    <age>62</age>
-                    <gender>female</gender>
-                    <role role_type="producer">Producer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Zane</first_name>
-                    <last_name>Weiner</last_name>
-                    <age>64</age>
-                    <gender>male</gender>
-                    <role role_type="producer">Producer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Alan</first_name>
-                    <last_name>Lee</last_name>
-                    <age>76</age>
-                    <gender>male</gender>
-                    <role role_type="concept_artist">Concept artist</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>John</first_name>
-                    <last_name>Howe</last_name>
-                    <age>66</age>
-                    <gender>female</gender>
-                    <role role_type="concept_artist">Concept artist</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-
-            </people>
-
-        </movie>
-
-        <movie id="m004" genre="g02 g08" movie-series="s001">
-            <title>The Hobbit: The Battle of the Five Armies</title>
-
-            <media>
-                <cover source="cover_Hobbit3"></cover>
-                <trailer source="trailer_Hobbit3"></trailer>
-                <gallery>
-                    <image source="image1_Hobbit3"></image>
-                    <image source="image2_Hobbit3"></image>
-                    <image source="image3_Hobbit3"></image>
-                    <image source="image4_Hobbit3"></image>
-                    <image source="image5_Hobbit3"></image>
-                    <image source="image6_Hobbit3"></image>
-                </gallery>
-            </media>
-
-            <details>
-                <duration>144min</duration>
-                <!-- <genre genre_type="Biography"></genre> -->
-                <rating>7.4/10</rating>
-                <summary>
-                    Bilbo Baggins and company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness.
-                    After the Dragon leaves the Lonely Mountain, the people of Lake-town see a threat coming. Orcs, dwarves, elves and people prepare for war. Bilbo sees Thorin going mad and tries to help. Meanwhile, Gandalf is rescued from the Necromancer's prison and his rescuers realize who the Necromancer is.
-                </summary>
-                <year>2014</year>
-                <production>
-                    <studio>Warner Bros. Pictures</studio>
-                </production>
-                <language>English</language>
-                <country>New Zealand, United States</country>
-                <budget>$209–300 million</budget>
-            </details>
-
-
-            <people>
-
-                <person type="actor">
-                    <first_name>Martin </first_name>
-                    <last_name>Freeman</last_name>
-                    <age>53</age>
-                    <gender>male</gender>
-                    <role role_type="character">Bilbo Baggins</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Ian</first_name>
-                    <last_name>McKellen</last_name>
-                    <age>85</age>
-                    <gender>male</gender>
-                    <role role_type="character">Gandalf the Grey</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Richard </first_name>
-                    <last_name>Armitage </last_name>
-                    <age>53</age>
-                    <gender>male</gender>
-                    <role role_type="character">Thorin Oakenshield II</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Evangeline</first_name>
-                    <last_name>Lilly</last_name>
-                    <age>45</age>
-                    <gender>female</gender>
-                    <role role_type="character">Tauriel</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Luke</first_name>
-                    <last_name>Evans</last_name>
-                    <age>45</age>
-                    <gender>male</gender>
-                    <role role_type="character">Bard the Bowman</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Benedict</first_name>
-                    <last_name>Cumberbatch</last_name>
-                    <age>48</age>
-                    <gender>male</gender>
-                    <role role_type="character">Smaug (voice and motion capture), The Necromancer</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Orlando</first_name>
-                    <last_name>Bloom</last_name>
-                    <age>47</age>
-                    <gender>male</gender>
-                    <role role_type="character">Legolas</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Cate </first_name>
-                    <last_name>Blanchett</last_name>
-                    <age>55</age>
-                    <gender>female</gender>
-                    <role role_type="character">Galadriel</role>
-                    <involvement movie_refs="m002 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Hugo</first_name>
-                    <last_name>Weaving</last_name>
-                    <age>64</age>
-                    <gender>male</gender>
-                    <role role_type="character">Elrond</role>
-                    <involvement movie_refs="m002 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Christopher</first_name>
-                    <last_name>Lee</last_name>
-                    <age>93 (passed away on June 7th, 2015)</age>
-                    <gender>male</gender>
-                    <role role_type="character">Saruman</role>
-                    <involvement movie_refs="m002 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Ken </first_name>
-                    <last_name>Stott</last_name>
-                    <age>70</age>
-                    <gender>male</gender>
-                    <role role_type="character">Balin</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Graham</first_name>
-                    <last_name>McTavish</last_name>
-                    <age>63</age>
-                    <gender>male</gender>
-                    <role role_type="character">Dwalin</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Lee</first_name>
-                    <last_name>Pace</last_name>
-                    <age>45</age>
-                    <gender>male</gender>
-                    <role role_type="character">Thranduil</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Aidan</first_name>
-                    <last_name>Turner</last_name>
-                    <age>41</age>
-                    <gender>male</gender>
-                    <role role_type="character">Kili</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Dean </first_name>
-                    <last_name>O'Gorman</last_name>
-                    <age>48</age>
-                    <gender>male</gender>
-                    <role role_type="character">Fili</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>James </first_name>
-                    <last_name>Nesbitt</last_name>
-                    <age>59</age>
-                    <gender>male</gender>
-                    <role role_type="character">Bofur</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Stephen</first_name>
-                    <last_name>Fry</last_name>
-                    <age>67</age>
-                    <gender>male</gender>
-                    <role role_type="character">Master of Laketown</role>
-                    <involvement movie_refs="m003 m004"></involvement>
-                </person>
-                <person type="actor">
-                    <first_name>Manu</first_name>
-                    <last_name>Bennett</last_name>
-                    <age>54</age>
-                    <gender>male</gender>
-                    <role role_type="character">Azog</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-
-
-
-                <person type="creator">
-                    <first_name>Peter</first_name>
-                    <last_name>Jackson</last_name>
-                    <age>63</age>
-                    <gender>male</gender>
-                    <!-- here he is Director, Producer, Writer -->
-                    <role role_type="director">Director</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Fran</first_name>
-                    <last_name>Walsh</last_name>
-                    <age>65</age>
-                    <gender>female</gender>
-                    <!-- here she is Producer, Writer  -->
-                    <role role_type="producer">Producer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Philippa</first_name>
-                    <last_name>Boyens</last_name>
-                    <age>61</age>
-                    <gender>female</gender>
-                    <role role_type="producer">Director</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Guillermo</first_name>
-                    <last_name>del Toro</last_name>
-                    <age>59</age>
-                    <gender>male</gender>
-                    <role role_type="writer">Writer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Howard</first_name>
-                    <last_name>Shore</last_name>
-                    <age>77</age>
-                    <gender>male</gender>
-                    <role role_type="composer">Composer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Andrew</first_name>
-                    <last_name>Lesnie</last_name>
-                    <age>49 (passed away in 2015)</age>
-                    <gender>male</gender>
-                    <role role_type="cinematographer">Cinematographer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Jabez</first_name>
-                    <last_name>Olssen</last_name>
-                    <age>Approx. late 40s/early 50s</age>
-                    <gender>male</gender>
-                    <role role_type="editor">Editor</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Carolynne</first_name>
-                    <last_name>Cunningham</last_name>
-                    <age>62</age>
-                    <gender>female</gender>
-                    <role role_type="producer">Producer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Zane</first_name>
-                    <last_name>Weiner</last_name>
-                    <age>64</age>
-                    <gender>male</gender>
-                    <role role_type="producer">Producer</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Alan</first_name>
-                    <last_name>Lee</last_name>
-                    <age>76</age>
-                    <gender>male</gender>
-                    <role role_type="concept_artist">Concept artist</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>John</first_name>
-                    <last_name>Howe</last_name>
-                    <age>66</age>
-                    <gender>female</gender>
-                    <role role_type="concept_artist">Concept artist</role>
-                    <involvement movie_refs="m002 m003 m004"></involvement>
-                </person>
-
-            </people>
-
-        </movie>
-
-        <!-- TO DO: -->
-        <movie id="m005" genre="g01 g06 g07 g15">
-            <title>The Dark Knight</title>
-
-            <media>
-                <cover source="cover_dark_knight"></cover>
-                <trailer source="trailer_dark_knight"></trailer>
-                <gallery>
-                    <image source="image1_dark_knight"></image>
-                    <image source="image2_dark_knight"></image>
-                    <image source="image3_dark_knight"></image>
-                    <image source="image4_dark_knight"></image>
-                    <image source="image5_dark_knight"></image>
-                    <image source="image6_dark_knight"></image>
-                </gallery>
-            </media>
-
-            <details>
-                <duration>152min</duration>
-                <!-- <genre genre_type="Biography"></genre> -->
-                <rating>9.0/10</rating>
-                <summary>
-                    When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.
-                    Set within a year after the events of Batman Begins (2005), Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City, until a mysterious and sadistic criminal mastermind known only as "The Joker" appears in Gotham, creating a new wave of chaos. Batman's struggle against The Joker becomes deeply personal, forcing him to "confront everything he believes" and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent, and Rachel Dawes.   
-                </summary>
-                <year>2008</year>
-                <production>
-                    <studio>Warner Bros. Pictures</studio>
-                </production>
-                <language>English</language>
-                <country>United Kingdom, United States</country>
-                <budget>$185 million</budget>
-            </details>
-
-
-            <people>
-
-                <!-- TO DO -->
-                <person type="actor">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type="character"></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-
-
-                <!-- TO DO -->
-                <person type="creator">
-                    <first_name>Christopher</first_name>
-                    <last_name>Nolan</last_name>
-                    <age>54</age>
-                    <gender>male</gender>
-                    <role role_type="director">Director</role>
-                    <involvement movie_refs="m005"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name>Jonathan</first_name>
-                    <last_name>Nolan</last_name>
-                    <age>53</age>
-                    <gender>male</gender>
-                    <role role_type="writer">Writer</role>
-                    <involvement movie_refs="m005"></involvement>
-                </person>
-                <person type="creator">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type=""></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-            </people>
-
-        </movie>
-
-        <movie id="m006" genre="g07 g11 g14 g15">
-            <title>The Prestige</title>
-
-            <media>
-                <cover source="cover_prestige"></cover>
-                <trailer source="trailer_prestige"></trailer>
-                <gallery>
-                    <image source="image1_prestige"></image>
-                    <image source="image2_prestige"></image>
-                    <image source="image3_prestige"></image>
-                    <image source="image4_prestige"></image>
-                    <image source="image5_prestige"></image>
-                    <image source="image6_prestige"></image>
-                </gallery>
-            </media>
-
-            <details>
-                <!-- TO DO -->
-                <duration></duration>
-                <!-- <genre genre_type="Biography"></genre> -->
-                <rating>/10</rating>
-                <summary>
-
-                </summary>
-                <year></year>
-                <production>
-                    <studio></studio>
-                </production>
-                <language></language>
-                <country></country>
-                <budget>$ million</budget>
-            </details>
-
-
-            <people>
-
-                <!-- TO DO -->
-                <person type="actor">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type="character"></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-
-
-                <!-- TO DO -->
-                <person type="creator">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type=""></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-            </people>
-
-        </movie>
-
-        <movie id="m007" genre="g16 g07 g04 g09">
-            <title>The Pianist</title>
-
-            <media>
-                <cover source="cover_pianist"></cover>
-                <trailer source="trailer_pianist"></trailer>
-                <gallery>
-                    <image source="image1_pianist"></image>
-                    <image source="image2_pianist"></image>
-                    <image source="image3_pianist"></image>
-                    <image source="image4_pianist"></image>
-                    <image source="image5_pianist"></image>
-                    <image source="image6_pianist"></image>
-                </gallery>
-            </media>
-
-            <details>
-                <!-- TO DO -->
-                <duration></duration>
-                <!-- <genre genre_type="Biography"></genre> -->
-                <rating>/10</rating>
-                <summary>
-
-                </summary>
-                <year></year>
-                <production>
-                    <studio></studio>
-                </production>
-                <language></language>
-                <country></country>
-                <budget>$ million</budget>
-            </details>
-
-
-            <people>
-
-                <!-- TO DO -->
-                <person type="actor">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type="character"></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-
-
-                <!-- TO DO -->
-                <person type="creator">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type=""></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-            </people>
-
-        </movie>
-
-        <movie id="m008" genre="g03 g02 g05 g07">
-            <title>Up</title>
-
-            <media>
-                <cover source="cover_up"></cover>
-                <trailer source="trailer_up"></trailer>
-                <gallery>
-                    <image source="image1_up"></image>
-                    <image source="image2_up"></image>
-                    <image source="image3_up"></image>
-                    <image source="image4_up"></image>
-                    <image source="image5_up"></image>
-                    <image source="image6_up"></image>
-                </gallery>
-            </media>
-
-            <details>
-                <!-- TO DO -->
-                <duration></duration>
-                <!-- <genre genre_type="Biography"></genre> -->
-                <rating>/10</rating>
-                <summary>
-
-                </summary>
-                <year></year>
-                <production>
-                    <studio></studio>
-                </production>
-                <language></language>
-                <country></country>
-                <budget>$ million</budget>
-            </details>
-
-
-            <people>
-
-                <!-- TO DO -->
-                <person type="actor">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type="character"></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-
-
-                <!-- TO DO -->
-                <person type="creator">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type=""></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-            </people>
-
-        </movie>
-
-        <movie id="m008" genre="g03 g02 g05 g07">
-            <title>Up</title>
-
-            <media>
-                <cover source="cover_up"></cover>
-                <trailer source="trailer_up"></trailer>
-                <gallery>
-                    <image source="image1_up"></image>
-                    <image source="image2_up"></image>
-                    <image source="image3_up"></image>
-                    <image source="image4_up"></image>
-                    <image source="image5_up"></image>
-                    <image source="image6_up"></image>
-                </gallery>
-            </media>
-
-            <details>
-                <!-- TO DO -->
-                <duration></duration>
-                <!-- <genre genre_type="Biography"></genre> -->
-                <rating>/10</rating>
-                <summary>
-
-                </summary>
-                <year></year>
-                <production>
-                    <studio></studio>
-                </production>
-                <language></language>
-                <country></country>
-                <budget>$ million</budget>
-            </details>
-
-
-            <people>
-
-                <!-- TO DO -->
-                <person type="actor">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type="character"></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-
-
-                <!-- TO DO -->
-                <person type="creator">
-                    <first_name></first_name>
-                    <last_name></last_name>
-                    <age></age>
-                    <gender></gender>
-                    <role role_type=""></role>
-                    <involvement movie_refs=""></involvement>
-                </person>
-
-            </people>
+            <people people_ids="actor001 actor002 actor003 actor004 actor005 actor006 actor007 actor008
+                                director001 director002 producer001 producer002 producer003 producer004 producer005
+                                writer001 writer002 composer001 cinema001 editor001" />
 
         </movie>
     </movies>
@@ -1415,10 +110,230 @@
         <genre id="g14" genre_type="Sci-Fi">Sci-Fi</genre>
         <genre id="g15" genre_type="Thriller">Thriller</genre>
         <genre id="g16" genre_type="War">War</genre>
-        <genre id="g17" genre_type="Western">Western</genre>
     </genres>
 
     <movie-series>
         <series id="s001">The Hobbit</series>
     </movie-series>
+
+    <directors>
+        <director id="director001">
+            <person>
+                <first_name>Dimitar</first_name>
+                <last_name>Dimitrov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </director>
+        <director id="director002">
+            <person>
+                <first_name>Tsvetoslav</first_name>
+                <last_name>Borisov - Tsetso</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </director>
+    </directors>
+    
+    <writers>
+        <writer id="writer001">
+            <person>
+                <first_name>Emil</first_name>
+                <last_name>Bonev</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </writer>
+        <writer id="writer002">
+            <person>
+                <first_name>Velichka</first_name>
+                <last_name>Markova-Lita</last_name>
+                <age>38</age>
+                <gender>female</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </writer>
+    </writers>
+    
+    <producers>
+        <producer id="producer001">
+            <person>
+            <first_name>Ivan</first_name>
+            <last_name>Hristov</last_name>
+            <age>38</age>
+            <gender>male</gender>
+            <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+        <producer id="producer002">
+            <person>                    
+                <first_name>Andrei</first_name>
+                <last_name>Arnaudov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+        <producer id="producer003">
+            <person>
+                <first_name>Jordan</first_name>
+                <last_name>Markov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+        <producer id="producer004">
+            <person>                    
+                <first_name>Alexander</first_name>
+                <last_name>Zdravkov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+        <producer id="producer005">
+            <person>                    
+                <first_name>Vasil</first_name>
+                <last_name>Bolyarski</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+    </producers>
+    
+    <other_creators>
+        <other_creator id="composer001" type="composer">
+            <person>
+                <first_name>Georgi</first_name>
+                <last_name>Strezov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="cinema001"  type="cinematographer">
+            <person>
+                <first_name>Boris</first_name>
+                <last_name>Slavkov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="editor001" type="editor">
+            <person>
+                <first_name>Victoria</first_name>
+                <last_name>Radoslavova</last_name>
+                <age>38</age>
+                <gender>female</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </other_creator>
+    </other_creators>
+
+    <actors>
+        <actor id="actor001">
+            <character>Lita</character>
+            <person>
+                <first_name>Aleksandra</first_name>
+                <last_name>Svilenova</last_name>
+                <age>22</age>
+                <gender>female</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor002">
+            <character>Gundi</character>
+            <person>
+                <first_name>Pavel</first_name>
+                <last_name>Ivanov</last_name>
+                <age>31</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor003">
+            <character>Maria</character>
+            <person>
+                <first_name>Paraskeva</first_name>
+                <last_name>Djukelova</last_name>
+                <age>54</age>
+                <gender>female</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor004">
+            <character>Asparuh</character>
+            <person>
+                <first_name>Dimiter</first_name>
+                <last_name>D. Marinov</last_name>
+                <age>60</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor005">
+            <character>Architect Markov</character>
+            <person>
+                <first_name>Emil</first_name>
+                <last_name>Markov</last_name>
+                <age>61</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor006">
+            <character>Marena</character>
+            <person>
+                <first_name>Biliana</first_name>
+                <last_name>Petrinska</last_name>
+                <age>50</age>
+                <gender>female</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor007">
+            <character>State Security Agent</character>
+            <person>
+                <first_name>Penko</first_name>
+                <last_name>Gospodinov</last_name>
+                <age>54</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor008">
+            <character>Zoro</character>
+            <person>
+                <first_name>Stoyan</first_name>
+                <last_name>Radev</last_name>
+                <age>53</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+    </actors>
+
+    <studios>
+        <studio id="st001">Medium Station</studio>
+    </studios>
+
+    <countries>
+        <country id="c001">United States</country>
+        <country id="c002">United Kingdom</country>
+        <country id="c003">Bulgaria</country>
+    </countries>
+    
+    <languages>
+        <language id="l001">English</language>
+        <language id="l002">French</language>
+        <language id="l003">Bulgarian</language>
+        <language id="l004">German</language>
+        <language id="l005">Russian</language>
+    </languages>
 </movie_catalog>

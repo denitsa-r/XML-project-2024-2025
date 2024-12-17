@@ -1,0 +1,52 @@
+$primary_color: #c48736;
+$light_primary: #f7ca4b;
+$dark_color: #050505;
+$light_color: #fbeccb;
+$danger_color: #7f170e;
+$max-width: 1500px;
+
+// set text color based on the background
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// set background and text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+// margin & padding
+
+$spaceamounts: (1, 2, 3, 4, 5);
+@each $space in $spaceamounts {
+  //all around margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  //vertical margin
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  //all around padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  //vertical padding
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  //vertical padding
+  .px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+}
