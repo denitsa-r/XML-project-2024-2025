@@ -82,6 +82,17 @@
             <xs:element name="media" type="movieMediaType" />
             <xs:element name="details" type="movieDetailsType"/>
         </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+        <xs:attribute name="genre" type="xs:IDREFS" use="required" />
+        <xs:attribute name="movie-series" type="xs:IDREF" />
+        <xs:attribute name="director" type="xs:IDREFS" use="required" />
+        <xs:attribute name="writer" type="xs:IDREFS" use="required" />
+        <xs:attribute name="producer" type="xs:IDREFS" use="required" />
+        <xs:attribute name="other_creator" type="xs:IDREFS" use="required" />
+        <xs:attribute name="actor" type="xs:IDREFS" use="required" />
+        <xs:attribute name="studio" type="xs:IDREF" use="required" />
+        <xs:attribute name="country" type="xs:IDREFS" use="required" />
+        <xs:attribute name="language" type="xs:IDREF" use="required" />
     </xs:complexType>
 
     <!-- MOVIE MEDIA TYPE -->
@@ -180,15 +191,6 @@
                 </xs:keyref>
             </xs:element>
         </xs:sequence>
-
-        <xs:attribute name="type" use="required">
-            <xs:simpleType>
-                <xs:restriction base="xs:string">
-                    <xs:enumeration value="creator" />
-                    <xs:enumeration value="actor" />
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
     </xs:complexType>
 
 
@@ -255,63 +257,82 @@
     </xs:element>
     
     <xs:element name="directors">
-        <xs:sequence>
-            <xs:element name="director">
-                <xs:key name="directorKey">
-                    <xs:selection xpath="movie_catalog/directors/director" />
-                    <xs:field xpath="@id" />
-                </xs:key>
-                <xs:element name="person" type="personType" />
-            </xs:element>
-        </xs:sequence>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="director">
+                    <xs:key name="directorKey">
+                        <xs:selection xpath="movie_catalog/directors/director" />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                    <xs:simpleType>
+                        <xs:element name="person" type="personType" />
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 
     <xs:element name="writers">
-        <xs:sequence>
-            <xs:element name="writer">
-                <xs:key name="writerKey">
-                    <xs:selection xpath="movie_catalog/writers/writer" />
-                    <xs:field xpath="@id" />
-                </xs:key>
-                <xs:element name="person" type="personType" />
-            </xs:element>
-        </xs:sequence>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="writer">
+                    <xs:key name="writerKey">
+                        <xs:selection xpath="movie_catalog/writers/writer" />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                    <xs:simpleType>
+                        <xs:element name="person" type="personType" />
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 
     <xs:element name="producers">
-        <xs:sequence>
-            <xs:element name="producer">
-                <xs:key name="producerKey">
-                    <xs:selection xpath="movie_catalog/producers/producer" />
-                    <xs:field xpath="@id" />
-                </xs:key>
-                <xs:element name="person" type="personType" />
-            </xs:element>
-        </xs:sequence>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="producer">
+                    <xs:key name="producerKey">
+                        <xs:selection xpath="movie_catalog/producers/producer" />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                    <xs:attribute name="id" type="xs:ID" use="required" />
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 
     <xs:element name="other_creators">
-        <xs:sequence>
-            <xs:element name="other_creator">
-                <xs:key name="other_creatorKey">
-                    <xs:selection xpath="movie_catalog/other_creators/other_creator" />
-                    <xs:field xpath="@id" />
-                </xs:key>
-                <xs:element name="person" type="personType" />
-            </xs:element>
-        </xs:sequence>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="other_creator">
+                    <xs:key name="other_creatorKey">
+                        <xs:selection xpath="movie_catalog/other_creators/other_creator" />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                    <xs:simpleType>
+                        <xs:element name="person" type="personType" />
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 
     <xs:element name="actors">
-        <xs:sequence>
-            <xs:element name="actor">
-                <xs:key name="actorKey">
-                    <xs:selection xpath="movie_catalog/actors/actor" />
-                    <xs:field xpath="@id" />
-                </xs:key>
-                <xs:element name="person" type="personType" />
-            </xs:element>
-        </xs:sequence>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="character" type="xs:string" />
+                <xs:element name="actor">
+                    <xs:key name="actorKey">
+                        <xs:selection xpath="movie_catalog/actors/actor" />
+                        <xs:field xpath="@id" />
+                    </xs:key>
+                    <xs:simpleType>
+                        <xs:element name="person" type="personType" />
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
     
     <xs:element name="studios">

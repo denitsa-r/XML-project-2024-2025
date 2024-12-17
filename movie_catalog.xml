@@ -18,40 +18,9 @@
 <!ENTITY image4_Gundi PUBLIC "image4_Gundi_identifier" "https://futbolninovini.info/wp-content/uploads/2024/11/Gundi-Legenda-za-lubovta_1.jpg" NDATA jpeg>
 <!ENTITY image5_Gundi PUBLIC "image5_Gundi_identifier" "https://i.actualno.com/actualno_2013/upload/2024/05/09/0263210001715236684_big.webp" NDATA jpeg>
 <!ENTITY image6_Gundi PUBLIC "image6_Gundi_identifier" "https://zavedime.net/wp-content/uploads/2024/05/376792740_260865460260387_761164997363569178_n.jpg" NDATA jpeg>
-<!-- HOBBIT: AN UNEXPECTED JOURNEY -->
-<!ENTITY cover_Hobbit1 PUBLIC "cover_Hobbit1_identifier" "https://cdn-images.dzcdn.net/images/cover/eb551fb178aa395839939ea03b8d47be/0x1900-000000-80-0-0.jpg" NDATA jpeg>
-<!ENTITY image1_Hobbit1 PUBLIC "image1_Hobbit1_identifier" "https://www.slantmagazine.com/wp-content/uploads/2012/12/film_hobbitanunexpectedjourney.jpg" NDATA jpeg>
-<!ENTITY image2_Hobbit1 PUBLIC "image2_Hobbit1_identifier" "https://images.squarespace-cdn.com/content/v1/59e512ddf43b55c29c71b996/1534338893145-XR37MECUMBN71Y6XOIHC/hobbitunexpectedjourney.jpg" NDATA jpeg>
-<!ENTITY image3_Hobbit1 PUBLIC "image3_Hobbit1_identifier" "https://www.pluggedin.com/wp-content/uploads/2020/01/Hobbit-An-Unexpected-Journey-main432-1200x686.jpg" NDATA jpeg>
-<!ENTITY image4_Hobbit1 PUBLIC "image4_Hobbit1_identifier" "https://m.media-amazon.com/images/M/MV5BMjA3OTk4NjI2OF5BMl5BanBnXkFtZTcwNDc1Mzg3OA@@._V1_.jpg" NDATA jpeg>
-<!ENTITY image5_Hobbit1 PUBLIC "image5_Hobbit1_identifier" "https://m.media-amazon.com/images/M/MV5BMTkxMjA5MjI5N15BMl5BanBnXkFtZTcwMTc1Mzg3OA@@._V1_.jpg" NDATA jpeg>
-<!ENTITY image6_Hobbit1 PUBLIC "image6_Hobbit1_identifier" "https://m.media-amazon.com/images/M/MV5BMTc5Mzc2MDcwOF5BMl5BanBnXkFtZTcwNDg0Mzg3OA@@._V1_.jpg" NDATA jpeg>
-<!-- HOBBIT: THE DESOLATION OF SMAUG -->
-<!ENTITY cover_Hobbit2 PUBLIC "cover_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_.jpg" NDATA jpeg>
-<!ENTITY image1_Hobbit2 PUBLIC "image1_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMTgzODA2MTM1M15BMl5BanBnXkFtZTgwMjk2MDM3MDE@._V1_.jpg" NDATA jpeg>
-<!ENTITY image2_Hobbit2 PUBLIC "image2_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMjMyMjE5Nzk2N15BMl5BanBnXkFtZTgwOTk2MDM3MDE@._V1_.jpg" NDATA jpeg>
-<!ENTITY image3_Hobbit2 PUBLIC "image3_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMjMyMjc2Mjc3NF5BMl5BanBnXkFtZTgwNzk2MDM3MDE@._V1_.jpg" NDATA jpeg>
-<!ENTITY image4_Hobbit2 PUBLIC "image4_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMjM3MjUyNzM5OV5BMl5BanBnXkFtZTgwMzk2MDM3MDE@._V1_.jpg" NDATA jpeg>
-<!ENTITY image5_Hobbit2 PUBLIC "image5_Hobbit2_identifier" "https://images.squarespace-cdn.com/content/v1/5233347fe4b00c95cda9e5d6/1387163581006-JXCXWFGYIV4WZQRB9RGR/The-Hobbit-The-Desolation-of-Smaug-Pics.jpg" NDATA jpeg>
-<!ENTITY image6_Hobbit2 PUBLIC "image6_Hobbit_identifier" "https://m.media-amazon.com/images/M/MV5BODA5MjE4NzgwOF5BMl5BanBnXkFtZTgwNDI2MDgzMzE@._V1_.jpg" NDATA jpeg>
-<!-- HOBBIT: THE BATTLE OF FIVE ARMIES -->
-<!ENTITY cover_Hobbit3 PUBLIC "cover_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BOWIwNTQzYTQtNzNkOS00Zjc3LTliNTgtMTVlNjM4NTliNmM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" NDATA jpeg>
-<!ENTITY image1_Hobbit3 PUBLIC "image1_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTc1NjYwODIxNV5BMl5BanBnXkFtZTgwMjkzNDM2MzE@._V1_.jpg" NDATA jpeg>
-<!ENTITY image2_Hobbit3 PUBLIC "image2_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTQ4OTE5MDU5Ml5BMl5BanBnXkFtZTgwMzkzNDM2MzE@._V1_.jpg" NDATA jpeg>
-<!ENTITY image3_Hobbit3 PUBLIC "image3_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BOTM1MzA1Mjg5MV5BMl5BanBnXkFtZTgwNDcyNTc1MzE@._V1_.jpg" NDATA jpeg>
-<!ENTITY image4_Hobbit3 PUBLIC "image4_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTgwNzg0NDI5Ml5BMl5BanBnXkFtZTgwOTczNDM2MzE@._V1_.jpg" NDATA jpeg>
-<!ENTITY image5_Hobbit3 PUBLIC "image5_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTU3MjcyMDI2NV5BMl5BanBnXkFtZTgwODgzNDM2MzE@._V1_QL75_UX328_.jpg" NDATA jpeg>
-<!ENTITY image6_Hobbit3 PUBLIC "image6_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTc1MzE2MTA4MF5BMl5BanBnXkFtZTgwMTkzNDM2MzE@._V1_QL75_UX522_.jpg" NDATA jpeg>
-
 <!-- TRAILERS -->
 <!-- GUNDI -->
 <!ENTITY trailer_Gundi PUBLIC "trailer_Gundi_identifier" "https://youtu.be/1tlNwolYp6k?si=zY8AziDYnBlQzXvC" NDATA video>
-<!-- HOBBIT: AN UNEXPECTED JOURNEY -->
-<!ENTITY trailer_Hobbit1 PUBLIC "trailer_Hobbit1_identifier" "https://youtu.be/9PSXjr1gbjc?si=KAWlPQVx2YyJSI37" NDATA video>
-<!-- HOBBIT: THE DESOLATION OF SMAUG -->
-<!ENTITY trailer_Hobbit2 PUBLIC "trailer_Hobbit2_identifier" "https://youtu.be/fnaojlfdUbs?si=4A4Ym9rR_7d9_i26" NDATA video>
-<!-- HOBBIT: THE BATTLE OF FIVE ARMIES -->
-<!ENTITY trailer_Hobbit3 PUBLIC "trailer_Hobbit3_identifier" "https://youtu.be/iVAgTiBrrDA?si=77auPBavJaBuaidE" NDATA video>
 ]
 >
 
@@ -83,7 +52,7 @@
                 <!-- <genre genre_type="Biography"></genre> -->
                 <rating>9.2/10</rating>
                 <summary>
-                    "Gundi: Legend of Love" is a poignant sports drama that chronicles the life of Georgi Asparuhov, Bulgaria's most beloved football icon of the 20th century. From humble beginnings in a Sofia suburb to national stardom, the film unfolds the dual narratives of Georgi's spectacular career and his deep love for his wife, Lita. Set against the backdrop of Bulgaria's political and social turbulence during the 1960s, the story captures Georgi's rise as a footballing legend alongside his struggles within the oppressive regime that sought to control every aspect of his life. At the heart of the narrative is his relationship with Lita, a woman from an affluent family whose love becomes Georgi's anchor amid the challenges of his career and the demands of fame. Their journey is marred by external pressures and personal trials but buoyed by moments of joy and triumph, such as the legendary matches that secured Georgi's place in sports history. Tragically, their shared dreams and hopes are cut short on June 30, 1971, leaving a legacy that transcends generations. The film blends authentic period detail with dynamic football action, brought to life through state-of-the-art VFX, showcasing some of the most pivotal matches in Georgi's career. "Gundi: Legend of Love" not only celebrates the sportsman but also the man behind the legend, whose love story continues to inspire long after his untimely demise.    
+                    "Gundi: Legend of Love" is a poignant sports Drama
                 </summary>
                 <year>2024</year>
                 <budget>no info</budget>
@@ -93,22 +62,8 @@
     </movies>
 
     <genres>
-        <genre id="g01" genre_type="Action">Action</genre>
-        <genre id="g02" genre_type="Adventure">Adventure</genre>
-        <genre id="g03" genre_type="Animation">Animation</genre>
-        <genre id="g04" genre_type="Biography">Biography</genre>
-        <genre id="g05" genre_type="Comedy">Comedy</genre>
-        <genre id="g06" genre_type="Crime">Crime</genre>
         <genre id="g07" genre_type="Drama">Drama</genre>
-        <genre id="g08" genre_type="Fantasy">Fantasy</genre>
-        <genre id="g09" genre_type="Historical">Historical</genre>
-        <genre id="g10" genre_type="Horror">Horror</genre>
-        <genre id="g11" genre_type="Mystery">Mystery</genre>
-        <genre id="g12" genre_type="Musical">Musical</genre>
         <genre id="g13" genre_type="Romance">Romance</genre>
-        <genre id="g14" genre_type="Sci-Fi">Sci-Fi</genre>
-        <genre id="g15" genre_type="Thriller">Thriller</genre>
-        <genre id="g16" genre_type="War">War</genre>
     </genres>
 
     <movie-series>
@@ -120,15 +75,6 @@
             <person>
                 <first_name>Dimitar</first_name>
                 <last_name>Dimitrov</last_name>
-                <age>38</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </director>
-        <director id="director002">
-            <person>
-                <first_name>Tsvetoslav</first_name>
-                <last_name>Borisov - Tsetso</last_name>
                 <age>38</age>
                 <gender>male</gender>
                 <involvement movie_refs="m001"></involvement>
@@ -146,15 +92,6 @@
                 <involvement movie_refs="m001"></involvement>
             </person>
         </writer>
-        <writer id="writer002">
-            <person>
-                <first_name>Velichka</first_name>
-                <last_name>Markova-Lita</last_name>
-                <age>38</age>
-                <gender>female</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </writer>
     </writers>
     
     <producers>
@@ -165,42 +102,6 @@
             <age>38</age>
             <gender>male</gender>
             <involvement movie_refs="m001"></involvement>
-            </person>
-        </producer>
-        <producer id="producer002">
-            <person>                    
-                <first_name>Andrei</first_name>
-                <last_name>Arnaudov</last_name>
-                <age>38</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </producer>
-        <producer id="producer003">
-            <person>
-                <first_name>Jordan</first_name>
-                <last_name>Markov</last_name>
-                <age>38</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </producer>
-        <producer id="producer004">
-            <person>                    
-                <first_name>Alexander</first_name>
-                <last_name>Zdravkov</last_name>
-                <age>38</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </producer>
-        <producer id="producer005">
-            <person>                    
-                <first_name>Vasil</first_name>
-                <last_name>Bolyarski</last_name>
-                <age>38</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
             </person>
         </producer>
     </producers>
@@ -215,24 +116,6 @@
                 <involvement movie_refs="m001"></involvement>
             </person>
         </other_creator>
-        <other_creator id="cinema001"  type="cinematographer">
-            <person>
-                <first_name>Boris</first_name>
-                <last_name>Slavkov</last_name>
-                <age>38</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </other_creator>
-        <other_creator id="editor001" type="editor">
-            <person>
-                <first_name>Victoria</first_name>
-                <last_name>Radoslavova</last_name>
-                <age>38</age>
-                <gender>female</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </other_creator>
     </other_creators>
 
     <actors>
@@ -243,76 +126,6 @@
                 <last_name>Svilenova</last_name>
                 <age>22</age>
                 <gender>female</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </actor>
-        <actor id="actor002">
-            <character>Gundi</character>
-            <person>
-                <first_name>Pavel</first_name>
-                <last_name>Ivanov</last_name>
-                <age>31</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </actor>
-        <actor id="actor003">
-            <character>Maria</character>
-            <person>
-                <first_name>Paraskeva</first_name>
-                <last_name>Djukelova</last_name>
-                <age>54</age>
-                <gender>female</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </actor>
-        <actor id="actor004">
-            <character>Asparuh</character>
-            <person>
-                <first_name>Dimiter</first_name>
-                <last_name>D. Marinov</last_name>
-                <age>60</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </actor>
-        <actor id="actor005">
-            <character>Architect Markov</character>
-            <person>
-                <first_name>Emil</first_name>
-                <last_name>Markov</last_name>
-                <age>61</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </actor>
-        <actor id="actor006">
-            <character>Marena</character>
-            <person>
-                <first_name>Biliana</first_name>
-                <last_name>Petrinska</last_name>
-                <age>50</age>
-                <gender>female</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </actor>
-        <actor id="actor007">
-            <character>State Security Agent</character>
-            <person>
-                <first_name>Penko</first_name>
-                <last_name>Gospodinov</last_name>
-                <age>54</age>
-                <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
-            </person>
-        </actor>
-        <actor id="actor008">
-            <character>Zoro</character>
-            <person>
-                <first_name>Stoyan</first_name>
-                <last_name>Radev</last_name>
-                <age>53</age>
-                <gender>male</gender>
                 <involvement movie_refs="m001"></involvement>
             </person>
         </actor>

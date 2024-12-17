@@ -6,14 +6,14 @@
 <!ATTLIST movie id ID #REQUIRED>
 <!ATTLIST movie genre IDREFS #REQUIRED>
 <!ATTLIST movie movie-series IDREF #IMPLIED>
-<!ATTLIST movie studio IDREF #REQUIRED>
-<!ATTLIST movie country IDREFS #REQUIRED>
-<!ATTLIST movie language IDREF #REQUIRED>
 <!ATTLIST movie director IDREFS #REQUIRED>
 <!ATTLIST movie writer IDREFS #REQUIRED>
 <!ATTLIST movie producer IDREFS #REQUIRED>
 <!ATTLIST movie other_creator IDREFS #REQUIRED>
 <!ATTLIST movie actor IDREFS #REQUIRED>
+<!ATTLIST movie studio IDREF #REQUIRED>
+<!ATTLIST movie country IDREFS #REQUIRED>
+<!ATTLIST movie language IDREF #REQUIRED>
 
 <!ELEMENT title (#PCDATA)>
 
