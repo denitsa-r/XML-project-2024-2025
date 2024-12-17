@@ -2,14 +2,18 @@
 
 <!ELEMENT movies (movie+)>
 <!-- можем да добавим в началото каталогът да бъде разделен на филми, филмови поредици и жанрове -->
-<!ELEMENT movie (title, media, details, people)>
+<!ELEMENT movie (title, media, details)>
 <!ATTLIST movie id ID #REQUIRED>
 <!ATTLIST movie genre IDREFS #REQUIRED>
 <!ATTLIST movie movie-series IDREF #IMPLIED>
 <!ATTLIST movie studio IDREF #REQUIRED>
 <!ATTLIST movie country IDREFS #REQUIRED>
-<!ATTLIST movie director IDREFS #REQUIRED>
 <!ATTLIST movie language IDREF #REQUIRED>
+<!ATTLIST movie director IDREFS #REQUIRED>
+<!ATTLIST movie writer IDREFS #REQUIRED>
+<!ATTLIST movie producer IDREFS #REQUIRED>
+<!ATTLIST movie other_creator IDREFS #REQUIRED>
+<!ATTLIST movie actor IDREFS #REQUIRED>
 
 <!ELEMENT title (#PCDATA)>
 
@@ -30,9 +34,6 @@
 <!ELEMENT summary (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
 <!ELEMENT budget (#PCDATA)>
-
-<!ELEMENT people EMPTY>
-<!ATTLIST people people_ids IDREFS #REQUIRED>
 
 <!-- Top-Level Genres Section -->
 <!ELEMENT genres (genre+)>
