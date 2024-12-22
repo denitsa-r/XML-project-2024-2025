@@ -1,4 +1,4 @@
-<!ELEMENT movie_catalog (movies, genres, movie-series, directors, writers, producers, other_creators, actors, studios, countries, languages)>
+<!ELEMENT movie_catalog (movies, genres, movie-series, directors, writers, producers, other_creators, actors, studios)>
 
 <!ELEMENT movies (movie+)>
 <!-- можем да добавим в началото каталогът да бъде разделен на филми, филмови поредици и жанрове -->
@@ -12,8 +12,6 @@
 <!ATTLIST movie other_creator IDREFS #REQUIRED>
 <!ATTLIST movie actor IDREFS #REQUIRED>
 <!ATTLIST movie studio IDREF #REQUIRED>
-<!ATTLIST movie country IDREFS #REQUIRED>
-<!ATTLIST movie language IDREF #REQUIRED>
 
 <!ELEMENT title (#PCDATA)>
 
@@ -27,12 +25,13 @@
 <!ATTLIST image source ENTITY #REQUIRED>
 <!-- image има source, май трябва да е entity. тези май всички са entities -->
 
-<!-- <!ELEMENT details (duration, genre, rating, summary, year, language, country, budget)> -->
-<!ELEMENT details (duration, rating, summary, year, budget)>
+<!ELEMENT details (duration, rating, summary, year, language, country, budget)>
 <!ELEMENT duration (#PCDATA)>
 <!ELEMENT rating (#PCDATA)>
 <!ELEMENT summary (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
 <!ELEMENT budget (#PCDATA)>
 
 <!-- Top-Level Genres Section -->
@@ -87,13 +86,3 @@
 <!ELEMENT studios (studio+)>
 <!ELEMENT studio (#PCDATA)>
 <!ATTLIST studio id ID #REQUIRED>
-
-<!-- Top-Level Countries Section -->
-<!ELEMENT countries (country+)>
-<!ELEMENT country (#PCDATA)>
-<!ATTLIST country id ID #REQUIRED>
-
-<!-- Top-Level Language Section -->
-<!ELEMENT languages (language+)>
-<!ELEMENT language (#PCDATA)>
-<!ATTLIST language id ID #REQUIRED>

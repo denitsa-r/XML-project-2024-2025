@@ -14,8 +14,6 @@
                 <xs:element name="other_creators" />
                 <xs:element name="actors" />
                 <xs:element name="studios" />
-                <xs:element name="countries" />
-                <xs:element name="languages" />
             </xs:all>
         </xs:complexType>
     </xs:element>
@@ -41,14 +39,6 @@
                     </xs:keyref>
                     <xs:keyref name="studioKeyRef" refer="studioKey">
                         <xs:selector xpath="movie_catalog/studios/studio" />
-                        <xs:field xpath="@id" />
-                    </xs:keyref>
-                    <xs:keyref name="countryKeyRef" refer="countryKey">
-                        <xs:selector xpath="movie_catalog/countries/country" />
-                        <xs:field xpath="@id" />
-                    </xs:keyref>
-                    <xs:keyref name="languageKeyRef" refer="languageKey">
-                        <xs:selector xpath="movie_catalog/languages/language" />
                         <xs:field xpath="@id" />
                     </xs:keyref>
                     <xs:keyref name="directorKeyRef" refer="directorKey">
@@ -91,8 +81,6 @@
         <xs:attribute name="other_creator" type="xs:IDREFS" use="required" />
         <xs:attribute name="actor" type="xs:IDREFS" use="required" />
         <xs:attribute name="studio" type="xs:IDREF" use="required" />
-        <xs:attribute name="country" type="xs:IDREFS" use="required" />
-        <xs:attribute name="language" type="xs:IDREF" use="required" />
     </xs:complexType>
 
     <!-- MOVIE MEDIA TYPE -->
@@ -148,6 +136,8 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
+            <xs:element name="language" type="nameType" />
+            <xs:element name="country" type="nameType" />
             <xs:element name="budget" type="xs:string" />
         </xs:sequence>
     </xs:complexType>
@@ -276,6 +266,15 @@
             			<xs:sequence>
                         	<xs:element name="person" type="personType" maxOccurs="1" />
             			</xs:sequence>
+                        <xs:attribute name="other_creator" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="composer" />
+                                    <xs:enumeration value="cinematographer" />
+                                    <xs:enumeration value="editor" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
@@ -344,32 +343,6 @@
                     <xs:key name="studioKey">
                         <xs:selector xpath="." />
                         <xs:field xpath="@id" />
-                    </xs:key>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:element name="countries">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="country">
-                    <xs:key name="countryKey">
-                        <xs:selector xpath="." />
-                        <xs:field xpath="@id" />
-                    </xs:key>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-    
-    <xs:element name="languages">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="language">
-                    <xs:key name="languageKey">
-                        <xs:selector xpath="." />
-                        <xs:field xpath="@id" />    
                     </xs:key>
                 </xs:element>
             </xs:sequence>

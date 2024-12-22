@@ -18,20 +18,32 @@
 <!ENTITY image4_Gundi PUBLIC "image4_Gundi_identifier" "https://futbolninovini.info/wp-content/uploads/2024/11/Gundi-Legenda-za-lubovta_1.jpg" NDATA jpeg>
 <!ENTITY image5_Gundi PUBLIC "image5_Gundi_identifier" "https://i.actualno.com/actualno_2013/upload/2024/05/09/0263210001715236684_big.webp" NDATA jpeg>
 <!ENTITY image6_Gundi PUBLIC "image6_Gundi_identifier" "https://zavedime.net/wp-content/uploads/2024/05/376792740_260865460260387_761164997363569178_n.jpg" NDATA jpeg>
+<!-- HOBBIT: AN UNEXPECTED JOURNEY -->
+<!ENTITY cover_Hobbit1 PUBLIC "cover_Hobbit1_identifier" "https://cdn-images.dzcdn.net/images/cover/eb551fb178aa395839939ea03b8d47be/0x1900-000000-80-0-0.jpg" NDATA jpeg>
+<!ENTITY image1_Hobbit1 PUBLIC "image1_Hobbit1_identifier" "https://www.slantmagazine.com/wp-content/uploads/2012/12/film_hobbitanunexpectedjourney.jpg" NDATA jpeg>
+<!ENTITY image2_Hobbit1 PUBLIC "image2_Hobbit1_identifier" "https://images.squarespace-cdn.com/content/v1/59e512ddf43b55c29c71b996/1534338893145-XR37MECUMBN71Y6XOIHC/hobbitunexpectedjourney.jpg" NDATA jpeg>
+<!ENTITY image3_Hobbit1 PUBLIC "image3_Hobbit1_identifier" "https://www.pluggedin.com/wp-content/uploads/2020/01/Hobbit-An-Unexpected-Journey-main432-1200x686.jpg" NDATA jpeg>
+<!ENTITY image4_Hobbit1 PUBLIC "image4_Hobbit1_identifier" "https://m.media-amazon.com/images/M/MV5BMjA3OTk4NjI2OF5BMl5BanBnXkFtZTcwNDc1Mzg3OA@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image5_Hobbit1 PUBLIC "image5_Hobbit1_identifier" "https://m.media-amazon.com/images/M/MV5BMTkxMjA5MjI5N15BMl5BanBnXkFtZTcwMTc1Mzg3OA@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image6_Hobbit1 PUBLIC "image6_Hobbit1_identifier" "https://m.media-amazon.com/images/M/MV5BMTc5Mzc2MDcwOF5BMl5BanBnXkFtZTcwNDg0Mzg3OA@@._V1_.jpg" NDATA jpeg>
+
 <!-- TRAILERS -->
 <!-- GUNDI -->
 <!ENTITY trailer_Gundi PUBLIC "trailer_Gundi_identifier" "https://youtu.be/1tlNwolYp6k?si=zY8AziDYnBlQzXvC" NDATA video>
+<!-- HOBBIT: AN UNEXPECTED JOURNEY -->
+<!ENTITY trailer_Hobbit1 PUBLIC "trailer_Hobbit1_identifier" "https://youtu.be/9PSXjr1gbjc?si=KAWlPQVx2YyJSI37" NDATA video>
+
 ]
 >
 
 <movie_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="movie_catalog.xsd">
     <movies>
-        <movie id="m001" genre="g07 g13" studio="st001" country="c003" language="l003"
+        <movie id="m001" genre="g07 g13" studio="st001"
                 director="director001 director002"
-                writer="writer001 writer002 "
+                writer="writer001 writer002 writer003"
                 producer="producer001 producer002 producer003 producer004 producer005"
                 other_creator="composer001 cinema001 editor001"
-                actor="actor001 actor002 actor003 actor004 actor005 actor006 actor007 actor008">
+                actor="actor001 actor002 actor003 actor004 actor005 actor006 actor007 actor008 actor009">
             <title>Gundi: Legend of Love</title>
 
             <media>
@@ -55,15 +67,68 @@
                     "Gundi: Legend of Love" is a poignant sports Drama
                 </summary>
                 <year>2024</year>
+                <language>Bulgarian</language>
+                <country>Bulgaria</country>
                 <budget>no info</budget>
             </details>
 
         </movie>
+
+        <movie id="m002" genre="g02 g08" movie-series="s001" studio="s002"
+                director="director003 director004 director005 director006"
+                writer="writer004 writer005"
+                producer="producer006 producer007 producer008 producer009"
+                other_creator="composer002 cinema002 editor002"
+                actor="actor10 actor11 actor12 actor13 actor14 actor15 actor16 actor17 actor18 actor19 actor20 actor21 actor22 actor23 actor24 actor25">
+            <title>The Hobbit: An Unexpected Journey</title>
+
+            <media>
+                <cover source="cover_Hobbit1"></cover>
+                <trailer source="trailer_Hobbit1"></trailer>
+                <gallery>
+                    <image source="image1_Hobbit1"></image>
+                    <image source="image2_Hobbit1"></image>
+                    <image source="image3_Hobbit1"></image>
+                    <image source="image4_Hobbit1"></image>
+                    <image source="image5_Hobbit1"></image>
+                    <image source="image6_Hobbit1"></image>
+                </gallery>
+            </media>
+
+            <details>
+                <duration>182min</duration>
+                <!-- <genre genre_type="Biography"></genre> -->
+                <rating>7.8/10</rating>
+                <summary>
+                    A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home and the gold within it from the dragon Smaug.
+                    Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey, Bilbo finds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through treacherous lands swarming with Goblins and Orcs, deadly Wargs and Giant Spiders, Shapeshifters and Sorcerers. Although their goal lies to the East and the wastelands of the Lonely Mountain first they must escape the goblin tunnels, where Bilbo meets the creature that will change his life forever ... Gollum. Here, alone with Gollum, on the shores of an underground lake, the unassuming Bilbo Baggins not only discovers depths of guile and courage that surprise even him, he also gains possession of Gollum's "precious" ring that holds unexpected and useful qualities ... A simple, gold ring that is tied to the fate of all Middle-earth in ways Bilbo cannot begin to know
+                </summary>
+                <year>2012</year>
+                <language>English</language>
+                <country>New Zealand, United States</country>
+                <budget>$200–315 million</budget>
+            </details>
+        </movie>
     </movies>
 
     <genres>
+        <genre id="g01" genre_type="Action">Action</genre>
+        <genre id="g02" genre_type="Adventure">Adventure</genre>
+        <genre id="g03" genre_type="Animation">Animation</genre>
+        <genre id="g04" genre_type="Biography">Biography</genre>
+        <genre id="g05" genre_type="Comedy">Comedy</genre>
+        <genre id="g06" genre_type="Crime">Crime</genre>
         <genre id="g07" genre_type="Drama">Drama</genre>
+        <genre id="g08" genre_type="Fantasy">Fantasy</genre>
+        <genre id="g09" genre_type="Historical">Historical</genre>
+        <genre id="g10" genre_type="Horror">Horror</genre>
+        <genre id="g11" genre_type="Mystery">Mystery</genre>
+        <genre id="g12" genre_type="Musical">Musical</genre>
         <genre id="g13" genre_type="Romance">Romance</genre>
+        <genre id="g14" genre_type="Sci-Fi">Sci-Fi</genre>
+        <genre id="g15" genre_type="Thriller">Thriller</genre>
+        <genre id="g16" genre_type="War">War</genre>
+        <genre id="g17" genre_type="Western">Western</genre>
     </genres>
 
     <movie-series>
@@ -80,6 +145,53 @@
                 <involvement movie_refs="m001"></involvement>
             </person>
         </director>
+        <director id="director002">
+            <person>
+                <first_name>Tsvetoslav</first_name>
+                <last_name>Borisov - Tsetso</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </director>
+
+        <director id="director003">
+            <person> 
+                <first_name>Peter</first_name>
+                <last_name>Jackson</last_name>
+                <age>63</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </director>
+
+        <director id="director004">
+            <person> 
+                <first_name>Peter</first_name>
+                <last_name>Jackson</last_name>
+                <age>63</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </director>
+        <director id="director005">
+            <person> 
+                <first_name>Peter</first_name>
+                <last_name>Jackson</last_name>
+                <age>63</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </director>
+        <director id="director006">
+            <person> 
+                <first_name>Peter</first_name>
+                <last_name>Jackson</last_name>
+                <age>63</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </director>
     </directors>
     
     <writers>
@@ -92,16 +204,127 @@
                 <involvement movie_refs="m001"></involvement>
             </person>
         </writer>
+        <writer id="writer002">
+            <person>
+                <first_name>Velichka</first_name>
+                <last_name>Markova-Lita</last_name>
+                <age>38</age>
+                <gender>female</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </writer>
+        <writer id="writer003">
+            <person>
+                <first_name>Emil</first_name>
+                <last_name>Bonev</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </writer>
+
+        <writer id="writer004">
+            <person>
+                <first_name>Guillermo</first_name>
+                <last_name>del Toro</last_name>
+                <age>59</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m002"></involvement>
+            </person>
+        </writer>
+        <writer id="writer005">
+            <person>
+                <first_name>Emil</first_name>
+                <last_name>Bonev</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </writer>
     </writers>
     
     <producers>
+        <!-- GUNDI -->
         <producer id="producer001">
             <person>
-            <first_name>Ivan</first_name>
-            <last_name>Hristov</last_name>
-            <age>38</age>
-            <gender>male</gender>
-            <involvement movie_refs="m001"></involvement>
+                <first_name>Ivan</first_name>
+                <last_name>Hristov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+        <producer id="producer002">
+            <person>
+                <first_name>Andrei</first_name>
+                <last_name>Arnaudov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+        <producer id="producer003">
+            <person>
+                <first_name>Jordan</first_name>
+                <last_name>Markov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+        <producer id="producer004">
+            <person>
+                <first_name>Alexander</first_name>
+                <last_name>Zdravkov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+        <producer id="producer005">
+            <person>
+                <first_name>Vasil</first_name>
+                <last_name>Bolyarski</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </producer>
+
+        <producer id="producer006">
+            <person>
+                <first_name>Fran</first_name>
+                <last_name>Walsh</last_name>
+                <age>65</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </producer>
+        <producer id="producer007">
+            <person>
+                <first_name>Philippa</first_name>
+                <last_name>Boyens</last_name>
+                <age>61</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </producer> 
+        <producer id="producer008">
+            <person>
+                <first_name>Zane</first_name>
+                <last_name>Weiner</last_name>
+                <age>64</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </producer>
+        <producer id="producer009">
+            <person>
+                <first_name>Rick</first_name>
+                <last_name>Porras</last_name>
+                <age>60</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m002"></involvement>
             </person>
         </producer>
     </producers>
@@ -114,6 +337,52 @@
                 <age>38</age>
                 <gender>male</gender>
                 <involvement movie_refs="m001"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="cinema001" type="cinematographer">
+            <person>
+                <first_name>Boris</first_name>
+                <last_name>Slavkov</last_name>
+                <age>38</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="editor001" type="editor">
+            <person>
+                <first_name>Victoria</first_name>
+                <last_name>Radoslavova</last_name>
+                <age>38</age>
+                <gender>female</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </other_creator>
+        
+        <other_creator id="composer002" type="composer">
+            <person>
+                    <first_name>Howard</first_name>
+                    <last_name>Shore</last_name>
+                    <age>77</age>
+                    <gender>male</gender>
+                    <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="cinema002" type="cinematographer">
+            <person>
+                <first_name>Andrew</first_name>
+                <last_name>Lesnie</last_name>
+                <age>49 (passed away in 2015)</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="editor002" type="editor">
+            <person>
+                <first_name>Jabez</first_name>
+                <last_name>Olssen</last_name>
+                <age>Approx. late 40s/early 50s</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m002 m003 m004"></involvement>
             </person>
         </other_creator>
     </other_creators>
@@ -129,23 +398,253 @@
                 <involvement movie_refs="m001"></involvement>
             </person>
         </actor>
+        <actor id="actor002">
+            <character>Gundi</character>
+            <person>
+                <first_name>Pavel</first_name>
+                <last_name>Ivanov</last_name>
+                <age>31</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor003">
+            <character>Maria</character>
+            <person>
+                <first_name>Paraskeva</first_name>
+                <last_name>Djukelova</last_name>
+                <age>54</age>
+                <gender>female</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor004">
+            <character>Asparuh</character>
+            <person>
+                <first_name>Dimiter</first_name>
+                <last_name>D. Marinov</last_name>
+                <age>60</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor005">
+            <character>Asparuh</character>
+            <person>
+                <first_name>Dimiter</first_name>
+                <last_name>D. Marinov</last_name>
+                <age>60</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor006">
+            <character>Architect Markov</character>
+            <person>
+                <first_name>Emil</first_name>
+                <last_name>Markov</last_name>
+                <age>61</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor007">
+            <character>Marena</character>
+            <person>
+                <first_name>Biliana</first_name>
+                <last_name>Petrinska</last_name>
+                <age>50</age>
+                <gender>female</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor008">
+            <character>State Security Agent</character>
+            <person>
+                <first_name>Penko</first_name>
+                <last_name>Gospodinov</last_name>
+                <age>54</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        <actor id="actor009">
+            <character>Zoro</character>
+            <person>
+                <first_name>Stoyan</first_name>
+                <last_name>Radev</last_name>
+                <age>53</age>
+                <gender>male</gender>
+                <involvement movie_refs="m001"></involvement>
+            </person>
+        </actor>
+        
+        <actor id="actor010">
+            <character>Bilbo Baggins</character>
+            <person>
+                <first_name>Martin </first_name>
+                <last_name>Freeman</last_name>
+                <age>53</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor011">
+            <character>Gandalf the Grey</character>
+            <person>
+                <first_name>Ian</first_name>
+                <last_name>McKellen</last_name>
+                <age>85</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor012">
+            <character>Thorin Oakenshield II</character>
+            <person>
+                <first_name>Richard </first_name>
+                <last_name>Armitage </last_name>
+                <age>53</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor013">
+            <character>Balin</character>
+            <person>
+                <first_name>Ken </first_name>
+                <last_name>Stott</last_name>
+                <age>70</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor014">
+            <character>Dwalin</character>
+            <person>
+                <first_name>Graham</first_name>
+                <last_name>McTavish</last_name>
+                <age>63</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor015">
+            <character>Kili</character>
+            <person>
+                <first_name>Aidan</first_name>
+                <last_name>Turner</last_name>
+                <age>41</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor0016">
+            <character>Bofur</character>
+            <person>
+                <first_name>James </first_name>
+                <last_name>Nesbitt</last_name>
+                <age>59</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor017">
+            <character>Azog</character>
+            <person>
+                <first_name>Manu</first_name>
+                <last_name>Bennett</last_name>
+                <age>54</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor018">
+            <character>Kili</character>
+            <person>
+                <first_name>Aidan</first_name>
+                <last_name>Turner</last_name>
+                <age>41</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003"></involvement>
+            </person>
+        </actor>
+        <actor id="actor019">
+            <character>Radagast the Brown</character>
+            <person>
+                <first_name>Sylvester </first_name>
+                <last_name>McCoy</last_name>
+                <age>81</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m003"></involvement>
+            </person>
+        </actor>
+        <actor id="actor020">
+            <character>Galadriel</character>
+            <person>
+                <first_name>Cate </first_name>
+                <last_name>Blanchett</last_name>
+                <age>55</age>
+                <gender>female</gender>
+                <involvement movie_refs="m002 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor021">
+            <character>Elrond</character>
+            <person>
+                <first_name>Hugo</first_name>
+                <last_name>Weaving</last_name>
+                <age>64</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor022">
+            <character>Saruman</character>
+            <person>
+                <first_name>Christopher</first_name>
+                <last_name>Lee</last_name>
+                <age>93 (passed away on June 7th, 2015)</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor023">
+            <character>Frodo Baggins (cameo)</character>
+            <person>
+                <first_name>Elijah </first_name>
+                <last_name>Wood</last_name>
+                <age>43</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002"></involvement>
+            </person>
+        </actor>
+        <actor id="actor024">
+            <character>Gollum</character>
+            <person>
+                <first_name>Andy </first_name>
+                <last_name>Serkis</last_name>
+                <age>60</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002"></involvement>
+            </person>
+        </actor>
+        <actor id="actor025">
+            <character>The Great Goblin</character>
+            <person>
+                <first_name>Barry</first_name>
+                <last_name>Humphries</last_name>
+                <age>89 (passed away on April 22nd, 2023)</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002"></involvement>
+            </person>
+        </actor>
+        
     </actors>
 
     <studios>
         <studio id="st001">Medium Station</studio>
+        <studio id="st002">Warner Bros. Pictures</studio>
     </studios>
 
-    <countries>
-        <country id="c001">United States</country>
-        <country id="c002">United Kingdom</country>
-        <country id="c003">Bulgaria</country>
-    </countries>
-    
-    <languages>
-        <language id="l001">English</language>
-        <language id="l002">French</language>
-        <language id="l003">Bulgarian</language>
-        <language id="l004">German</language>
-        <language id="l005">Russian</language>
-    </languages>
 </movie_catalog>

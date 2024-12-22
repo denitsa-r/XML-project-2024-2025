@@ -15,7 +15,7 @@
             </head>
 
             <body>
-                <ul class="filter-menu"> Choose filteer:
+                <ul class="filter-menu"> Choose filter:
                     <ul class="genres"> By genre:
                         <!-- here i want to show all different types of genres -->
                         <xsl:for-each select="movie_catalog/genres/genre">
@@ -28,31 +28,10 @@
                             <li><xsl:value-of select="."/></li>
                         </xsl:for-each>
                     </ul>
-                    <ul> By Country:
-                        <!-- here i want to show all different types of series -->
-                        <!-- TO DO -->
-                        <!-- <xsl:for-each select="movie_catalog/countries/country">
-                            <li><xsl:value-of select="."/></li>
-                        </xsl:for-each> -->
-                    </ul>
-                    <ul> By Topic:
+                    <ul> By Studio:
                         <!-- TO DO -->
                         <!-- here i want to show all different types of series -->
-                        <!-- <xsl:for-each select="movie_catalog/countries/country">
-                            <li><xsl:value-of select="."/></li>
-                        </xsl:for-each> -->
-                    </ul>
-                    <ul> By Source:
-                        <!-- TO DO -->
-                        <!-- here i want to show all different types of series -->
-                        <!-- <xsl:for-each select="movie_catalog/countries/country">
-                            <li><xsl:value-of select="."/></li>
-                        </xsl:for-each> -->
-                    </ul>
-                    <ul> By Production Company:
-                        <!-- TO DO -->
-                        <!-- here i want to show all different types of series -->
-                        <xsl:for-each select="movie_catalog/movies/movie/production">
+                        <xsl:for-each select="movie_catalog/studios/studio">
                             <li><xsl:value-of select="."/></li>
                         </xsl:for-each>
                     </ul>
