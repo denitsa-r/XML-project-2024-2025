@@ -11,7 +11,7 @@
 <!ATTLIST movie producer IDREFS #REQUIRED>
 <!ATTLIST movie other_creator IDREFS #REQUIRED>
 <!ATTLIST movie actor IDREFS #REQUIRED>
-<!ATTLIST movie studio IDREF #REQUIRED>
+<!ATTLIST movie studio IDREFS #REQUIRED>
 
 <!ELEMENT title (#PCDATA)>
 

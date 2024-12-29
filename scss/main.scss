@@ -29,42 +29,15 @@ img {
 }
 
 .filter-menu {
-  display: flex;
-  flex-direction: column;
   max-width: 1500px;
   margin: auto;
+  justify-content: space-evenly;
 
   li {
-    padding: 0.25rem 1rem;
-    font-size: 0.75rem;
-    background-color: #c4873600;
-    border: 1px solid $light_color;
-    transition: 0.75s ease-in-out;
-    border-radius: 10px;
-
-    &:hover {
-      background-color: $primary_color;
-      border: 1px solid $light_primary;
-    }
-
-    &:active {
-      background-color: $danger_color;
-      border: 1px solid $light_primary;
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
+    margin-top: 0.05rem;
+    max-width: 15rem;
     width: 100%;
-    justify-content: space-between;
-  }
-
-  div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    box-shadow: 10px 10px 5px #05050587;
   }
 }
 
@@ -107,6 +80,27 @@ img {
   }
 }
 
+.dropdown {
+  position: relative;
+  padding: 0.5rem 0;
+  li {
+    display: none;
+  }
+
+  &:hover {
+    ul {
+      position: absolute;
+    }
+    li {
+      display: block;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
 //navbar
 //grid -> main layouts
 //flex -> aligning
@@ -134,62 +128,5 @@ img {
     &:hover {
       color: $primary_color;
     }
-  }
-}
-
-// landing
-.landing {
-  position: relative;
-  background: url("../img/showcase.jpg") no-repeat center center/cover;
-  height: 100vh;
-
-  &-inner {
-    color: #fff;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-}
-
-//profiles page
-.profile {
-  display: grid;
-  grid-template-columns: 2fr 4fr 2fr;
-  grid-gap: 2rem;
-  align-items: center;
-  padding: 1rem;
-  line-height: 1.8;
-  margin-bottom: 1rem;
-}
-
-//profile page
-.profile-grid {
-  display: grid;
-  grid-template-areas:
-    "top top"
-    "about about"
-    "exp edu"
-    "github github";
-  grid-gap: 1rem;
-
-  .profile-top {
-    grid-area: top;
-  }
-  .profile-about {
-    grid-area: about;
-  }
-  .profile-exp {
-    grid-area: exp;
-  }
-  .profile-edu {
-    grid-area: edu;
-  }
-  .profile-github {
-    grid-area: github;
   }
 }

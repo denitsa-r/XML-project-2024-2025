@@ -58,11 +58,15 @@
   color: #333;
   padding: 0.4rem 1.3rem;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 1rem;
-  margin-right: 0.5rem;
   outline: none;
   transition: all 0.2s ease-in;
+
+  &:active {
+    @include set-background($primary_color);
+  }
 
   &.btn-primary {
     @include set-background($primary_color);
@@ -75,6 +79,7 @@
     @include set-background($light_color);
     &:hover {
       background: lighten($light_color, 5%);
+      color: #333;
     }
   }
 
@@ -141,4 +146,54 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.t-style {
+  &-i {
+    font-style: italic;
+  }
+  &-b {
+    font-weight: 900;
+  }
+  &-sb {
+    font-weight: 600;
+  }
+  &-r {
+    font-weight: 300;
+  }
+  &-l {
+    font-weight: 100;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+.heading {
+  &-s {
+    font-size: 1.5rem;
+  }
+  &-m {
+    font-size: 2rem;
+  }
+  &-l {
+    font-size: 2.5rem;
+  }
+  &-xl {
+    font-size: 3.5rem;
+  }
 }

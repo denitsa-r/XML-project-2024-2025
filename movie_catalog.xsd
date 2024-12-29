@@ -80,7 +80,7 @@
         <xs:attribute name="producer" type="xs:IDREFS" use="required" />
         <xs:attribute name="other_creator" type="xs:IDREFS" use="required" />
         <xs:attribute name="actor" type="xs:IDREFS" use="required" />
-        <xs:attribute name="studio" type="xs:IDREF" use="required" />
+        <xs:attribute name="studio" type="xs:IDREFS" use="required" />
     </xs:complexType>
 
     <!-- MOVIE MEDIA TYPE -->

@@ -26,12 +26,52 @@
 <!ENTITY image4_Hobbit1 PUBLIC "image4_Hobbit1_identifier" "https://m.media-amazon.com/images/M/MV5BMjA3OTk4NjI2OF5BMl5BanBnXkFtZTcwNDc1Mzg3OA@@._V1_.jpg" NDATA jpeg>
 <!ENTITY image5_Hobbit1 PUBLIC "image5_Hobbit1_identifier" "https://m.media-amazon.com/images/M/MV5BMTkxMjA5MjI5N15BMl5BanBnXkFtZTcwMTc1Mzg3OA@@._V1_.jpg" NDATA jpeg>
 <!ENTITY image6_Hobbit1 PUBLIC "image6_Hobbit1_identifier" "https://m.media-amazon.com/images/M/MV5BMTc5Mzc2MDcwOF5BMl5BanBnXkFtZTcwNDg0Mzg3OA@@._V1_.jpg" NDATA jpeg>
+<!-- HOBBIT: THE DESOLATION OF SMAUG -->
+<!ENTITY cover_Hobbit2 PUBLIC "cover_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_.jpg" NDATA jpeg>
+<!ENTITY image1_Hobbit2 PUBLIC "image1_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMTgzODA2MTM1M15BMl5BanBnXkFtZTgwMjk2MDM3MDE@._V1_.jpg" NDATA jpeg>
+<!ENTITY image2_Hobbit2 PUBLIC "image2_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMjMyMjE5Nzk2N15BMl5BanBnXkFtZTgwOTk2MDM3MDE@._V1_.jpg" NDATA jpeg>
+<!ENTITY image3_Hobbit2 PUBLIC "image3_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMjMyMjc2Mjc3NF5BMl5BanBnXkFtZTgwNzk2MDM3MDE@._V1_.jpg" NDATA jpeg>
+<!ENTITY image4_Hobbit2 PUBLIC "image4_Hobbit2_identifier" "https://m.media-amazon.com/images/M/MV5BMjM3MjUyNzM5OV5BMl5BanBnXkFtZTgwMzk2MDM3MDE@._V1_.jpg" NDATA jpeg>
+<!ENTITY image5_Hobbit2 PUBLIC "image5_Hobbit2_identifier" "https://images.squarespace-cdn.com/content/v1/5233347fe4b00c95cda9e5d6/1387163581006-JXCXWFGYIV4WZQRB9RGR/The-Hobbit-The-Desolation-of-Smaug-Pics.jpg" NDATA jpeg>
+<!ENTITY image6_Hobbit2 PUBLIC "image6_Hobbit_identifier" "https://m.media-amazon.com/images/M/MV5BODA5MjE4NzgwOF5BMl5BanBnXkFtZTgwNDI2MDgzMzE@._V1_.jpg" NDATA jpeg>
+<!-- HOBBIT: THE BATTLE OF FIVE ARMIES -->
+<!ENTITY cover_Hobbit3 PUBLIC "cover_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BOWIwNTQzYTQtNzNkOS00Zjc3LTliNTgtMTVlNjM4NTliNmM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" NDATA jpeg>
+<!ENTITY image1_Hobbit3 PUBLIC "image1_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTc1NjYwODIxNV5BMl5BanBnXkFtZTgwMjkzNDM2MzE@._V1_.jpg" NDATA jpeg>
+<!ENTITY image2_Hobbit3 PUBLIC "image2_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTQ4OTE5MDU5Ml5BMl5BanBnXkFtZTgwMzkzNDM2MzE@._V1_.jpg" NDATA jpeg>
+<!ENTITY image3_Hobbit3 PUBLIC "image3_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BOTM1MzA1Mjg5MV5BMl5BanBnXkFtZTgwNDcyNTc1MzE@._V1_.jpg" NDATA jpeg>
+<!ENTITY image4_Hobbit3 PUBLIC "image4_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTgwNzg0NDI5Ml5BMl5BanBnXkFtZTgwOTczNDM2MzE@._V1_.jpg" NDATA jpeg>
+<!ENTITY image5_Hobbit3 PUBLIC "image5_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTU3MjcyMDI2NV5BMl5BanBnXkFtZTgwODgzNDM2MzE@._V1_QL75_UX328_.jpg" NDATA jpeg>
+<!ENTITY image6_Hobbit3 PUBLIC "image6_Hobbit3_identifier" "https://m.media-amazon.com/images/M/MV5BMTc1MzE2MTA4MF5BMl5BanBnXkFtZTgwMTkzNDM2MzE@._V1_QL75_UX522_.jpg" NDATA jpeg>
+<!-- INCEPTION -->
+<!ENTITY cover_Inception PUBLIC "cover_Inception_identifier" "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg" NDATA jpeg>
+<!ENTITY image1_Inception PUBLIC "image1_Inception_identifier" "https://m.media-amazon.com/images/M/MV5BMjIyNjk1OTgzNV5BMl5BanBnXkFtZTcwOTU0OTk1Mw@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image2_Inception PUBLIC "image2_Inception_identifier" "https://m.media-amazon.com/images/M/MV5BMTMxNDExNzM4MV5BMl5BanBnXkFtZTcwNDY0OTk1Mw@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image3_Inception PUBLIC "image3_Inception_identifier" "https://m.media-amazon.com/images/M/MV5BMTY3MzMzMDgyMF5BMl5BanBnXkFtZTcwMzY0OTk1Mw@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image4_Inception PUBLIC "image4_Inception_identifier" "https://m.media-amazon.com/images/M/MV5BMTQ1ZmIzOTAtNDcwZi00NDVkLWE4NWItYWNhZGY1MmVlZGU0XkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg" NDATA jpeg>
+<!ENTITY image5_Inception PUBLIC "image5_Inception_identifier" "https://m.media-amazon.com/images/M/MV5BMTY0NDEwMzMwMl5BMl5BanBnXkFtZTcwNzQ0OTk1Mw@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image6_Inception PUBLIC "image6_Inception_identifier" "https://m.media-amazon.com/images/M/MV5BMTk1NDM4MDMwMF5BMl5BanBnXkFtZTcwMjY0OTk1Mw@@._V1_.jpg" NDATA jpeg>
+<!-- COCO -->
+<!ENTITY cover_Coco PUBLIC "cover_Coco_identifier" "https://m.media-amazon.com/images/M/MV5BMDIyM2E2NTAtMzlhNy00ZGUxLWI1NjgtZDY5MzhiMDc5NGU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" NDATA jpeg>
+<!ENTITY image1_Coco PUBLIC "image1_Coco_identifier" "https://m.media-amazon.com/images/M/MV5BMTcxNjg0NTg1Nl5BMl5BanBnXkFtZTgwODkyMjMyNDM@._V1_.jpg" NDATA jpeg>
+<!ENTITY image2_Coco PUBLIC "image2_Coco_identifier" "https://m.media-amazon.com/images/M/MV5BMTYwNTQwNTc5OF5BMl5BanBnXkFtZTgwOTkyMjMyNDM@._V1_.jpg" NDATA jpeg>
+<!ENTITY image3_Coco PUBLIC "image3_Coco_identifier" "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStD5iTpuxtcxcufdPjYgedUniqmeKFKYB3DA&s" NDATA jpeg>
+<!ENTITY image4_Coco PUBLIC "image4_Coco_identifier" "https://m.media-amazon.com/images/M/MV5BMjM2Mjc0OTAyNl5BMl5BanBnXkFtZTgwNzEzMjMyNDM@._V1_.jpg" NDATA jpeg>
+<!ENTITY image5_Coco PUBLIC "image5_Coco_identifier" "https://m.media-amazon.com/images/M/MV5BMjM2MzIwNDYyMV5BMl5BanBnXkFtZTgwMTEzMjMyNDM@._V1_.jpg" NDATA jpeg>
+<!ENTITY image6_Coco PUBLIC "image6_Coco_identifier" "https://m.media-amazon.com/images/M/MV5BNTY4OWRiZTUtNWM1Yi00NWExLTkzMzgtMjExMjFhNzg1ZjEwXkEyXkFqcGdeQXVyNjMwMzc3MjE@._V1_.jpg" NDATA jpeg>
 
 <!-- TRAILERS -->
 <!-- GUNDI -->
 <!ENTITY trailer_Gundi PUBLIC "trailer_Gundi_identifier" "https://youtu.be/1tlNwolYp6k?si=zY8AziDYnBlQzXvC" NDATA video>
 <!-- HOBBIT: AN UNEXPECTED JOURNEY -->
 <!ENTITY trailer_Hobbit1 PUBLIC "trailer_Hobbit1_identifier" "https://youtu.be/9PSXjr1gbjc?si=KAWlPQVx2YyJSI37" NDATA video>
+<!-- HOBBIT: THE DESOLATION OF SMAUG -->
+<!ENTITY trailer_Hobbit2 PUBLIC "trailer_Hobbit2_identifier" "https://youtu.be/fnaojlfdUbs?si=4A4Ym9rR_7d9_i26" NDATA video>
+<!-- HOBBIT: THE BATTLE OF FIVE ARMIES -->
+<!ENTITY trailer_Hobbit3 PUBLIC "trailer_Hobbit3_identifier" "https://youtu.be/iVAgTiBrrDA?si=77auPBavJaBuaidE" NDATA video>
+<!-- INCEPTION -->
+<!ENTITY trailer_Inception PUBLIC "trailer_Inception_identifier" "https://youtu.be/hstBN0Qkqhc?si=xjTwuKJp0MmT8oqG" NDATA video>
+<!-- COCO -->
+<!ENTITY trailer_Coco PUBLIC "trailer_Coco_identifier" "https://youtu.be/hstBN0Qkqhc?si=xjTwuKJp0MmT8oqG" NDATA video>
 
 ]
 >
@@ -109,6 +149,150 @@
                 <budget>$200–315 million</budget>
             </details>
         </movie>
+
+        <movie id="m003" genre="g02 g08" movie-series="s001" studio="st002"
+                director="director003 director004 director005 director006"
+                writer="writer004 writer005"
+                producer="producer006 producer007 producer008"
+                other_creator="composer002 cinema002 editor002"
+                actor="actor10 actor11 actor12 actor13 actor14 actor15 actor16 actor17 actor18 actor19 actor20 actor026 actor027 actor028 actor029 actor030 actor031">
+            <title>The Hobbit: The Desolation of Smaug</title>
+
+            <media>
+                <cover source="cover_Hobbit2"></cover>
+                <trailer source="trailer_Hobbit2"></trailer>
+                <gallery>
+                    <image source="image1_Hobbit2"></image>
+                    <image source="image2_Hobbit2"></image>
+                    <image source="image3_Hobbit2"></image>
+                    <image source="image4_Hobbit2"></image>
+                    <image source="image5_Hobbit2"></image>
+                    <image source="image6_Hobbit2"></image>
+                </gallery>
+            </media>
+
+            <details>
+                <duration>161min</duration>
+                <!-- <genre genre_type="Biography"></genre> -->
+                <rating>7.8/10</rating>
+                <summary>
+                    The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim the Lonely Mountain, their homeland, from the dragon Smaug.
+                    After successfully crossing over (and under) the Misty Mountains, Thorin and Company must seek aid from a powerful stranger before taking on the dangers of Mirkwood Forest--without their Wizard. If they reach the human settlement of Lake-town it will be time for the hobbit Bilbo Baggins to fulfill his contract with the dwarves. The party must complete the journey to Lonely Mountain and burglar Baggins must seek out the Secret Door that will give them access to the hoard of the dragon Smaug. And, where has Gandalf got off to? And what is his secret business to the south?                
+                </summary>
+                <year>2013</year>
+                <language>English</language>
+                <country>New Zealand, United States</country>
+                <budget>$217–250 million</budget>
+            </details>
+
+        </movie>
+
+        <movie id="m004" genre="g02 g08" movie-series="s001" studio="st002"
+                director="director003 director004 director005 director006"
+                writer="writer004 writer005"
+                producer="producer006 producer007 producer008"
+                other_creator="composer002 cinema002 editor002"
+                actor="actor10 actor11 actor12 actor13 actor14 actor15 actor16 actor17 actor18 actor19 actor20 actor21 actor22 actor026 actor027 actor028 actor029 actor030 actor031">
+            <title>The Hobbit: The Battle of the Five Armies</title>
+
+            <media>
+                <cover source="cover_Hobbit3"></cover>
+                <trailer source="trailer_Hobbit3"></trailer>
+                <gallery>
+                    <image source="image1_Hobbit3"></image>
+                    <image source="image2_Hobbit3"></image>
+                    <image source="image3_Hobbit3"></image>
+                    <image source="image4_Hobbit3"></image>
+                    <image source="image5_Hobbit3"></image>
+                    <image source="image6_Hobbit3"></image>
+                </gallery>
+            </media>
+
+            <details>
+                <duration>144min</duration>
+                <!-- <genre genre_type="Biography"></genre> -->
+                <rating>7.4/10</rating>
+                <summary>
+                    Bilbo Baggins and company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness.
+                    After the Dragon leaves the Lonely Mountain, the people of Lake-town see a threat coming. Orcs, dwarves, elves and people prepare for war. Bilbo sees Thorin going mad and tries to help. Meanwhile, Gandalf is rescued from the Necromancer's prison and his rescuers realize who the Necromancer is.
+                </summary>
+                <year>2014</year>
+                <language>English</language>
+                <country>New Zealand, United States</country>
+                <budget>$209–300 million</budget>
+            </details>
+
+        </movie>
+        
+        <movie id="m005" genre="g01 g02 g10 g14 g15" studio="st002"
+                director="director004"
+                writer="writer005"
+                producer="producer010 producer011"
+                other_creator="composer003 cinema003 editor003"
+                actor="actor032 actor033 actor034 actor035 actor036 actor037 actor038 actor039 actor040 actor041">
+            <title>Inception</title>
+
+            <media>
+                <cover source="cover_Inception"></cover>
+                <trailer source="trailer_Inception"></trailer>
+                <gallery>
+                    <image source="image1_Inception"></image>
+                    <image source="image2_Inception"></image>
+                    <image source="image3_Inception"></image>
+                    <image source="image4_Inception"></image>
+                    <image source="image5_Inception"></image>
+                    <image source="image6_Inception"></image>
+                </gallery>
+            </media>
+
+            <details>
+                <duration>148min</duration>
+                <rating>8.8/10</rating>
+                <summary>
+                    A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.
+                </summary>
+                <year>2010</year>
+                <language>English</language>
+                <country>USA, UK, France, Japan, Canada</country>
+                <budget>$160 million</budget>
+            </details>
+
+        </movie>
+        
+        <movie id="m006" genre="g03 g12 g05 g08 g07" studio="st003 st004"
+                director="director005 director006"
+                writer="writer006"
+                producer="producer012 producer013"
+                other_creator="composer004 cinema004 editor004"
+                actor="actor042 actor043 actor044 actor045 actor046 actor047 actor048 actor049 actor050 actor051 actor052">
+            <title>Coco </title>
+
+            <media>
+                <cover source="cover_Coco"></cover>
+                <trailer source="trailer_Coco"></trailer>
+                <gallery>
+                    <image source="image1_Coco"></image>
+                    <image source="image2_Coco"></image>
+                    <image source="image3_Coco"></image>
+                    <image source="image4_Coco"></image>
+                    <image source="image5_Coco"></image>
+                    <image source="image6_Coco"></image>
+                </gallery>
+            </media>
+
+            <details>
+                <duration>105min</duration>
+                <rating>8.4/10</rating>
+                <summary>
+                    Young Miguel dreams of becoming a musician despite his family's ban on music. During the Día de los Muertos, he embarks on a journey to the Land of the Dead to uncover his family's secrets.                
+                </summary>
+                <year>2017</year>
+                <language>English, Spanish</language>
+                <country>USA</country>
+                <budget>$175 million</budget>
+            </details>
+
+        </movie>
     </movies>
 
     <genres>
@@ -167,29 +351,40 @@
 
         <director id="director004">
             <person> 
-                <first_name>Peter</first_name>
-                <last_name>Jackson</last_name>
-                <age>63</age>
+                <first_name>Christopher </first_name>
+                <last_name>Nolan </last_name>
+                <age>54</age>
                 <gender>male</gender>
-                <involvement movie_refs="m002 m003 m004"></involvement>
+                <involvement movie_refs="m005"></involvement>
             </person>
         </director>
+
         <director id="director005">
             <person> 
-                <first_name>Peter</first_name>
-                <last_name>Jackson</last_name>
-                <age>63</age>
+                <first_name>Lee</first_name>
+                <last_name>Unkrich</last_name>
+                <age>57</age>
                 <gender>male</gender>
-                <involvement movie_refs="m002 m003 m004"></involvement>
+                <involvement movie_refs="п006"></involvement>
             </person>
         </director>
         <director id="director006">
             <person> 
-                <first_name>Peter</first_name>
-                <last_name>Jackson</last_name>
-                <age>63</age>
+                <first_name>Lee</first_name>
+                <last_name>Unkrich</last_name>
+                <age>57</age>
                 <gender>male</gender>
-                <involvement movie_refs="m002 m003 m004"></involvement>
+                <involvement movie_refs="п006"></involvement>
+            </person>
+        </director>
+
+        <director id="director007">
+            <person> 
+                <first_name>Adrian</first_name>
+                <last_name>Molina</last_name>
+                <age>39</age>
+                <gender>male</gender>
+                <involvement movie_refs="m006"></involvement>
             </person>
         </director>
     </directors>
@@ -232,13 +427,43 @@
                 <involvement movie_refs="m002"></involvement>
             </person>
         </writer>
+
         <writer id="writer005">
             <person>
-                <first_name>Emil</first_name>
-                <last_name>Bonev</last_name>
-                <age>38</age>
+                <first_name>Christopher </first_name>
+                <last_name>Nolan </last_name>
+                <age>54</age>
                 <gender>male</gender>
-                <involvement movie_refs="m001"></involvement>
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </writer>
+
+        <writer id="writer006">
+            <person>
+                <first_name>Lee</first_name>
+                <last_name>Unkrich</last_name>
+                <age>57</age>
+                <gender>male</gender>
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </writer> 
+
+        <writer id="writer008">
+            <person>
+                <first_name>Gerald</first_name>
+                <last_name>R. Molen</last_name>
+                <age>89</age>
+                <gender>male</gender>
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </writer> 
+        <writer id="writer007">
+            <person>
+                <first_name>Branko</first_name>
+                <last_name>Lustig</last_name>
+                <age>87 (passed away on 14 november 2019)</age>
+                <gender>male</gender>
+                <involvement movie_refs="m006"></involvement>
             </person>
         </writer>
     </writers>
@@ -327,6 +552,45 @@
                 <involvement movie_refs="m002"></involvement>
             </person>
         </producer>
+        
+        <producer id="producer010">
+            <person>
+                <first_name>Christopher </first_name>
+                <last_name>Nolan </last_name>
+                <age>54</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </producer>
+        <producer id="producer011">
+            <person>
+                <first_name>Emma  </first_name>
+                <last_name>Thomas </last_name>
+                <age>52</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </producer>
+        
+        <producer id="producer012">
+            <person>
+                <first_name>Darla</first_name>
+                <last_name>K. Anderson</last_name>
+                <age>55</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </producer>
+        <producer id="producer013">
+            <person>
+                <first_name>John</first_name>
+                <last_name>Lasseter</last_name>
+                <age>67</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </producer>
+        
     </producers>
     
     <other_creators>
@@ -383,6 +647,62 @@
                 <age>Approx. late 40s/early 50s</age>
                 <gender>male</gender> 
                 <involvement movie_refs="m002 m003 m004"></involvement>
+            </person>
+        </other_creator>
+        
+        <other_creator id="composer003" type="composer">
+            <person>
+                    <first_name>Hans </first_name>
+                    <last_name>Zimmer </last_name>
+                    <age>67</age>
+                    <gender>male</gender>
+                    <involvement movie_refs="m005"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="cinema003" type="cinematographer">
+            <person>
+                <first_name>Wally </first_name>
+                <last_name>Pfister </last_name>
+                <age>63</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="editor003" type="editor">
+            <person>
+                <first_name>Lee </first_name>
+                <last_name>Smith </last_name>
+                <age>64</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </other_creator>
+        
+        <other_creator id="composer004" type="composer">
+            <person>
+                    <first_name>Hans </first_name>
+                    <last_name>Zimmer </last_name>
+                    <age>67</age>
+                    <gender>male</gender>
+                    <involvement movie_refs="m006"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="cinema004" type="cinematographer">
+            <person>
+                <first_name>Janusz</first_name>
+                <last_name>Kamiński</last_name>
+                <age>65</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </other_creator>
+        <other_creator id="editor004" type="editor">
+            <person>
+                <first_name>Michael</first_name>
+                <last_name>Kahn</last_name>
+                <age>93</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m006"></involvement>
             </person>
         </other_creator>
     </other_creators>
@@ -639,12 +959,294 @@
                 <involvement movie_refs="m002"></involvement>
             </person>
         </actor>
+
+        <actor id="actor026">
+            <character>Tauriel</character>
+            <person>
+                <first_name>Evangeline</first_name>
+                <last_name>Lilly</last_name>
+                <age>45</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor027">
+            <character>Bard the Bowman</character>
+            <person>
+                <first_name>Luke</first_name>
+                <last_name>Evans</last_name>
+                <age>45</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor028">
+            <character>Smaug (voice and motion capture), The Necromancer</character>
+            <person>
+                <first_name>Benedict</first_name>
+                <last_name>Cumberbatch</last_name>
+                <age>48</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor029">
+            <character>Legolas</character>
+            <person>
+                <first_name>Orlando</first_name>
+                <last_name>Bloom</last_name>
+                <age>47</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor030">
+            <character>Thranduil</character>
+            <person>
+                <first_name>Lee</first_name>
+                <last_name>Pace</last_name>
+                <age>45</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m003 m004"></involvement>
+            </person>
+        </actor>
+        <actor id="actor031">
+            <character>Master of Laketown</character>
+            <person>
+                <first_name>Stephen</first_name>
+                <last_name>Fry</last_name>
+                <age>67</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m003 m004"></involvement>
+            </person>
+        </actor>
+
+        <actor id="actor032">
+            <character>Dom Cobb</character>
+            <person>
+                <first_name>Leonardo </first_name>
+                <last_name>DiCaprio </last_name>
+                <age>50</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor033">
+            <character>Arthur</character>
+            <person>
+                <first_name>Joseph</first_name>
+                <last_name>Gordon-Levitt</last_name>
+                <age>42</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor034">
+            <character>Ariadne</character>
+            <person>
+                <first_name>Elliot</first_name>
+                <last_name>Page</last_name>
+                <age>36</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor035">
+            <character>Eames</character>
+            <person>
+                <first_name>Tom</first_name>
+                <last_name>Hardy</last_name>
+                <age>46</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor036">
+            <character>Saito</character>
+            <person>
+                <first_name>Ken</first_name>
+                <last_name>Watanabe</last_name>
+                <age>64</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor037">
+            <character>Yusuf</character>
+            <person>
+                <first_name>Dileep</first_name>
+                <last_name>Rao</last_name>
+                <age>50</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor038">
+            <character>Robert Fischer</character>
+            <person>
+                <first_name>Cillian</first_name>
+                <last_name>Murphy</last_name>
+                <age>47</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor039">
+            <character>Browning</character>
+            <person>
+                <first_name>Tom</first_name>
+                <last_name>Berenger</last_name>
+                <age>74</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor040">
+            <character>Mal</character>
+            <person>
+                <first_name>Marion</first_name>
+                <last_name>Cotillard</last_name>
+                <age>48</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor041">
+            <character>Miles</character>
+            <person>
+                <first_name>Michael</first_name>
+                <last_name>Caine</last_name>
+                <age>90</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m005"></involvement>
+            </person>
+        </actor>
+       
+        <actor id="actor042">
+            <character>Tío Oscar and Tío Felipe (Dual Role)</character>
+            <person>
+                <first_name>Herbert</first_name>
+                <last_name>Siguenza</last_name>
+                <age>63</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor043">
+            <character>Chicharrón</character>
+            <person>
+                <first_name>Edward</first_name>
+                <last_name>James Olmos</last_name>
+                <age>77</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor044">
+            <character>Arrival Agent</character>
+            <person>
+                <first_name>Octavio</first_name>
+                <last_name>Solis</last_name>
+                <age>63</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor045">
+            <character>Clerk</character>
+            <person>
+                <first_name>Gabriel</first_name>
+                <last_name>Iglesias</last_name>
+                <age>47</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor046">
+            <character>Corrections Officer</character>
+            <person>
+                <first_name>Cheech</first_name>
+                <last_name>Marin</last_name>
+                <age>78</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor047">
+            <character>Mamá Imelda</character>
+            <person>
+                <first_name>Alanna</first_name>
+                <last_name>Ubach</last_name>
+                <age>48</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor048">
+            <character>Mamá Luisa</character>
+            <person>
+                <first_name>Sofía</first_name>
+                <last_name>Espinosa</last_name>
+                <age>34</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor049">
+            <character>Plaza Mariachi</character>
+            <person>
+                <first_name>Lombardo</first_name>
+                <last_name>Boyar</last_name>
+                <age>49</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor050">
+            <character>Tía Rosita</character>
+            <person>
+                <first_name>Selene</first_name>
+                <last_name>Luna</last_name>
+                <age>52</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor051">
+            <character>Departures Agent</character>
+            <person>
+                <first_name>Carla</first_name>
+                <last_name>Medina</last_name>
+                <age>39</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+        <actor id="actor052">
+            <character>Emcee</character>
+            <person>
+                <first_name>Carla</first_name>
+                <last_name>Medina</last_name>
+                <age>57</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m006"></involvement>
+            </person>
+        </actor>
+
         
     </actors>
 
     <studios>
         <studio id="st001">Medium Station</studio>
         <studio id="st002">Warner Bros. Pictures</studio>
+        <studio id="st003">Pixar Animation Studios</studio>
+        <studio id="st004">Walt Disney Pictures</studio>
+        <studio id="st005">Universal Pictures</studio>
+        <studio id="st006">Amblin Entertainment</studio>
+        <studio id="st007">Orion Pictures</studio>
+        <studio id="st008">Working Title Films</studio>
+        <studio id="st009">StudioCanal</studio>
+        <studio id="st010">Focus Features</studio>
     </studios>
 
 </movie_catalog>
