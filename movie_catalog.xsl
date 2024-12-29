@@ -37,7 +37,7 @@
                 <meta charset="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="stylesheet" href="dist/css/main.min.css" />
-                <title>Movie Catalog</title>
+                <title><xsl:text>Movie Catalogue</xsl:text></title>
             </head>
 
             <body>
@@ -45,7 +45,6 @@
                 <div id="content" class="p-5">
                     <xsl:call-template name="loadContent"></xsl:call-template>
                 </div>
-            <!-- some js -->
             </body>
             <script defer="true">
 
@@ -75,8 +74,8 @@
                     filterValue: ""
                 };
 
-                const xmlDocPath = "hotels.xml";
-                const xslDocPath = "hotels.xsl";
+                const xmlDocPath = "movie_catalog.xml";
+                const xslDocPath = "movie_catalog.xsl";
 
                 let xsltProcessor;
                 let xmlDoc;
@@ -310,7 +309,7 @@
 
                             <xsl:variable name="coverImage" select="unparsed-entity-uri(media/cover/@source)" />
 
-                            <!-- movie card for every movie -->
+                            <!- movie card for every movie ->
                             <a href="movie_details.html?id={@id}" class="movie-card">
                                 <div class="cover" style="background-image:url({$coverImage})"></div>
                                 <h3 class="px-1"><xsl:value-of select="title"/></h3>
@@ -358,4 +357,5 @@
  -->
 
     <!-- селектира преките наследници на message -->
+
 </xsl:stylesheet>
