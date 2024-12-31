@@ -41,6 +41,13 @@ img {
   }
 }
 
+.cover {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .movie-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -59,13 +66,6 @@ img {
     &:hover {
       background-color: #fbeccb10;
       transition: 0.75s ease-in-out;
-    }
-
-    .cover {
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
     }
 
     .year-rating-bar {
@@ -101,32 +101,36 @@ h1 {
   text-align: center;
 }
 
-//navbar
-//grid -> main layouts
-//flex -> aligning
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.7rem 2rem;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  top: 0;
-  border-bottom: solid 1px $primary_color;
-  opacity: 0.9;
+.single-movie-holder {
+  width: 95%;
+  margin: auto;
+  padding: 2rem;
 
-  ul {
-    display: flex;
+  .media {
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+    padding: 1rem 0;
+    @include set-background(#fbeccb10);
+
+    #activeImg {
+      background-size: contain;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 1rem;
+      width: 90%;
+      height: 100%;
+      margin: auto;
+    }
   }
 
-  a {
-    color: #fff;
-    padding: 0.45rem;
-    margin: 0 0.25rem;
-
-    &:hover {
-      color: $primary_color;
-    }
+  .info {
+    @include set-background($light_color);
+    width: 100%;
+    padding: 1rem 2rem;
   }
 }

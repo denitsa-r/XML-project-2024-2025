@@ -1,10 +1,9 @@
 //cantainer
 .container {
   max-width: $max-width;
-  margin: auto;
   overflow: hidden;
   padding: 0 2rem;
-  margin: 6rem 0 0 3rem;
+  margin: 6rem auto auto 3rem;
 }
 
 //text styles
