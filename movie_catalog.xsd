@@ -269,9 +269,9 @@
                         <xs:attribute name="other_creator" use="required">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
-                                    <xs:enumeration value="composer" />
-                                    <xs:enumeration value="cinematographer" />
-                                    <xs:enumeration value="editor" />
+                                    <xs:enumeration value="Composer" />
+                                    <xs:enumeration value="Cinematographer" />
+                                    <xs:enumeration value="Editor" />
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>

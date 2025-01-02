@@ -114,7 +114,7 @@
 
         </movie>
 
-        <movie id="m002" genre="g02 g08" movie-series="s001" studio="s002"
+        <movie id="m002" genre="g02 g08" movie-series="s001" studio="st002"
                 director="director003 director004 director005 director006"
                 writer="writer004 writer005"
                 producer="producer006 producer007 producer008 producer009"
@@ -322,7 +322,7 @@
     <directors>
         <director id="director001">
             <person>
-                <first_name>Dimitar</first_name>
+                <first_name>Dimitar </first_name>
                 <last_name>Dimitrov</last_name>
                 <age>38</age>
                 <gender>male</gender>
@@ -331,7 +331,7 @@
         </director>
         <director id="director002">
             <person>
-                <first_name>Tsvetoslav</first_name>
+                <first_name>Tsvetoslav </first_name>
                 <last_name>Borisov - Tsetso</last_name>
                 <age>38</age>
                 <gender>male</gender>
@@ -341,7 +341,7 @@
 
         <director id="director003">
             <person> 
-                <first_name>Peter</first_name>
+                <first_name>Peter </first_name>
                 <last_name>Jackson</last_name>
                 <age>63</age>
                 <gender>male</gender>
@@ -351,7 +351,7 @@
 
         <director id="director004">
             <person> 
-                <first_name>Christopher </first_name>
+                <first_name>Christopher  </first_name>
                 <last_name>Nolan </last_name>
                 <age>54</age>
                 <gender>male</gender>
@@ -361,26 +361,26 @@
 
         <director id="director005">
             <person> 
-                <first_name>Lee</first_name>
+                <first_name>Lee </first_name>
                 <last_name>Unkrich</last_name>
                 <age>57</age>
                 <gender>male</gender>
-                <involvement movie_refs="п006"></involvement>
+                <involvement movie_refs="m006"></involvement>
             </person>
         </director>
         <director id="director006">
             <person> 
-                <first_name>Lee</first_name>
+                <first_name>Lee </first_name>
                 <last_name>Unkrich</last_name>
                 <age>57</age>
                 <gender>male</gender>
-                <involvement movie_refs="п006"></involvement>
+                <involvement movie_refs="m006"></involvement>
             </person>
         </director>
 
         <director id="director007">
             <person> 
-                <first_name>Adrian</first_name>
+                <first_name>Adrian </first_name>
                 <last_name>Molina</last_name>
                 <age>39</age>
                 <gender>male</gender>
@@ -392,7 +392,7 @@
     <writers>
         <writer id="writer001">
             <person>
-                <first_name>Emil</first_name>
+                <first_name>Emil </first_name>
                 <last_name>Bonev</last_name>
                 <age>38</age>
                 <gender>male</gender>
@@ -401,7 +401,7 @@
         </writer>
         <writer id="writer002">
             <person>
-                <first_name>Velichka</first_name>
+                <first_name>Velichka </first_name>
                 <last_name>Markova-Lita</last_name>
                 <age>38</age>
                 <gender>female</gender>
@@ -410,7 +410,7 @@
         </writer>
         <writer id="writer003">
             <person>
-                <first_name>Emil</first_name>
+                <first_name>Emil </first_name>
                 <last_name>Bonev</last_name>
                 <age>38</age>
                 <gender>male</gender>
@@ -420,7 +420,7 @@
 
         <writer id="writer004">
             <person>
-                <first_name>Guillermo</first_name>
+                <first_name>Guillermo </first_name>
                 <last_name>del Toro</last_name>
                 <age>59</age>
                 <gender>male</gender> 
@@ -430,7 +430,7 @@
 
         <writer id="writer005">
             <person>
-                <first_name>Christopher </first_name>
+                <first_name>Christopher  </first_name>
                 <last_name>Nolan </last_name>
                 <age>54</age>
                 <gender>male</gender>
@@ -440,7 +440,7 @@
 
         <writer id="writer006">
             <person>
-                <first_name>Lee</first_name>
+                <first_name>Lee </first_name>
                 <last_name>Unkrich</last_name>
                 <age>57</age>
                 <gender>male</gender>
@@ -450,7 +450,7 @@
 
         <writer id="writer008">
             <person>
-                <first_name>Gerald</first_name>
+                <first_name>Gerald </first_name>
                 <last_name>R. Molen</last_name>
                 <age>89</age>
                 <gender>male</gender>
@@ -459,7 +459,7 @@
         </writer> 
         <writer id="writer007">
             <person>
-                <first_name>Branko</first_name>
+                <first_name>Branko </first_name>
                 <last_name>Lustig</last_name>
                 <age>87 (passed away on 14 november 2019)</age>
                 <gender>male</gender>
@@ -472,7 +472,7 @@
         <!-- GUNDI -->
         <producer id="producer001">
             <person>
-                <first_name>Ivan</first_name>
+                <first_name>Ivan </first_name>
                 <last_name>Hristov</last_name>
                 <age>38</age>
                 <gender>male</gender>
@@ -481,7 +481,7 @@
         </producer>
         <producer id="producer002">
             <person>
-                <first_name>Andrei</first_name>
+                <first_name>Andrei </first_name>
                 <last_name>Arnaudov</last_name>
                 <age>38</age>
                 <gender>male</gender>
@@ -490,7 +490,7 @@
         </producer>
         <producer id="producer003">
             <person>
-                <first_name>Jordan</first_name>
+                <first_name>Jordan </first_name>
                 <last_name>Markov</last_name>
                 <age>38</age>
                 <gender>male</gender>
@@ -499,7 +499,7 @@
         </producer>
         <producer id="producer004">
             <person>
-                <first_name>Alexander</first_name>
+                <first_name>Alexander </first_name>
                 <last_name>Zdravkov</last_name>
                 <age>38</age>
                 <gender>male</gender>
@@ -508,7 +508,7 @@
         </producer>
         <producer id="producer005">
             <person>
-                <first_name>Vasil</first_name>
+                <first_name>Vasil </first_name>
                 <last_name>Bolyarski</last_name>
                 <age>38</age>
                 <gender>male</gender>
@@ -518,7 +518,7 @@
 
         <producer id="producer006">
             <person>
-                <first_name>Fran</first_name>
+                <first_name>Fran </first_name>
                 <last_name>Walsh</last_name>
                 <age>65</age>
                 <gender>female</gender> 
@@ -527,7 +527,7 @@
         </producer>
         <producer id="producer007">
             <person>
-                <first_name>Philippa</first_name>
+                <first_name>Philippa </first_name>
                 <last_name>Boyens</last_name>
                 <age>61</age>
                 <gender>female</gender> 
@@ -536,7 +536,7 @@
         </producer> 
         <producer id="producer008">
             <person>
-                <first_name>Zane</first_name>
+                <first_name>Zane </first_name>
                 <last_name>Weiner</last_name>
                 <age>64</age>
                 <gender>male</gender> 
@@ -545,7 +545,7 @@
         </producer>
         <producer id="producer009">
             <person>
-                <first_name>Rick</first_name>
+                <first_name>Rick </first_name>
                 <last_name>Porras</last_name>
                 <age>60</age>
                 <gender>male</gender> 
@@ -555,7 +555,7 @@
         
         <producer id="producer010">
             <person>
-                <first_name>Christopher </first_name>
+                <first_name>Christopher  </first_name>
                 <last_name>Nolan </last_name>
                 <age>54</age>
                 <gender>male</gender> 
@@ -564,7 +564,7 @@
         </producer>
         <producer id="producer011">
             <person>
-                <first_name>Emma  </first_name>
+                <first_name>Emma   </first_name>
                 <last_name>Thomas </last_name>
                 <age>52</age>
                 <gender>male</gender> 
@@ -574,7 +574,7 @@
         
         <producer id="producer012">
             <person>
-                <first_name>Darla</first_name>
+                <first_name>Darla </first_name>
                 <last_name>K. Anderson</last_name>
                 <age>55</age>
                 <gender>female</gender> 
@@ -583,7 +583,7 @@
         </producer>
         <producer id="producer013">
             <person>
-                <first_name>John</first_name>
+                <first_name>John </first_name>
                 <last_name>Lasseter</last_name>
                 <age>67</age>
                 <gender>male</gender> 
@@ -594,27 +594,27 @@
     </producers>
     
     <other_creators>
-        <other_creator id="composer001" type="composer">
+        <other_creator id="composer001" type="Composer">
             <person>
-                <first_name>Georgi</first_name>
+                <first_name>Georgi </first_name>
                 <last_name>Strezov</last_name>
                 <age>38</age>
                 <gender>male</gender>
                 <involvement movie_refs="m001"></involvement>
             </person>
         </other_creator>
-        <other_creator id="cinema001" type="cinematographer">
+        <other_creator id="cinema001" type="Cinematographer">
             <person>
-                <first_name>Boris</first_name>
+                <first_name>Boris </first_name>
                 <last_name>Slavkov</last_name>
                 <age>38</age>
                 <gender>male</gender>
                 <involvement movie_refs="m001"></involvement>
             </person>
         </other_creator>
-        <other_creator id="editor001" type="editor">
+        <other_creator id="editor001" type="Editor">
             <person>
-                <first_name>Victoria</first_name>
+                <first_name>Victoria </first_name>
                 <last_name>Radoslavova</last_name>
                 <age>38</age>
                 <gender>female</gender>
@@ -622,27 +622,27 @@
             </person>
         </other_creator>
         
-        <other_creator id="composer002" type="composer">
+        <other_creator id="composer002" type="Composer">
             <person>
-                    <first_name>Howard</first_name>
+                    <first_name>Howard </first_name>
                     <last_name>Shore</last_name>
                     <age>77</age>
                     <gender>male</gender>
                     <involvement movie_refs="m002 m003 m004"></involvement>
             </person>
         </other_creator>
-        <other_creator id="cinema002" type="cinematographer">
+        <other_creator id="cinema002" type="Cinematographer">
             <person>
-                <first_name>Andrew</first_name>
+                <first_name>Andrew </first_name>
                 <last_name>Lesnie</last_name>
                 <age>49 (passed away in 2015)</age>
                 <gender>male</gender> 
                 <involvement movie_refs="m002 m003 m004"></involvement>
             </person>
         </other_creator>
-        <other_creator id="editor002" type="editor">
+        <other_creator id="editor002" type="Editor">
             <person>
-                <first_name>Jabez</first_name>
+                <first_name>Jabez </first_name>
                 <last_name>Olssen</last_name>
                 <age>Approx. late 40s/early 50s</age>
                 <gender>male</gender> 
@@ -650,27 +650,27 @@
             </person>
         </other_creator>
         
-        <other_creator id="composer003" type="composer">
+        <other_creator id="composer003" type="Composer">
             <person>
-                    <first_name>Hans </first_name>
+                    <first_name>Hans  </first_name>
                     <last_name>Zimmer </last_name>
                     <age>67</age>
                     <gender>male</gender>
                     <involvement movie_refs="m005"></involvement>
             </person>
         </other_creator>
-        <other_creator id="cinema003" type="cinematographer">
+        <other_creator id="cinema003" type="Cinematographer">
             <person>
-                <first_name>Wally </first_name>
+                <first_name>Wally  </first_name>
                 <last_name>Pfister </last_name>
                 <age>63</age>
                 <gender>male</gender> 
                 <involvement movie_refs="m005"></involvement>
             </person>
         </other_creator>
-        <other_creator id="editor003" type="editor">
+        <other_creator id="editor003" type="Editor">
             <person>
-                <first_name>Lee </first_name>
+                <first_name>Lee  </first_name>
                 <last_name>Smith </last_name>
                 <age>64</age>
                 <gender>male</gender> 
@@ -678,27 +678,27 @@
             </person>
         </other_creator>
         
-        <other_creator id="composer004" type="composer">
+        <other_creator id="composer004" type="Composer">
             <person>
-                    <first_name>Hans </first_name>
+                    <first_name>Hans  </first_name>
                     <last_name>Zimmer </last_name>
                     <age>67</age>
                     <gender>male</gender>
                     <involvement movie_refs="m006"></involvement>
             </person>
         </other_creator>
-        <other_creator id="cinema004" type="cinematographer">
+        <other_creator id="cinema004" type="Cinematographer">
             <person>
-                <first_name>Janusz</first_name>
+                <first_name>Janusz </first_name>
                 <last_name>Kamiński</last_name>
                 <age>65</age>
                 <gender>male</gender> 
                 <involvement movie_refs="m006"></involvement>
             </person>
         </other_creator>
-        <other_creator id="editor004" type="editor">
+        <other_creator id="editor004" type="Editor">
             <person>
-                <first_name>Michael</first_name>
+                <first_name>Michael </first_name>
                 <last_name>Kahn</last_name>
                 <age>93</age>
                 <gender>male</gender> 
@@ -711,7 +711,7 @@
         <actor id="actor001">
             <character>Lita</character>
             <person>
-                <first_name>Aleksandra</first_name>
+                <first_name>Aleksandra  </first_name>
                 <last_name>Svilenova</last_name>
                 <age>22</age>
                 <gender>female</gender>
@@ -721,7 +721,7 @@
         <actor id="actor002">
             <character>Gundi</character>
             <person>
-                <first_name>Pavel</first_name>
+                <first_name>Pavel  </first_name>
                 <last_name>Ivanov</last_name>
                 <age>31</age>
                 <gender>male</gender>
@@ -731,7 +731,7 @@
         <actor id="actor003">
             <character>Maria</character>
             <person>
-                <first_name>Paraskeva</first_name>
+                <first_name>Paraskeva  </first_name>
                 <last_name>Djukelova</last_name>
                 <age>54</age>
                 <gender>female</gender>
@@ -741,7 +741,7 @@
         <actor id="actor004">
             <character>Asparuh</character>
             <person>
-                <first_name>Dimiter</first_name>
+                <first_name>Dimiter  </first_name>
                 <last_name>D. Marinov</last_name>
                 <age>60</age>
                 <gender>male</gender>
@@ -751,7 +751,7 @@
         <actor id="actor005">
             <character>Asparuh</character>
             <person>
-                <first_name>Dimiter</first_name>
+                <first_name>Dimiter  </first_name>
                 <last_name>D. Marinov</last_name>
                 <age>60</age>
                 <gender>male</gender>
@@ -761,7 +761,7 @@
         <actor id="actor006">
             <character>Architect Markov</character>
             <person>
-                <first_name>Emil</first_name>
+                <first_name>Emil  </first_name>
                 <last_name>Markov</last_name>
                 <age>61</age>
                 <gender>male</gender>
@@ -771,7 +771,7 @@
         <actor id="actor007">
             <character>Marena</character>
             <person>
-                <first_name>Biliana</first_name>
+                <first_name>Biliana  </first_name>
                 <last_name>Petrinska</last_name>
                 <age>50</age>
                 <gender>female</gender>
@@ -781,7 +781,7 @@
         <actor id="actor008">
             <character>State Security Agent</character>
             <person>
-                <first_name>Penko</first_name>
+                <first_name>Penko  </first_name>
                 <last_name>Gospodinov</last_name>
                 <age>54</age>
                 <gender>male</gender>
@@ -791,7 +791,7 @@
         <actor id="actor009">
             <character>Zoro</character>
             <person>
-                <first_name>Stoyan</first_name>
+                <first_name>Stoyan  </first_name>
                 <last_name>Radev</last_name>
                 <age>53</age>
                 <gender>male</gender>
@@ -802,7 +802,7 @@
         <actor id="actor010">
             <character>Bilbo Baggins</character>
             <person>
-                <first_name>Martin </first_name>
+                <first_name>Martin   </first_name>
                 <last_name>Freeman</last_name>
                 <age>53</age>
                 <gender>male</gender>
@@ -812,7 +812,7 @@
         <actor id="actor011">
             <character>Gandalf the Grey</character>
             <person>
-                <first_name>Ian</first_name>
+                <first_name>Ian  </first_name>
                 <last_name>McKellen</last_name>
                 <age>85</age>
                 <gender>male</gender>
@@ -822,7 +822,7 @@
         <actor id="actor012">
             <character>Thorin Oakenshield II</character>
             <person>
-                <first_name>Richard </first_name>
+                <first_name>Richard   </first_name>
                 <last_name>Armitage </last_name>
                 <age>53</age>
                 <gender>male</gender>
@@ -832,7 +832,7 @@
         <actor id="actor013">
             <character>Balin</character>
             <person>
-                <first_name>Ken </first_name>
+                <first_name>Ken   </first_name>
                 <last_name>Stott</last_name>
                 <age>70</age>
                 <gender>male</gender>
@@ -842,7 +842,7 @@
         <actor id="actor014">
             <character>Dwalin</character>
             <person>
-                <first_name>Graham</first_name>
+                <first_name>Graham  </first_name>
                 <last_name>McTavish</last_name>
                 <age>63</age>
                 <gender>male</gender>
@@ -852,7 +852,7 @@
         <actor id="actor015">
             <character>Kili</character>
             <person>
-                <first_name>Aidan</first_name>
+                <first_name>Aidan  </first_name>
                 <last_name>Turner</last_name>
                 <age>41</age>
                 <gender>male</gender>
@@ -862,7 +862,7 @@
         <actor id="actor016">
             <character>Bofur</character>
             <person>
-                <first_name>James </first_name>
+                <first_name>James   </first_name>
                 <last_name>Nesbitt</last_name>
                 <age>59</age>
                 <gender>male</gender>
@@ -872,7 +872,7 @@
         <actor id="actor017">
             <character>Azog</character>
             <person>
-                <first_name>Manu</first_name>
+                <first_name>Manu  </first_name>
                 <last_name>Bennett</last_name>
                 <age>54</age>
                 <gender>male</gender>
@@ -882,7 +882,7 @@
         <actor id="actor018">
             <character>Kili</character>
             <person>
-                <first_name>Aidan</first_name>
+                <first_name>Aidan  </first_name>
                 <last_name>Turner</last_name>
                 <age>41</age>
                 <gender>male</gender>
@@ -892,7 +892,7 @@
         <actor id="actor019">
             <character>Radagast the Brown</character>
             <person>
-                <first_name>Sylvester </first_name>
+                <first_name>Sylvester   </first_name>
                 <last_name>McCoy</last_name>
                 <age>81</age>
                 <gender>male</gender>
@@ -902,7 +902,7 @@
         <actor id="actor020">
             <character>Galadriel</character>
             <person>
-                <first_name>Cate </first_name>
+                <first_name>Cate   </first_name>
                 <last_name>Blanchett</last_name>
                 <age>55</age>
                 <gender>female</gender>
@@ -912,7 +912,7 @@
         <actor id="actor021">
             <character>Elrond</character>
             <person>
-                <first_name>Hugo</first_name>
+                <first_name>Hugo  </first_name>
                 <last_name>Weaving</last_name>
                 <age>64</age>
                 <gender>male</gender>
@@ -922,7 +922,7 @@
         <actor id="actor022">
             <character>Saruman</character>
             <person>
-                <first_name>Christopher</first_name>
+                <first_name>Christopher  </first_name>
                 <last_name>Lee</last_name>
                 <age>93 (passed away on June 7th, 2015)</age>
                 <gender>male</gender>
@@ -932,7 +932,7 @@
         <actor id="actor023">
             <character>Frodo Baggins (cameo)</character>
             <person>
-                <first_name>Elijah </first_name>
+                <first_name>Elijah   </first_name>
                 <last_name>Wood</last_name>
                 <age>43</age>
                 <gender>male</gender>
@@ -942,7 +942,7 @@
         <actor id="actor024">
             <character>Gollum</character>
             <person>
-                <first_name>Andy </first_name>
+                <first_name>Andy   </first_name>
                 <last_name>Serkis</last_name>
                 <age>60</age>
                 <gender>male</gender>
@@ -952,7 +952,7 @@
         <actor id="actor025">
             <character>The Great Goblin</character>
             <person>
-                <first_name>Barry</first_name>
+                <first_name>Barry  </first_name>
                 <last_name>Humphries</last_name>
                 <age>89 (passed away on April 22nd, 2023)</age>
                 <gender>male</gender>
@@ -963,7 +963,7 @@
         <actor id="actor026">
             <character>Tauriel</character>
             <person>
-                <first_name>Evangeline</first_name>
+                <first_name>Evangeline  </first_name>
                 <last_name>Lilly</last_name>
                 <age>45</age>
                 <gender>female</gender> 
@@ -973,7 +973,7 @@
         <actor id="actor027">
             <character>Bard the Bowman</character>
             <person>
-                <first_name>Luke</first_name>
+                <first_name>Luke  </first_name>
                 <last_name>Evans</last_name>
                 <age>45</age>
                 <gender>male</gender> 
@@ -983,7 +983,7 @@
         <actor id="actor028">
             <character>Smaug (voice and motion capture), The Necromancer</character>
             <person>
-                <first_name>Benedict</first_name>
+                <first_name>Benedict  </first_name>
                 <last_name>Cumberbatch</last_name>
                 <age>48</age>
                 <gender>male</gender> 
@@ -993,7 +993,7 @@
         <actor id="actor029">
             <character>Legolas</character>
             <person>
-                <first_name>Orlando</first_name>
+                <first_name>Orlando  </first_name>
                 <last_name>Bloom</last_name>
                 <age>47</age>
                 <gender>male</gender> 
@@ -1003,7 +1003,7 @@
         <actor id="actor030">
             <character>Thranduil</character>
             <person>
-                <first_name>Lee</first_name>
+                <first_name>Lee  </first_name>
                 <last_name>Pace</last_name>
                 <age>45</age>
                 <gender>male</gender> 
@@ -1013,7 +1013,7 @@
         <actor id="actor031">
             <character>Master of Laketown</character>
             <person>
-                <first_name>Stephen</first_name>
+                <first_name>Stephen  </first_name>
                 <last_name>Fry</last_name>
                 <age>67</age>
                 <gender>male</gender> 
@@ -1024,7 +1024,7 @@
         <actor id="actor032">
             <character>Dom Cobb</character>
             <person>
-                <first_name>Leonardo </first_name>
+                <first_name>Leonardo   </first_name>
                 <last_name>DiCaprio </last_name>
                 <age>50</age>
                 <gender>male</gender> 
@@ -1034,7 +1034,7 @@
         <actor id="actor033">
             <character>Arthur</character>
             <person>
-                <first_name>Joseph</first_name>
+                <first_name>Joseph  </first_name>
                 <last_name>Gordon-Levitt</last_name>
                 <age>42</age>
                 <gender>male</gender> 
@@ -1044,7 +1044,7 @@
         <actor id="actor034">
             <character>Ariadne</character>
             <person>
-                <first_name>Elliot</first_name>
+                <first_name>Elliot  </first_name>
                 <last_name>Page</last_name>
                 <age>36</age>
                 <gender>male</gender> 
@@ -1054,7 +1054,7 @@
         <actor id="actor035">
             <character>Eames</character>
             <person>
-                <first_name>Tom</first_name>
+                <first_name>Tom  </first_name>
                 <last_name>Hardy</last_name>
                 <age>46</age>
                 <gender>male</gender> 
@@ -1064,7 +1064,7 @@
         <actor id="actor036">
             <character>Saito</character>
             <person>
-                <first_name>Ken</first_name>
+                <first_name>Ken  </first_name>
                 <last_name>Watanabe</last_name>
                 <age>64</age>
                 <gender>male</gender> 
@@ -1074,7 +1074,7 @@
         <actor id="actor037">
             <character>Yusuf</character>
             <person>
-                <first_name>Dileep</first_name>
+                <first_name>Dileep  </first_name>
                 <last_name>Rao</last_name>
                 <age>50</age>
                 <gender>male</gender> 
@@ -1084,7 +1084,7 @@
         <actor id="actor038">
             <character>Robert Fischer</character>
             <person>
-                <first_name>Cillian</first_name>
+                <first_name>Cillian  </first_name>
                 <last_name>Murphy</last_name>
                 <age>47</age>
                 <gender>male</gender> 
@@ -1094,7 +1094,7 @@
         <actor id="actor039">
             <character>Browning</character>
             <person>
-                <first_name>Tom</first_name>
+                <first_name>Tom  </first_name>
                 <last_name>Berenger</last_name>
                 <age>74</age>
                 <gender>male</gender> 
@@ -1104,7 +1104,7 @@
         <actor id="actor040">
             <character>Mal</character>
             <person>
-                <first_name>Marion</first_name>
+                <first_name>Marion  </first_name>
                 <last_name>Cotillard</last_name>
                 <age>48</age>
                 <gender>female</gender> 
@@ -1114,7 +1114,7 @@
         <actor id="actor041">
             <character>Miles</character>
             <person>
-                <first_name>Michael</first_name>
+                <first_name>Michael  </first_name>
                 <last_name>Caine</last_name>
                 <age>90</age>
                 <gender>male</gender> 
@@ -1125,7 +1125,7 @@
         <actor id="actor042">
             <character>Tío Oscar and Tío Felipe (Dual Role)</character>
             <person>
-                <first_name>Herbert</first_name>
+                <first_name>Herbert  </first_name>
                 <last_name>Siguenza</last_name>
                 <age>63</age>
                 <gender>male</gender> 
@@ -1135,7 +1135,7 @@
         <actor id="actor043">
             <character>Chicharrón</character>
             <person>
-                <first_name>Edward</first_name>
+                <first_name>Edward  </first_name>
                 <last_name>James Olmos</last_name>
                 <age>77</age>
                 <gender>male</gender> 
@@ -1145,7 +1145,7 @@
         <actor id="actor044">
             <character>Arrival Agent</character>
             <person>
-                <first_name>Octavio</first_name>
+                <first_name>Octavio  </first_name>
                 <last_name>Solis</last_name>
                 <age>63</age>
                 <gender>male</gender> 
@@ -1155,7 +1155,7 @@
         <actor id="actor045">
             <character>Clerk</character>
             <person>
-                <first_name>Gabriel</first_name>
+                <first_name>Gabriel  </first_name>
                 <last_name>Iglesias</last_name>
                 <age>47</age>
                 <gender>male</gender> 
@@ -1165,7 +1165,7 @@
         <actor id="actor046">
             <character>Corrections Officer</character>
             <person>
-                <first_name>Cheech</first_name>
+                <first_name>Cheech  </first_name>
                 <last_name>Marin</last_name>
                 <age>78</age>
                 <gender>male</gender> 
@@ -1175,7 +1175,7 @@
         <actor id="actor047">
             <character>Mamá Imelda</character>
             <person>
-                <first_name>Alanna</first_name>
+                <first_name>Alanna  </first_name>
                 <last_name>Ubach</last_name>
                 <age>48</age>
                 <gender>female</gender> 
@@ -1185,7 +1185,7 @@
         <actor id="actor048">
             <character>Mamá Luisa</character>
             <person>
-                <first_name>Sofía</first_name>
+                <first_name>Sofía  </first_name>
                 <last_name>Espinosa</last_name>
                 <age>34</age>
                 <gender>female</gender> 
@@ -1195,7 +1195,7 @@
         <actor id="actor049">
             <character>Plaza Mariachi</character>
             <person>
-                <first_name>Lombardo</first_name>
+                <first_name>Lombardo  </first_name>
                 <last_name>Boyar</last_name>
                 <age>49</age>
                 <gender>male</gender> 
@@ -1205,7 +1205,7 @@
         <actor id="actor050">
             <character>Tía Rosita</character>
             <person>
-                <first_name>Selene</first_name>
+                <first_name>Selene  </first_name>
                 <last_name>Luna</last_name>
                 <age>52</age>
                 <gender>female</gender> 
@@ -1215,7 +1215,7 @@
         <actor id="actor051">
             <character>Departures Agent</character>
             <person>
-                <first_name>Carla</first_name>
+                <first_name>Carla  </first_name>
                 <last_name>Medina</last_name>
                 <age>39</age>
                 <gender>female</gender> 
@@ -1225,7 +1225,7 @@
         <actor id="actor052">
             <character>Emcee</character>
             <person>
-                <first_name>Carla</first_name>
+                <first_name>Carla  </first_name>
                 <last_name>Medina</last_name>
                 <age>57</age>
                 <gender>female</gender> 

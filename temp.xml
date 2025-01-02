@@ -1,25 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:output method="html" indent="yes"/>
-
-    <!-- показва начален -->
-    <xsl:param name="loadDocument">true</xsl:param>
-    <!-- показва всички -->
-    <xsl:param name="showAll">true</xsl:param>
-    <!-- показва един филм според ID -->
-    <xsl:param name="showId"></xsl:param>
-    <!-- управление на сортирането -->
-    <xsl:param name="sortOn"></xsl:param>
-    <xsl:param name="sortOrder">ascending</xsl:param>
-    <xsl:param name="sortType">text</xsl:param>
-    <!-- управление на филтрирането -->
-    <xsl:param name="filterOn"></xsl:param>
-    <xsl:param name="filterValue"></xsl:param>
-
-    <!-- ШАБЛОНИ ТОЗИ Е ЗА ROOT -->
-    <xsl:template match="/">
+    <!-- Template for ROOT -->
+    <xsl:template match="/movie_catalog">
         <html>
             <head>
                 <meta charset="UTF-8" />
@@ -30,99 +11,166 @@
 
             <body>
                 <h1 class="heading-xl my-2 t-style-sb">Movie Catalogue</h1>
+
                 <ul class="filter-menu d-flex">
+                    <!-- Genre Filter -->
                     <ul class="dropdown">
                         <div class="btn">Choose genre:</div>
-                            <ul class="d-flex-column">
-                                <!-- here i want to show all different types of genres -->
-                                <xsl:for-each select="movie_catalog/genres/genre">
-                                    <li class="btn btn-primary"><xsl:value-of select="."/></li>
-                                </xsl:for-each>
-                            </ul>
-                    </ul>
-                    <ul class="dropdown"> 
-                        <div class="btn">Choose Series:</div>
-                        <!-- here i want to show all different types of series -->
                         <ul class="d-flex-column">
-                            <xsl:for-each select="movie_catalog/movie-series/series">
-                                <li class="btn btn-primary"><xsl:value-of select="."/></li>
+                            <xsl:for-each select="genres/genre">
+                                <li>
+                                    <button onclick="filterBy('genre', '{@id}')" class="btn btn-primary">
+                                        <xsl:value-of select="." />
+                                    </button>
+                                </li>
                             </xsl:for-each>
                         </ul>
                     </ul>
+
+                    <!-- Series Filter -->
+                    <ul class="dropdown">
+                        <div class="btn">Choose Series:</div>
+                        <ul class="d-flex-column">
+                            <xsl:for-each select="movie-series/series">
+                                <li>
+                                    <button onclick="filterBy('series', '{@id}')" class="btn btn-primary">
+                                        <xsl:value-of select="." />
+                                    </button>
+                                </li>
+                            </xsl:for-each>
+                        </ul>
+                    </ul>
+
+                    <!-- Studio Filter -->
                     <ul class="dropdown">
                         <div class="btn">Choose Studio:</div>
-                        <!-- TO DO -->
-                        <!-- here i want to show all different types of series -->
                         <ul class="d-flex-column">
-                            <xsl:for-each select="movie_catalog/studios/studio">
-                                <li class="btn btn-primary"><xsl:value-of select="."/></li>
+                            <xsl:for-each select="studios/studio">
+                                <li>
+                                    <button onclick="filterBy('studio', '{@id}')" class="btn btn-primary">
+                                        <xsl:value-of select="." />
+                                    </button>
+                                </li>
                             </xsl:for-each>
                         </ul>
                     </ul>
-                    <ul class="dropdown"> 
+
+                    <!-- Sort Options -->
+                    <ul class="dropdown">
                         <div class="btn">Order By:</div>
                         <ul class="d-flex-column">
-                            <li class="btn btn-primary">Alphabethicaly</li>
-                            <li class="btn btn-primary">Year</li>
-                            <li class="btn btn-primary">Rating</li>
-                            <li class="btn btn-primary">Lenght</li>
-                            <li class="btn btn-primary">Budget</li>
+                            <li><button onclick="orderBy('title', 'ascending', 'text')" class="btn btn-primary">A-Z</button></li>
+                            <li><button onclick="orderBy('title', 'descending', 'text')" class="btn btn-primary">Z-A</button></li>
+                            <li><button onclick="orderBy('year', 'ascending', 'number')" class="btn btn-primary">Year ↑</button></li>
+                            <li><button onclick="orderBy('year', 'descending', 'number')" class="btn btn-primary">Year ↓</button></li>
+                            <li><button onclick="orderBy('rating', 'ascending', 'number')" class="btn btn-primary">Rating ↑</button></li>
+                            <li><button onclick="orderBy('rating', 'descending', 'number')" class="btn btn-primary">Rating ↓</button></li>
+                            <li><button onclick="orderBy('length', 'ascending', 'number')" class="btn btn-primary">Length ↑</button></li>
+                            <li><button onclick="orderBy('length', 'descending', 'number')" class="btn btn-primary">Length ↓</button></li>
+                            <li><button onclick="orderBy('budget', 'ascending', 'number')" class="btn btn-primary">Budget ↑</button></li>
+                            <li><button onclick="orderBy('budget', 'descending', 'number')" class="btn btn-primary">Budget ↓</button></li>
                         </ul>
                     </ul>
                 </ul>
+
                 <div class="container">
-
                     <div class="movie-list">
-                        <xsl:for-each select="movie_catalog/movies/movie">
+                        <!-- Filtering movies -->
+                        <xsl:for-each select="movies/movie">
+                            <!-- Check if movie matches filter -->
+                            <xsl:if test="(
+                                ($filterOn = 'genre' and contains(details/genre, $filterValue)) or
+                                ($filterOn = 'series' and contains(series, $filterValue)) or
+                                ($filterOn = 'studio' and contains(studio, $filterValue)) or
+                                ($filterOn = '')
+                            )">
+                                <xsl:variable name="coverImage" select="unparsed-entity-uri(media/cover/@source)" />
+                                <!-- Movie card -->
+                                <a href="#" class="movie-card">
+                                    <div class="cover" style="background-image:url({$coverImage})"></div>
+                                    <h3 class="px-1"><xsl:value-of select="title" /></h3>
+                                    <div class="year-rating-bar p-1">
+                                        <p><xsl:value-of select="details/year" /></p>
+                                        <p><xsl:value-of select="details/rating" />/10</p>
+                                    </div>
+                                </a>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </div>
+                </div>
+            </body>
+        </html>
+    </xsl:template>
 
-                            <xsl:variable name="coverImage" select="unparsed-entity-uri(media/cover/@source)" />
+    <!-- Шаблон за отделен филм -->
+    <xsl:template name="single-movie">
+        <!-- single movie -->
+                <div class="container">
+                    <xsl:for-each select="movies/movie">
+                                <xsl:variable name="coverImage" select="unparsed-entity-uri(media/cover/@source)" />
+                                <xsl:variable name="img1" select="unparsed-entity-uri(media/cover/@source)" />
+                                <!-- Movie card -->
+                                <div class="d-flex-column single-movie-holder">
+                                    <div class="media">
+                                        <div id="activeImg" class="cover" style="background-image:url({$coverImage})"></div>
+                                        <div class="gallery">
+                                            <div class="cover" style="background-image:url({$coverImage})"></div>
+                                            <xsl:for-each select="media/gallery/image">
+                                                <xsl:variable name="currentImage" select="unparsed-entity-uri(@source)" />
+                                                <div class="cover" style="background-image:url({$currentImage})"></div>
+                                            </xsl:for-each>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h1><xsl:value-of select="title" /></h1>
+                                        <div class="genre-holder">
+                                            <xsl:call-template name="process-genres">
+                                                <xsl:with-param name="genres" select="@genre" />
+                                            </xsl:call-template>
+                                        </div>
+                                        <div>
+                                            <h1>Summary:</h1>
+                                            <p><xsl:value-of select="details/summary"/></p>
+                                        </div>
+                                        <div class="details">
+                                            <h1>Movie details:</h1>
+                                            <p><xsl:value-of select="details/year"/></p>
+                                            <p><xsl:value-of select="details/rating"/>/10</p>
+                                            <p><xsl:value-of select="details/duration"/>min</p>
+                                            <p><xsl:value-of select="details/language"/></p>
+                                            <p><xsl:value-of select="details/country"/></p>
+                                            <p><xsl:value-of select="details/budget"/></p>
+                                            <div class="studio-holder">
+                                                <xsl:call-template name="process-studios">
+                                                    <xsl:with-param name="studios" select="@studio" />
+                                                </xsl:call-template>
+                                            </div>
+                                        
+                                        </div>
 
-                            <!-- movie card for every movie -->
-                            <a href="movie_details.html?id={@id}" class="movie-card">
-                                <div class="cover" style="background-image:url({$coverImage})"></div>
-                                <h3 class="px-1"><xsl:value-of select="title"/></h3>
-                                <div class="year-rating-bar p-1">
-                                    <p><xsl:value-of select="details/year"/></p>
-                                    <div class="icon-star"></div>
-                                    <p><xsl:value-of select="details/rating"/></p>
+                                        <div class="cast">
+                                            <h1>Cast:</h1>
+                                            <xsl:call-template name="process-actors">
+                                                <xsl:with-param name="actors" select="@actor" />
+                                            </xsl:call-template>
+                                        </div>
+                                        <div class="creators">
+                                            <h1>Creators:</h1>
+                                            <xsl:call-template name="process-directors">
+                                                <xsl:with-param name="directors" select="@director" />
+                                            </xsl:call-template>
+                                            <xsl:call-template name="process-writers">
+                                                <xsl:with-param name="writers" select="@writer" />
+                                            </xsl:call-template>
+                                            <xsl:call-template name="process-producers">
+                                                <xsl:with-param name="producers" select="@producer" />
+                                            </xsl:call-template>
+                                            <xsl:call-template name="process-other_creators">
+                                                <xsl:with-param name="other_creators" select="@other_creator" />
+                                            </xsl:call-template>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
-                        </xsl:for-each>
-                    </div>
-
+                    </xsl:for-each>
                 </div>
-            </body>
-        </html>
     </xsl:template>
-    <xsl:template match="movie">
-        <html>
-            <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="stylesheet" href="dist/css/main.min.css" />
-                <title><xsl:value-of select="title"/> - Movie Details</title>
-            </head>
-            <body>
-                <div class="movie-details">
-                    <h1><xsl:value-of select="title"/></h1>
-                    <div class="cover">
-                        <xsl:variable name="coverImage" select="unparsed-entity-uri(media/cover/@source)" />
-                        <img src="{$coverImage}" alt="{title}" />
-                    </div>
-                    <p><strong>Year:</strong> <xsl:value-of select="details/year"/></p>
-                    <p><strong>Rating:</strong> <xsl:value-of select="details/rating"/></p>
-                    <p><strong>Genre:</strong>
-                        <xsl:for-each select="details/genre">
-                            <span><xsl:value-of select="."/></span>
-                        </xsl:for-each>
-                    </p>
-                    <p><strong>Description:</strong> <xsl:value-of select="description"/></p>
-                </div>
-                <a href="/">Back to Movie List</a>
-            </body>
-        </html>
-    </xsl:template>
-
-
-    <!-- селектира преките наследници на message -->
-</xsl:stylesheet>

@@ -73,7 +73,7 @@
 <!-- Top-Level Other Creators Section -->
 <!ELEMENT other_creators (other_creator+)>
 <!ELEMENT other_creator (person)>
-<!ATTLIST other_creator type (composer|cinematographer|editor) #REQUIRED>
+<!ATTLIST other_creator type (Composer|Cinematographer|Editor) #REQUIRED>
 <!ATTLIST other_creator id ID #REQUIRED>
 
 <!-- Top-Level Actors Section -->
