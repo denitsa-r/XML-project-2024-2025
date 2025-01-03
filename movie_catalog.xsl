@@ -37,7 +37,7 @@
                 <link rel="stylesheet" href="./dist/css/main.min.css" />
             </head>
             <body>
-                <div id="content" class="p-5">
+                <div id="content" class="p-5 d-flex flex-column justify-content-center">
                     <xsl:call-template name="loadContent" />
                 </div>
             </body>
@@ -63,6 +63,24 @@
                     });
                 };
 
+                let trailerUrlsMap = [
+                    <xsl:for-each select="//*[boolean(@source)]">
+                        <xsl:text>["</xsl:text>
+                        <xsl:value-of select="@source"/>
+                        <xsl:text>" , "</xsl:text>
+                        <xsl:value-of select="unparsed-entity-uri(@source)"/>
+                        <xsl:text>"], </xsl:text>
+                    </xsl:for-each>
+                ];
+
+                const updateTrailerSource = () => {
+                    trailerUrlsMap.forEach(([original, updated]) => {
+                        document.querySelectorAll(`iframe[src*='${original}']`)
+                            .forEach(el => {
+                                el.src = updated;
+                            });
+                    });
+                };
 
                 let state = {
                     loadDocument: "false",
@@ -101,6 +119,7 @@
                     }
 
                     updateImageSource();
+                    updateTrailerSource();
                 };
                 
                 const updateContent = () => {
@@ -116,6 +135,7 @@
                     document.getElementById("content").appendChild(fragment);
 
                     updateImageSource();
+                    updateTrailerSource();
                 };
 
                 const orderBy = (sortOn, sortOrder, sortType) => {
@@ -160,7 +180,7 @@
         <xsl:choose>
             <xsl:when test="$showAll = 'true'">
             <h1 class="heading-xl mb-5">Movies catalogue</h1>
-                <div id="sortOptionsMenu" class="d-flex col-4 offset-4 justify-content-around mb-5">
+                <div id="sortOptionsMenu" class="d-flex justify-content-around mb-5">
                     <div class="dropdown">
                         <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Choose Genre
@@ -284,6 +304,9 @@
         <xsl:variable name="genreId" select="/movie_catalog/movies/movie[@id=$showId]/@genre" />
         <xsl:variable name="seriesId" select="/movie_catalog/movies/movie[@id=$showId]/@movie-series" />
         <xsl:variable name="unparsedCover" select="/movie_catalog/movies/movie[@id=$showId]/media/cover/@source" />
+        <xsl:variable name="unparsedTrailer" select="/movie_catalog/movies/movie[@id=$showId]/media/trailer/@source" />
+        <!-- <xsl:variable name="trailerEntity" select="@source"/> -->
+        <span><xsl:value-of select="unparsed-entity-uri($unparsedTrailer)" /></span>
 
         <div>
             <div class="d-flex flex-column single-movie-holder">
@@ -368,6 +391,9 @@
                         </div>
 
                     </div>
+                </div>
+                <div class="trailer my-2">
+                    <iframe width="100%" height="700" src="{$unparsedTrailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
                 <div class="people-holder">
                     <div class="cast">

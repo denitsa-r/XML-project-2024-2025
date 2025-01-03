@@ -61,17 +61,17 @@
 
 <!-- TRAILERS -->
 <!-- GUNDI -->
-<!ENTITY trailer_Gundi PUBLIC "trailer_Gundi_identifier" "https://youtu.be/1tlNwolYp6k?si=zY8AziDYnBlQzXvC" NDATA video>
+<!ENTITY trailer_Gundi PUBLIC "trailer_Gundi_identifier" "https://www.youtube.com/embed/1tlNwolYp6k?si=Rp9xKAs2kwR4eJfE" NDATA video>
 <!-- HOBBIT: AN UNEXPECTED JOURNEY -->
-<!ENTITY trailer_Hobbit1 PUBLIC "trailer_Hobbit1_identifier" "https://youtu.be/9PSXjr1gbjc?si=KAWlPQVx2YyJSI37" NDATA video>
+<!ENTITY trailer_Hobbit1 PUBLIC "trailer_Hobbit1_identifier" "https://www.youtube.com/embed/9PSXjr1gbjc?si=qzneUSa_2illra1G" NDATA video>
 <!-- HOBBIT: THE DESOLATION OF SMAUG -->
-<!ENTITY trailer_Hobbit2 PUBLIC "trailer_Hobbit2_identifier" "https://youtu.be/fnaojlfdUbs?si=4A4Ym9rR_7d9_i26" NDATA video>
+<!ENTITY trailer_Hobbit2 PUBLIC "trailer_Hobbit2_identifier" "https://www.youtube.com/embed/fnaojlfdUbs?si=nCGxFdxkRFrhXJXu" NDATA video>
 <!-- HOBBIT: THE BATTLE OF FIVE ARMIES -->
-<!ENTITY trailer_Hobbit3 PUBLIC "trailer_Hobbit3_identifier" "https://youtu.be/iVAgTiBrrDA?si=77auPBavJaBuaidE" NDATA video>
+<!ENTITY trailer_Hobbit3 PUBLIC "trailer_Hobbit3_identifier" "https://www.youtube.com/embed/iVAgTiBrrDA?si=vPDV_atl0zb0kbyP" NDATA video>
 <!-- INCEPTION -->
-<!ENTITY trailer_Inception PUBLIC "trailer_Inception_identifier" "https://youtu.be/hstBN0Qkqhc?si=xjTwuKJp0MmT8oqG" NDATA video>
+<!ENTITY trailer_Inception PUBLIC "trailer_Inception_identifier" "https://www.youtube.com/embed/hstBN0Qkqhc?si=zh-ueTt5KYH4ZdWQ" NDATA video>
 <!-- COCO -->
-<!ENTITY trailer_Coco PUBLIC "trailer_Coco_identifier" "https://youtu.be/hstBN0Qkqhc?si=xjTwuKJp0MmT8oqG" NDATA video>
+<!ENTITY trailer_Coco PUBLIC "trailer_Coco_identifier" "https://www.youtube.com/embed/xlnPHQ3TLX8?si=eAhOPqNsNL4nmJeF" NDATA video>
 
 ]
 >

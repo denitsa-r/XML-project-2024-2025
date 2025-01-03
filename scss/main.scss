@@ -32,17 +32,9 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.filter-menu {
-  max-width: 1500px;
+#sortOptionsMenu {
+  width: 50%;
   margin: auto;
-  justify-content: space-evenly;
-
-  li {
-    margin-top: 0.05rem;
-    max-width: 15rem;
-    width: 100%;
-    box-shadow: 10px 10px 5px #05050587;
-  }
 }
 
 .cover {
@@ -105,7 +97,7 @@ h1 {
 
   .genre {
     @include set-background($grey_color);
-    border-radius: 5px;
+    border-radius: 15px;
   }
 }
 
