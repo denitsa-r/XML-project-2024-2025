@@ -84,7 +84,6 @@
                 producer="producer001 producer002 producer003 producer004 producer005"
                 other_creator="composer001 cinema001 editor001"
                 actor="actor001 actor002 actor003 actor004 actor005 actor006 actor007 actor008 actor009">
-            <title>Gundi: Legend of Love</title>
 
             <media>
                 <cover source="cover_Gundi" />
@@ -100,6 +99,7 @@
             </media>
 
             <details>
+                <title>Gundi: Legend of Love</title>
                 <duration>165</duration>
                 <!-- <genre genre_type="Biography"></genre> -->
                 <rating>9.2</rating>
@@ -120,7 +120,6 @@
                 producer="producer006 producer007 producer008 producer009"
                 other_creator="composer002 cinema002 editor002"
                 actor="actor010 actor011 actor012 actor013 actor014 actor015 actor016 actor017 actor018 actor019 actor020 actor021 actor022 actor023 actor024 actor025">
-            <title>The Hobbit: An Unexpected Journey</title>
 
             <media>
                 <cover source="cover_Hobbit1"></cover>
@@ -136,6 +135,7 @@
             </media>
 
             <details>
+                <title>The Hobbit: An Unexpected Journey</title>
                 <duration>182</duration>
                 <!-- <genre genre_type="Biography"></genre> -->
                 <rating>7.8</rating>
@@ -156,7 +156,6 @@
                 producer="producer006 producer007 producer008"
                 other_creator="composer002 cinema002 editor002"
                 actor="actor010 actor011 actor012 actor013 actor014 actor015 actor016 actor017 actor018 actor019 actor020 actor026 actor027 actor028 actor029 actor030 actor031">
-            <title>The Hobbit: The Desolation of Smaug</title>
 
             <media>
                 <cover source="cover_Hobbit2"></cover>
@@ -172,6 +171,7 @@
             </media>
 
             <details>
+                <title>The Hobbit: The Desolation of Smaug</title>
                 <duration>161</duration>
                 <!-- <genre genre_type="Biography"></genre> -->
                 <rating>7.8</rating>
@@ -193,7 +193,6 @@
                 producer="producer006 producer007 producer008"
                 other_creator="composer002 cinema002 editor002"
                 actor="actor010 actor011 actor012 actor013 actor014 actor015 actor016 actor017 actor018 actor019 actor020 actor021 actor022 actor026 actor027 actor028 actor029 actor030 actor031">
-            <title>The Hobbit: The Battle of the Five Armies</title>
 
             <media>
                 <cover source="cover_Hobbit3"></cover>
@@ -209,6 +208,7 @@
             </media>
 
             <details>
+                <title>The Hobbit: The Battle of the Five Armies</title>
                 <duration>144</duration>
                 <!-- <genre genre_type="Biography"></genre> -->
                 <rating>7.4</rating>
@@ -230,7 +230,6 @@
                 producer="producer010 producer011"
                 other_creator="composer003 cinema003 editor003"
                 actor="actor032 actor033 actor034 actor035 actor036 actor037 actor038 actor039 actor040 actor041">
-            <title>Inception</title>
 
             <media>
                 <cover source="cover_Inception"></cover>
@@ -246,6 +245,7 @@
             </media>
 
             <details>
+                <title>Inception</title>
                 <duration>148</duration>
                 <rating>8.8</rating>
                 <summary>
@@ -265,7 +265,6 @@
                 producer="producer012 producer013"
                 other_creator="composer004 cinema004 editor004"
                 actor="actor042 actor043 actor044 actor045 actor046 actor047 actor048 actor049 actor050 actor051 actor052">
-            <title>Coco </title>
 
             <media>
                 <cover source="cover_Coco"></cover>
@@ -281,6 +280,7 @@
             </media>
 
             <details>
+                <title>Coco </title>
                 <duration>105</duration>
                 <rating>8.4</rating>
                 <summary>

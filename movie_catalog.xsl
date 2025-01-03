@@ -210,6 +210,18 @@
                                 <button onclick="orderBy('','ascending','text')" class="dropdown-item">Default</button>
                             </li>
                             <li>
+                                <button onclick="orderBy('year','ascending','text')" class="dropdown-item">Year ↑</button>
+                            </li>
+                            <li>
+                                <button onclick="orderBy('year','descending','text')" class="dropdown-item">Year ↓</button>
+                            </li>
+                            <li>
+                                <button onclick="orderBy('rating','ascending','text')" class="dropdown-item">Rating ↑</button>
+                            </li>
+                            <li>
+                                <button onclick="orderBy('rating','descending','text')" class="dropdown-item">Rating ↓</button>
+                            </li>
+                            <li>
                                 <button onclick="orderBy('title','ascending','text')" class="dropdown-item">A-Z</button>
                             </li>
                             <li>
@@ -229,8 +241,9 @@
 
     <xsl:template name="movie-list">
         <div class="movie-list">
-            <xsl:for-each select="/movie_catalog/movies/movie">                
-                <xsl:sort select="*[name(.) = $sortOn]" data-type="{$sortType}" order="{$sortOrder}" />
+            <xsl:for-each select="/movie_catalog/movies/movie">
+            <!-- Сортиране по един критерий според параметъра sortOn -->
+            <xsl:sort select="details/*[name() = $sortOn]" data-type="{$sortType}" order="{$sortOrder}" />
 
                 <xsl:variable name="genres" select="@genre" />
                 <xsl:variable name="seriesId" select="@movie-series" />
@@ -244,7 +257,7 @@
                         <div class="cover img-fluid rounded-k" style="background-image:url('{$unparsedCover}')"></div>
                         <div class="py-1 px-0.25">
                             <h3>
-                                <xsl:value-of select="title" />
+                                <xsl:value-of select="details/title" />
                                 <small class='font-weight-500'>
                                     <xsl:text>(</xsl:text>
                                     <xsl:value-of select="details/year" />
@@ -275,7 +288,7 @@
         <div>
             <div class="d-flex flex-column single-movie-holder">
                 <h1 class="heading-l mb-5">
-                    <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/title"/>
+                    <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/title"/>
                     <small class='font-weight-500'>
                         <xsl:text>(</xsl:text>
                         <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/year" />
@@ -538,7 +551,7 @@
         <xsl:if test="string-length($involvement) > 0">
             <xsl:variable name="currentMovie" select="substring-before(concat($involvement, ' '), ' ')" />
             <!-- to do  -->
-            <span class="color-primary"><xsl:value-of select="/movie_catalog/movies/movie[@id=$currentMovie]/title" />; </span>
+            <span class="color-primary"><xsl:value-of select="/movie_catalog/movies/movie[@id=$currentMovie]/details/title" />; </span>
             <xsl:call-template name="process-involvement">
                 <xsl:with-param name="involvement" select="normalize-space(substring-after($involvement, ' '))" />
             </xsl:call-template>
