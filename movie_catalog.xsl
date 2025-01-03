@@ -275,7 +275,7 @@
                  or ($filterOn = '')">                    
                     <div class="movie-card" id="{@id}">
                         <div class="cover img-fluid rounded-k" style="background-image:url('{$unparsedCover}')"></div>
-                        <div class="py-1 px-0.25">
+                        <div class="py-1">
                             <h3>
                                 <xsl:value-of select="details/title" />
                                 <small class='font-weight-500'>
@@ -392,7 +392,7 @@
 
                     </div>
                 </div>
-                <div class="trailer my-2">
+                <div class="trailer">
                     <iframe width="100%" height="700" src="{$unparsedTrailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
                 <div class="people-holder">
