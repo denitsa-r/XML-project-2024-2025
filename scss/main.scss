@@ -81,18 +81,6 @@ p {
 .dropdown {
   position: relative;
   padding: 0.5rem 0;
-  li {
-    display: none;
-  }
-
-  &:hover {
-    ul {
-      position: absolute;
-    }
-    li {
-      display: block;
-    }
-  }
 }
 
 h1 {
