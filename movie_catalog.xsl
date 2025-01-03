@@ -1,237 +1,394 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    
-    <xsl:output method="html" indent="yes"/>
-    
-    <!-- Parameters for filtering and sorting -->
+    <xsl:output method="html" indent="yes" doctype-public="-//W3C//DTD HTML 4.01//EN" doctype-system="http://www.w3.org/TR/html4/strict.dtd" />
+
     <xsl:param name="loadDocument">true</xsl:param>
+
     <xsl:param name="showAll">true</xsl:param>
     <xsl:param name="showId"></xsl:param>
+
     <xsl:param name="sortOn"></xsl:param>
     <xsl:param name="sortOrder">ascending</xsl:param>
     <xsl:param name="sortType">text</xsl:param>
+
     <xsl:param name="filterOn"></xsl:param>
     <xsl:param name="filterValue"></xsl:param>
 
-
-    <!-- Главен шаблон -->
     <xsl:template match="/">
-        <xsl:call-template name="loadDocument">
-            <!-- Изберете дали да заредите movie-list или single-movie в зависимост от параметрите в JavaScript -->
-            <xsl:with-param name="content" select="'movie-list'" /> <!-- Това е по подразбиране, ако няма параметър id -->
-        </xsl:call-template>
+        <xsl:choose>
+            <xsl:when test="$loadDocument = 'true'">
+                <xsl:call-template name="loadDocument" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="loadContent" />
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
-
-    <!-- Шаблон за самият документ -->
     <xsl:template name="loadDocument">
-        <xsl:param name="content" />
-
-        <html>
+        <html lang="en">
             <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <link rel="stylesheet" href="dist/css/main.min.css" />
-                <title>Movie Catalog</title>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <title><xsl:text>Movie catalogue</xsl:text></title>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+                <link rel="stylesheet" href="./dist/css/main.min.css" />
             </head>
             <body>
-                <h1 class="heading-xl my-2 t-style-sb">Movie Catalogue</h1>
-
-                <!-- Тук премахваме проверката за параметър id в URL-а, тъй като тя ще се обработва в JavaScript -->
-                <xsl:when test="$content = 'single-movie'">
-                    <!-- Задаваме параметъра 'id' за конкретния филм -->
-                    <xsl:call-template name="single-movie">
-                        <xsl:with-param name="id" select="$id" />
-                    </xsl:call-template>
-                </xsl:when>
-                <xsl:otherwise>
-                    <!-- Ако няма параметър id, зареждаме списък с филми -->
-                    <xsl:call-template name="movie-list" />
-                </xsl:otherwise>
-
-                <div id="output"></div> <!-- Това е мястото, където ще бъде заредено съдържанието -->
-
-                <!-- Проверка за параметър 'id' в URL чрез JavaScript -->
-                <script>
-                        console.log("HERE");
-                    fetch('movie_catalog.xml')
-                    .then(response => response.text())
-                    .then(xmlString => {
-                        var parser = new DOMParser();
-                        var xmlDoc = parser.parseFromString(xmlString, "application/xml");
-
-                        var processor = new XSLTProcessor();
-                        var xslDoc = document;  // Вашият текущ HTML документ съдържа XSLT
-
-                        processor.importStylesheet(xslDoc);
-
-                        // Проверяваме за параметъра 'id' в URL-а
-                        var movieId = new URLSearchParams(window.location.search).get('id');
-                        if (movieId) {
-                            processor.setParameter(null, 'content', 'single-movie');  // Задаваме съдържанието като 'single-movie'
-                            processor.setParameter(null, 'id', movieId);  // Задаваме id на филма
-                        } else {
-                            processor.setParameter(null, 'content', 'movie-list');  // По подразбиране е 'movie-list'
-                        }
-                        var resultDocument = processor.transformToDocument(xmlDoc);
-                        console.log(resultDocument);
-                        if (!resultDocument) return;
-
-                        document.getElementById('output').appendChild(resultDocument.documentElement);
-                    })
-                    .catch(error => console.error('Error loading XML:', error));
-
-                </script>
+                <div id="content" class="p-5">
+                    <xsl:call-template name="loadContent" />
+                </div>
             </body>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"/>
+
+            <script defer="true">
+                let imageUrlsMap = [
+                <xsl:for-each select="//*[boolean(@source)]">
+                    <xsl:text>["</xsl:text>
+                    <xsl:value-of select="@source"/>
+                    <xsl:text>" , "</xsl:text>
+                    <xsl:value-of select="unparsed-entity-uri(@source)"/>
+                    <xsl:text>"], </xsl:text>
+                </xsl:for-each>
+                ];
+                const updateImageSource = () => {
+                    imageUrlsMap.forEach(([original, updated]) => {
+                        document.querySelectorAll(`.cover[style*="background-image:url('${original}')"]`)
+                            .forEach(el => {
+                                el.style.backgroundImage = `url('${updated}')`;
+                            });
+                    });
+                };
+
+
+                let state = {
+                    loadDocument: "false",
+                    showAll: "true",
+                    showId: "",
+                    sortOn: "",
+                    sortOrder: "ascending",
+                    sortType: "text",
+                    filterOn: "",
+                    filterValue: ""
+                };
+
+                const xmlDocPath = "movie_catalog.xml";
+                const xslDocPath = "movie_catalog.xsl";
+
+                let xsltProcessor;
+                let xmlDoc;
+
+                const initialize = async () => {
+                    try {
+                        const parser = new DOMParser();
+                        xsltProcessor = new XSLTProcessor();
+
+                        const xslResponse = await fetch(xslDocPath);
+                        const xslText = await xslResponse.text();
+                        const xslStylesheet = parser.parseFromString(xslText, "application/xml");
+                        xsltProcessor.importStylesheet(xslStylesheet);
+
+                        const xmlResponse = await fetch(xmlDocPath);
+                        const xmlText = await xmlResponse.text();
+                        xmlDoc = parser.parseFromString(xmlText, "application/xml");
+                    } catch(e) {
+                        document.getElementById("sortOptionsMenu").classList.remove("d-flex");
+                        document.getElementById("sortOptionsMenu").classList.add("d-none");
+                        for(const el of document.getElementsByClassName("showMoreBut")) el.classList.add("d-none");
+                    }
+
+                    updateImageSource();
+                };
+                
+                const updateContent = () => {
+                    xsltProcessor.clearParameters();
+
+                    for (const [key, value] of Object.entries(state)) {
+                        xsltProcessor.setParameter(null, key, value);
+                    }
+
+                    let fragment = xsltProcessor.transformToFragment(xmlDoc,document);
+
+                    document.getElementById("content").textContent = "";
+                    document.getElementById("content").appendChild(fragment);
+
+                    updateImageSource();
+                };
+
+                const orderBy = (sortOn, sortOrder, sortType) => {
+                    console.log(sortOn);
+                    state.sortOn = sortOn;
+                    state.sortOrder = sortOrder;
+                    state.sortType = sortType;
+                    console.log({ sortOn, sortOrder, sortType });
+
+                    updateContent();
+                };
+
+                const filterBy = (filterOn, filterValue) => {
+                    state.filterOn = filterOn;
+                    state.filterValue = filterValue;
+                    console.log({ filterOn, filterValue });
+
+                    updateContent();
+                };
+
+                const showHotelInfo = (showId) => {
+                    state.showAll = "false";
+                    state.showId = showId;
+
+                    updateContent();
+                };
+
+                const showAllHotels = () => {
+                    state.showAll = "true";
+                    state.showId = "";
+
+                    updateContent();
+                };
+
+                initialize();
+
+            </script>
         </html>
     </xsl:template>
 
+    <xsl:template name="loadContent">
+        <xsl:choose>
+            <xsl:when test="$showAll = 'true'">
+            <h1 class="heading-xl mb-5">Movies catalogue</h1>
+                <div id="sortOptionsMenu" class="d-flex col-4 offset-4 justify-content-around mb-5">
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Choose Genre
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button onclick="filterBy('','')" class="dropdown-item">All genres</button>
+                            </li>
+                            <xsl:for-each select="movie_catalog/genres/genre">
+                                <li>
+                                    <button onclick="filterBy('genre','{@id}')" class="dropdown-item">
+                                        <xsl:call-template name="genreShow">
+                                            <xsl:with-param name="genreId" select="@id" />
+                                        </xsl:call-template>
+                                    </button>
+                                </li>
+                            </xsl:for-each>
 
-    <!-- Шаблон за всички филми -->
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Choose Series
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button onclick="filterBy('','')" class="dropdown-item">All movies</button>
+                            </li>
+                            <xsl:for-each select="movie_catalog/movie-series/series">
+                                <li>
+                                    <button onclick="filterBy('series','{@id}')" class="dropdown-item">
+                                        <xsl:value-of select="." />
+                                    </button>
+                                </li>
+                            </xsl:for-each>
+
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Order by
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button onclick="orderBy('','ascending','text')" class="dropdown-item">Default</button>
+                            </li>
+                            <li>
+                                <button onclick="orderBy('title','ascending','text')" class="dropdown-item">A-Z</button>
+                            </li>
+                            <li>
+                                <button onclick="orderBy('title','descending','text')" class="dropdown-item">Z-A</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <xsl:call-template name="movie-list" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="single-movie" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
     <xsl:template name="movie-list">
-        <ul class="filter-menu d-flex">
-            <!-- Genre Filter -->
-            <ul class="dropdown">
-                <div class="btn">Choose genre:</div>
-                <ul class="d-flex-column">
-                    <xsl:for-each select="/movie_catalog/genres/genre">
-                        <li>
-                            <button onclick="filterBy('genre', '{@id}')" class="btn btn-primary">
-                                <xsl:value-of select="." />
-                            </button>
-                        </li>
-                    </xsl:for-each>
-                </ul>
-            </ul>
+        <div class="movie-list">
+            <xsl:for-each select="/movie_catalog/movies/movie">                
+                <xsl:sort select="*[name(.) = $sortOn]" data-type="{$sortType}" order="{$sortOrder}" />
 
-            <!-- Series Filter -->
-            <ul class="dropdown">
-                <div class="btn">Choose Series:</div>
-                <ul class="d-flex-column">
-                    <xsl:for-each select="movie_catalog/movie-series/series">
-                        <li>
-                            <button onclick="filterBy('series', '{@id}')" class="btn btn-primary">
-                                <xsl:value-of select="." />
-                            </button>
-                        </li>
-                    </xsl:for-each>
-                </ul>
-            </ul>
+                <xsl:variable name="genres" select="@genre" />
+                <xsl:variable name="seriesId" select="@movie-series" />
+                <xsl:variable name="unparsedCover" select="media/cover/@source" />
 
-            <!-- Sort Options -->
-            <ul class="dropdown">
-                <div class="btn">Order By:</div>
-                <ul class="d-flex-column">
-                    <li><button onclick="orderBy('title', 'ascending', 'text')" class="btn btn-primary">A-Z</button></li>
-                    <li><button onclick="orderBy('title', 'descending', 'text')" class="btn btn-primary">Z-A</button></li>
-                    <li><button onclick="orderBy('year', 'ascending', 'number')" class="btn btn-primary">Year ↑</button></li>
-                    <li><button onclick="orderBy('year', 'descending', 'number')" class="btn btn-primary">Year ↓</button></li>
-                    <li><button onclick="orderBy('rating', 'ascending', 'number')" class="btn btn-primary">Rating ↑</button></li>
-                    <li><button onclick="orderBy('rating', 'descending', 'number')" class="btn btn-primary">Rating ↓</button></li>
-                    <li><button onclick="orderBy('length', 'ascending', 'number')" class="btn btn-primary">Length ↑</button></li>
-                    <li><button onclick="orderBy('length', 'descending', 'number')" class="btn btn-primary">Length ↓</button></li>
-                    <li><button onclick="orderBy('budget', 'ascending', 'number')" class="btn btn-primary">Budget ↑</button></li>
-                    <li><button onclick="orderBy('budget', 'descending', 'number')" class="btn btn-primary">Budget ↓</button></li>
-                </ul>
-            </ul>
-        </ul>
+                <!-- Проверка дали филмът отговаря на филтъра по жанр -->
 
-        <div class="container">
-            <div class="movie-list">
-                <!-- Filtering movies -->
-                <xsl:for-each select="/movie_catalog/movies/movie">
-                    <!-- Check if movie matches filter -->
-                    <xsl:if test="(
-                        ($filterOn = 'genre' and contains(details/genre, $filterValue)) or
-                        ($filterOn = 'series' and contains(series, $filterValue)) or
-                        ($filterOn = 'studio' and contains(studio, $filterValue)) or
-                        ($filterOn = ''))">
-                        <xsl:variable name="coverImage" select="unparsed-entity-uri(media/cover/@source)" />
-                        <!-- Movie card -->
-                            <a href="?id={@id}" class="movie-card">
-                            <div class="cover" style="background-image:url({$coverImage})"></div>
-                            <h3 class="px-1"><xsl:value-of select="title" /></h3>
-                            <div class="year-rating-bar p-1">
-                                <p><xsl:value-of select="details/year" /></p>
-                                <p><xsl:value-of select="details/rating" />/10</p>
+                <xsl:if test="(($filterOn = 'series') and ($filterValue = $seriesId)) or ($filterOn = 'genre' and contains($genres, $filterValue)) 
+                 or ($filterOn = '')">                    
+                    <div class="movie-card" id="{@id}">
+                        <div class="cover img-fluid rounded-k" style="background-image:url('{$unparsedCover}')"></div>
+                        <div class="py-1 px-0.25">
+                            <h3>
+                                <xsl:value-of select="title" />
+                                <small class='font-weight-500'>
+                                    <xsl:text>(</xsl:text>
+                                    <xsl:value-of select="details/year" />
+                                    <xsl:text>)</xsl:text>
+                                </small>
+                            </h3>
+                            <p>
+                                <xsl:text>Rating: </xsl:text>
+                                <xsl:value-of select="details/rating" />
+                                <xsl:text> / 10</xsl:text>
+                            </p>
+                            <div class="align-bottom-right">
+                                <button class="btn btn-primary showMoreBut" onclick="showHotelInfo('{@id}')">Show more info</button>
                             </div>
-                        </a>
-                    </xsl:if>
-                </xsl:for-each>
-            </div>
+                        </div>
+                    </div>
+                        
+                </xsl:if>
+            </xsl:for-each>
         </div>
     </xsl:template>
 
     <xsl:template name="single-movie">
-        <xsl:param name="id" />
-        <div class="container">
-            <xsl:for-each select="/movie_catalog/movies/movie[@id = $id]">
-                <xsl:variable name="coverImage" select="unparsed-entity-uri(media/cover/@source)" />
-                <xsl:variable name="img1" select="unparsed-entity-uri(media/cover/@source)" />
-                <!-- Movie card -->
-                <div class="d-flex-column single-movie-holder">
-                    <div class="media">
-                        <div id="activeImg" class="cover" style="background-image:url({$coverImage})"></div>
-                        <div class="gallery">
-                            <div class="cover" style="background-image:url({$coverImage})"></div>
-                            <xsl:for-each select="media/gallery/image">
-                                <xsl:variable name="currentImage" select="unparsed-entity-uri(@source)" />
-                                <div class="cover" style="background-image:url({$currentImage})"></div>
+        <xsl:variable name="genreId" select="/movie_catalog/movies/movie[@id=$showId]/@genre" />
+        <xsl:variable name="seriesId" select="/movie_catalog/movies/movie[@id=$showId]/@movie-series" />
+        <xsl:variable name="unparsedCover" select="/movie_catalog/movies/movie[@id=$showId]/media/cover/@source" />
+
+        <div>
+            <div class="d-flex flex-column single-movie-holder">
+                <h1 class="heading-l mb-5">
+                    <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/title"/>
+                    <small class='font-weight-500'>
+                        <xsl:text>(</xsl:text>
+                        <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/year" />
+                        <xsl:text>)</xsl:text>
+                    </small>
+                    <span class="p-2" />
+                </h1>
+                <div class="d-flex">
+                    <div id="carouselAutoplaying" class="carousel slide col-6" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+            
+                                <div class="cover img-fluid rounded-k" style="background-image:url('{$unparsedCover}')"></div>
+                            </div>
+                            <xsl:for-each select="/movie_catalog/movies/movie[@id=$showId]/media/gallery/image">
+                                <xsl:variable name="unparsedImage" select="@source"/>
+                                <div class="carousel-item">
+                                    <div class="cover img-fluid rounded-k" style="background-image:url('{$unparsedImage}')"></div>
+                                </div>
                             </xsl:for-each>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
+
                     <div class="info">
-                        <h1><xsl:value-of select="title" /></h1>
-                        <div class="genre-holder">
+                        <div class="mb-4 d-flex justify-content-end">
                             <xsl:call-template name="process-genres">
-                                <xsl:with-param name="genres" select="@genre" />
+                                <xsl:with-param name="genres" select="/movie_catalog/movies/movie[@id=$showId]/@genre" />
                             </xsl:call-template>
                         </div>
                         <div>
-                            <h1>Summary:</h1>
-                            <p><xsl:value-of select="details/summary"/></p>
+                            <span class="font-weight-600"><xsl:text>Summary:</xsl:text></span>
+                            <p><xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/summary"/></p>
                         </div>
-                        <div class="details">
-                            <h1>Movie details:</h1>
-                            <p><xsl:value-of select="details/year"/></p>
-                            <p><xsl:value-of select="details/rating"/>/10</p>
-                            <p><xsl:value-of select="details/duration"/>min</p>
-                            <p><xsl:value-of select="details/language"/></p>
-                            <p><xsl:value-of select="details/country"/></p>
-                            <p><xsl:value-of select="details/budget"/></p>
-                            <div class="studio-holder">
-                                <xsl:call-template name="process-studios">
-                                    <xsl:with-param name="studios" select="@studio" />
-                                </xsl:call-template>
-                            </div>
-                        
-                        </div>
-                        <div class="cast">
-                            <h1>Cast:</h1>
-                            <xsl:call-template name="process-actors">
-                                <xsl:with-param name="actors" select="@actor" />
-                            </xsl:call-template>
-                        </div>
-                        <div class="creators">
-                            <h1>Creators:</h1>
-                            <xsl:call-template name="process-directors">
-                                <xsl:with-param name="directors" select="@director" />
-                            </xsl:call-template>
-                            <xsl:call-template name="process-writers">
-                                <xsl:with-param name="writers" select="@writer" />
-                            </xsl:call-template>
-                            <xsl:call-template name="process-producers">
-                                <xsl:with-param name="producers" select="@producer" />
-                            </xsl:call-template>
-                            <xsl:call-template name="process-other_creators">
-                                <xsl:with-param name="other_creators" select="@other_creator" />
+                        <xsl:if test="$seriesId != ''">
+                            <p>
+                                <span class="font-weight-600"><xsl:text>Part of: </xsl:text></span>
+                                <xsl:value-of select="/movie_catalog/movie-series/series[@id=$seriesId]" />
+                            </p>
+                        </xsl:if>
+                        <p>
+                            <span class="font-weight-600"><xsl:text>Rating: </xsl:text></span>
+                            <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/rating" />
+                            <xsl:text> / 10</xsl:text>
+                        </p>
+                        <p>
+                            <span class="font-weight-600"><xsl:text>Duration: </xsl:text></span>
+                            <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/duration" />
+                            <xsl:text> min</xsl:text>
+                        </p>
+                        <p>
+                            <span class="font-weight-600"><xsl:text>Language: </xsl:text></span>
+                            <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/language" />
+                        </p>
+                        <p>
+                            <span class="font-weight-600"><xsl:text>Filmed in: </xsl:text></span>
+                            <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/country" />
+                        </p>
+                        <div>
+                            <xsl:call-template name="process-studios">
+                                <xsl:with-param name="studios" select="/movie_catalog/movies/movie[@id=$showId]/@studio" />
                             </xsl:call-template>
                         </div>
+                        <p>
+                            <span class="font-weight-600"><xsl:text>Budget: </xsl:text></span>
+                            <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/budget" />
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary" onclick="showAllHotels()">Show all movies</button>
+                        </div>
+
                     </div>
                 </div>
-            </xsl:for-each>
+                <div class="people-holder">
+                    <div class="cast">
+                        <h1 class='mb-3 heading-l'>Cast:</h1>
+                        <xsl:call-template name="process-actors">
+                            <xsl:with-param name="actors" select="/movie_catalog/movies/movie[@id=$showId]/@actor" />
+                        </xsl:call-template>
+                    </div>
+                    <div class="creators">
+                        <h1 class='mb-3 heading-l'>Creators:</h1>
+                        <xsl:call-template name="process-directors">
+                            <xsl:with-param name="directors" select="/movie_catalog/movies/movie[@id=$showId]/@director" />
+                        </xsl:call-template>
+                        <xsl:call-template name="process-writers">
+                            <xsl:with-param name="writers" select="/movie_catalog/movies/movie[@id=$showId]/@writer" />
+                        </xsl:call-template>
+                        <xsl:call-template name="process-producers">
+                            <xsl:with-param name="producers" select="/movie_catalog/movies/movie[@id=$showId]/@producer" />
+                        </xsl:call-template>
+                        <xsl:call-template name="process-other_creators">
+                            <xsl:with-param name="other_creators" select="/movie_catalog/movies/movie[@id=$showId]/@other_creator" />
+                        </xsl:call-template>
+                    </div>
+                </div>
+            </div>
+         
         </div>
+    </xsl:template>
+
+    <xsl:template name="genreShow">
+        <xsl:param name="genreId"/>
+        <span>
+            <xsl:value-of select="/movie_catalog/genres/genre[@id=$genreId]" />
+        </span>
     </xsl:template>
 
     <!-- Шаблон да показване на жанровете -->
@@ -240,7 +397,7 @@
         <xsl:if test="string-length($genres) > 0">
             <!-- Extract the first genre ID -->
             <xsl:variable name="currentGenre" select="substring-before(concat($genres, ' '), ' ')" />
-            <div class="genre">
+            <div class="genre mx-2 py-2 px-3">
                 <xsl:value-of select="/movie_catalog/genres/genre[@id=$currentGenre]" />
             </div>
             <!-- Process remaining genres -->
@@ -256,6 +413,7 @@
         <xsl:if test="string-length($studios) > 0">
             <xsl:variable name="currentStudio" select="substring-before(concat($studios, ' '), ' ')" />
             <p>
+                <span class="font-weight-600"><xsl:text>Studio: </xsl:text></span>
                 <xsl:value-of select="/movie_catalog/studios/studio[@id=$currentStudio]" />
             </p>
             <xsl:call-template name="process-studios">
@@ -269,9 +427,9 @@
         <xsl:param name="actors" />
         <xsl:if test="string-length($actors) > 0">
             <xsl:variable name="currentActor" select="substring-before(concat($actors, ' '), ' ')" />
-            <b>
+            <span class="heading-s font-weight-600">
                 <xsl:value-of select="/movie_catalog/actors/actor[@id=$currentActor]/character" />: 
-            </b>
+            </span>
             <xsl:call-template name="process-person">
                 <xsl:with-param name="personPath" select="/movie_catalog/actors/actor[@id=$currentActor]" />
             </xsl:call-template>
@@ -286,9 +444,9 @@
         <xsl:param name="directors" />
         <xsl:if test="string-length($directors) > 0">
             <xsl:variable name="currentDirector" select="substring-before(concat($directors, ' '), ' ')" />
-            <b>
+            <span class="heading-s font-weight-600">
                 Director: 
-            </b>
+            </span>
             <xsl:call-template name="process-person">
                 <xsl:with-param name="personPath" select="/movie_catalog/directors/director[@id=$currentDirector]" />
             </xsl:call-template>
@@ -303,9 +461,9 @@
         <xsl:param name="writers" />
         <xsl:if test="string-length($writers) > 0">
             <xsl:variable name="currentWriter" select="substring-before(concat($writers, ' '), ' ')" />
-            <b>
+            <span class="heading-s font-weight-600">
                 Writer: 
-            </b>
+            </span>
             <xsl:call-template name="process-person">
                 <xsl:with-param name="personPath" select="/movie_catalog/writers/writer[@id=$currentWriter]" />
             </xsl:call-template>
@@ -320,9 +478,9 @@
         <xsl:param name="producers" />
         <xsl:if test="string-length($producers) > 0">
             <xsl:variable name="currentProducer" select="substring-before(concat($producers, ' '), ' ')" />
-            <b>
+            <span class="heading-s font-weight-600">
                Producer: 
-            </b>
+            </span>
             <xsl:call-template name="process-person">
                 <xsl:with-param name="personPath" select="/movie_catalog/producers/producer[@id=$currentProducer]" />
             </xsl:call-template>
@@ -337,9 +495,9 @@
         <xsl:param name="other_creators" />
         <xsl:if test="string-length($other_creators) > 0">
             <xsl:variable name="currentCreator" select="substring-before(concat($other_creators, ' '), ' ')" />
-            <b>
+            <span class="heading-s font-weight-600">
                 <xsl:value-of select="/movie_catalog/other_creators/other_creator[@id=$currentCreator]/@type" />
-            </b>
+            </span>
             <xsl:call-template name="process-person">
                 <xsl:with-param name="personPath" select="/movie_catalog/other_creators/other_creator[@id=$currentCreator]" />
             </xsl:call-template>
@@ -353,19 +511,24 @@
     <xsl:template name="process-person">
         <xsl:param name="personPath" />
         <ul>
+            <span class="font-weight-600"><xsl:text>Name: </xsl:text></span>
             <xsl:value-of select="$personPath/person/first_name" /> 
-            <xsl:value-of select="$personPath/person/last_name" />,
-            <xsl:value-of select="$personPath/person/age" />, 
+            <xsl:value-of select="$personPath/person/last_name" />
+            <br/>
+            <span class="font-weight-600"><xsl:text>Age: </xsl:text></span>
+            <xsl:value-of select="$personPath/person/age" />
+            <br/>
+            <span class="font-weight-600"><xsl:text>Gender: </xsl:text></span>
             <xsl:value-of select="$personPath/person/gender" />
             <br/>
             <li>
-                <b>
+                <span class="font-weight-600"><xsl:text>
                     Also in:
-                </b>
+                </xsl:text></span>
+                <xsl:call-template name="process-involvement">
+                    <xsl:with-param name="involvement" select="$personPath/person/involvement/@movie_refs" />
+                </xsl:call-template>
             </li>
-            <xsl:call-template name="process-involvement">
-                <xsl:with-param name="involvement" select="$personPath/person/involvement/@movie_refs" />
-            </xsl:call-template>
         </ul>
     </xsl:template>
 
@@ -375,43 +538,11 @@
         <xsl:if test="string-length($involvement) > 0">
             <xsl:variable name="currentMovie" select="substring-before(concat($involvement, ' '), ' ')" />
             <!-- to do  -->
-            <a href="singleMovie"> 
-                <xsl:value-of select="/movie_catalog/movies/movie[@id=$currentMovie]/title" />; 
-            </a>
+            <span class="color-primary"><xsl:value-of select="/movie_catalog/movies/movie[@id=$currentMovie]/title" />; </span>
             <xsl:call-template name="process-involvement">
                 <xsl:with-param name="involvement" select="normalize-space(substring-after($involvement, ' '))" />
             </xsl:call-template>
         </xsl:if>
     </xsl:template>
-
-    <!-- Шаблон за подробности за филм -->
-    <xsl:template match="/movie_catalog/movies/movie">
-        <html>
-            <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="stylesheet" href="dist/css/main.min.css" />
-                <title><xsl:value-of select="title"/> - Movie Details</title>
-            </head>
-            <body>
-                <div class="movie-details">
-                    <h1><xsl:value-of select="title" /></h1>
-                    <div class="cover">
-                        <xsl:variable name="coverImage" select="unparsed-entity-uri(media/cover/@source)" />
-                        <img src="{$coverImage}" alt="{title}" />
-                    </div>
-                    <p><strong>Year:</strong> <xsl:value-of select="details/year" /></p>
-                    <p><strong>Rating:</strong> <xsl:value-of select="details/rating" /></p>
-                    <p><strong>Genre:</strong>
-                        <xsl:for-each select="details/genre">
-                            <span><xsl:value-of select="." /></span>
-                        </xsl:for-each>
-                    </p>
-                    <p><strong>Description:</strong> <xsl:value-of select="description" /></p>
-                </div>
-                <a href="/">Back to Movie List</a>
-            </body>
-        </html>
-    </xsl:template>
-
+    
 </xsl:stylesheet>

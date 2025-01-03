@@ -1,6 +1,7 @@
 $primary_color: #c48736;
 $light_primary: #f7ca4b;
 $dark_color: #050505;
+$grey_color: #383838;
 $light_color: #fbeccb;
 $danger_color: #7f170e;
 $max-width: 1500px;
@@ -8,9 +9,9 @@ $max-width: 1500px;
 // set text color based on the background
 @function set-text-color($color) {
   @if (lightness($color) > 60) {
-    @return #333;
+    @return $grey_color;
   } @else {
-    @return #fff;
+    @return $light_color;
   }
 }
 
@@ -43,10 +44,52 @@ $spaceamounts: (1, 2, 3, 4, 5);
   }
   //vertical padding
   .py-#{$space} {
-    padding: #{$space}rem 0;
+    padding-top: #{$space}rem;
+    padding-bottom: #{$space}rem;
   }
   //vertical padding
   .px-#{$space} {
-    padding: 0 #{$space}rem;
+    padding-left: #{$space}rem;
+    padding-right: #{$space}rem;
+  }
+}
+
+$spaceamounts: (1, 2, 3, 4, 5);
+@each $space in $spaceamounts {
+  //all around margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  //vertical margin
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  //all around padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  //vertical padding
+  .py-#{$space} {
+    padding-top: #{$space}rem;
+    padding-bottom: #{$space}rem;
+  }
+  //vertical padding
+  .px-#{$space} {
+    padding-left: #{$space}rem;
+    padding-right: #{$space}rem;
+  }
+}
+
+$amounts: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+@each $amount in $amounts {
+  //all around margin
+  //all around padding
+  .font-weight-#{$amount} {
+    font-weight: #{$amount};
   }
 }

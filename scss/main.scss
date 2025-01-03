@@ -28,6 +28,10 @@ img {
   width: 100%;
 }
 
+p {
+  margin-bottom: 0.5rem;
+}
+
 .filter-menu {
   max-width: 1500px;
   margin: auto;
@@ -55,27 +59,21 @@ img {
   grid-row-gap: 1.5rem;
 
   .movie-card {
-    height: 500px;
+    height: 650px;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 4fr 0.75fr 0.25fr;
+    grid-template-rows: 4.5fr 1.5fr;
     align-items: center;
     color: $light_color;
     text-align: center;
-
-    &:hover {
-      background-color: #fbeccb10;
-      transition: 0.75s ease-in-out;
-    }
-
-    .year-rating-bar {
-      display: flex;
-      justify-content: space-between;
-      font-weight: 200;
+    background-color: #fbeccb10;
+    small {
+      color: #fbeccb90;
     }
 
     h3 {
-      font-weight: 500;
+      font-weight: 600;
+      font-size: 1.1rem;
     }
   }
 }
@@ -99,38 +97,33 @@ img {
 
 h1 {
   text-align: center;
+  font-weight: 700;
 }
 
 .single-movie-holder {
   width: 95%;
   margin: auto;
   padding: 2rem;
-
-  .media {
-    height: 80vh;
-    display: grid;
-    grid-template-rows: 4fr 1fr;
-    grid-gap: 1rem;
-    width: 100%;
-    padding: 1rem 0;
-    @include set-background(#fbeccb10);
-
-    #activeImg {
-      background-size: contain;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-gap: 1rem;
-      width: 90%;
-      height: 100%;
-      margin: auto;
-    }
-  }
+  @include set-background($light_color);
 
   .info {
-    @include set-background($light_color);
     width: 100%;
     padding: 1rem 2rem;
+  }
+  .carousel {
+    background-color: $dark_color;
+    margin: auto;
+  }
+
+  .genre {
+    @include set-background($grey_color);
+    border-radius: 5px;
+  }
+}
+
+.carousel-item {
+  height: 70vh;
+  .cover {
+    background-size: contain;
   }
 }

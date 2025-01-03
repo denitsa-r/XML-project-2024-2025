@@ -69,8 +69,10 @@
 
   &.btn-primary {
     @include set-background($primary_color);
-    &:hover {
-      background: lighten($primary_color, 5%);
+    &:hover,
+    &:active {
+      background: lighten($dark_color, 20%);
+      color: #fff;
     }
   }
 
@@ -103,7 +105,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     background: lighten($dark_color, 20%);
     color: #fff;
   }
@@ -195,4 +198,8 @@ h6 {
   &-xl {
     font-size: 3.5rem;
   }
+}
+
+.color-primary {
+  color: $primary_color;
 }
