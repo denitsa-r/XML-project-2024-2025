@@ -58,6 +58,14 @@
 <!ENTITY image4_Coco PUBLIC "image4_Coco_identifier" "https://m.media-amazon.com/images/M/MV5BMjM2Mjc0OTAyNl5BMl5BanBnXkFtZTgwNzEzMjMyNDM@._V1_.jpg" NDATA jpeg>
 <!ENTITY image5_Coco PUBLIC "image5_Coco_identifier" "https://m.media-amazon.com/images/M/MV5BMjM2MzIwNDYyMV5BMl5BanBnXkFtZTgwMTEzMjMyNDM@._V1_.jpg" NDATA jpeg>
 <!ENTITY image6_Coco PUBLIC "image6_Coco_identifier" "https://m.media-amazon.com/images/M/MV5BNTY4OWRiZTUtNWM1Yi00NWExLTkzMzgtMjExMjFhNzg1ZjEwXkEyXkFqcGdeQXVyNjMwMzc3MjE@._V1_.jpg" NDATA jpeg>
+<!-- THE PRESTIGE -->
+<!ENTITY cover_Prestige PUBLIC "cover_Prestige_identifier" "https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_.jpg" NDATA jpeg>
+<!ENTITY image1_Prestige PUBLIC "image1_Prestige_identifier" "https://m.media-amazon.com/images/M/MV5BODc0MzkxOTg5N15BMl5BanBnXkFtZTcwODkzNDMyMw@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image2_Prestige PUBLIC "image2_Prestige_identifier" "https://m.media-amazon.com/images/M/MV5BMjA0NDE4NjI4MF5BMl5BanBnXkFtZTcwMjUzNDMyMw@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image3_Prestige PUBLIC "image3_Prestige_identifier" "https://m.media-amazon.com/images/M/MV5BMTk1MjY0MTk0MV5BMl5BanBnXkFtZTcwMzA0NDMyMw@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image4_Prestige PUBLIC "image4_Prestige_identifier" "https://m.media-amazon.com/images/M/MV5BMTU4OTYyMDE0M15BMl5BanBnXkFtZTcwMDA0NDMyMw@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image5_Prestige PUBLIC "image5_Prestige_identifier" "https://m.media-amazon.com/images/M/MV5BMTczMjQ3NTcwMl5BMl5BanBnXkFtZTcwMzUzNDMyMw@@._V1_.jpg" NDATA jpeg>
+<!ENTITY image6_Prestige PUBLIC "image6_Prestige_identifier" "https://m.media-amazon.com/images/M/MV5BMjE4NTU0MzU4OV5BMl5BanBnXkFtZTcwMTYzNDMyMw@@._V1_.jpg" NDATA jpeg>
 
 <!-- TRAILERS -->
 <!-- GUNDI -->
@@ -72,13 +80,15 @@
 <!ENTITY trailer_Inception PUBLIC "trailer_Inception_identifier" "https://www.youtube.com/embed/hstBN0Qkqhc?si=zh-ueTt5KYH4ZdWQ" NDATA video>
 <!-- COCO -->
 <!ENTITY trailer_Coco PUBLIC "trailer_Coco_identifier" "https://www.youtube.com/embed/xlnPHQ3TLX8?si=eAhOPqNsNL4nmJeF" NDATA video>
+<!-- THE PRESTIGE -->
+<!ENTITY trailer_Prestige PUBLIC "trailer_Prestige_identifier" "https://www.youtube.com/embed/RLtaA9fFNXU?si=qFWNmmTJMRBjw4db" NDATA video>
 
 ]
 >
 
 <movie_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="movie_catalog.xsd">
     <movies>
-        <movie id="m001" genre="g07 g13" studio="st001"
+        <movie id="m001" genre="g04 g09 g07 g13" studio="st001"
                 director="director001 director002"
                 writer="writer001 writer002 writer003"
                 producer="producer001 producer002 producer003 producer004 producer005"
@@ -261,7 +271,7 @@
         
         <movie id="m006" genre="g03 g12 g05 g08 g07" studio="st003 st004"
                 director="director005 director006"
-                writer="writer006"
+                writer="writer007 writer008"
                 producer="producer012 producer013"
                 other_creator="composer004 cinema004 editor004"
                 actor="actor042 actor043 actor044 actor045 actor046 actor047 actor048 actor049 actor050 actor051 actor052">
@@ -290,6 +300,41 @@
                 <language>English, Spanish</language>
                 <country>USA</country>
                 <budget>$175 million</budget>
+            </details>
+
+        </movie>
+        
+        <movie id="m007" genre="g07 g11 g15 g14" studio="st002 st011"
+                director="director004 director007"
+                writer="writer005 writer009"
+                producer="producer010 producer011 producer014"
+                other_creator="composer005 cinema003 editor003"
+                actor="actor053 actor054 actor055 actor056 actor057 actor058 actor059">
+
+            <media>
+                <cover source="cover_Prestige"></cover>
+                <trailer source="trailer_Prestige"></trailer>
+                <gallery>
+                    <image source="image1_Prestige"></image>
+                    <image source="image2_Prestige"></image>
+                    <image source="image3_Prestige"></image>
+                    <image source="image4_Prestige"></image>
+                    <image source="image5_Prestige"></image>
+                    <image source="image6_Prestige"></image>
+                </gallery>
+            </media>
+
+            <details>
+                <title>The Prestige</title>
+                <duration>130</duration>
+                <rating>8.5</rating>
+                <summary>
+                    In 1890s London, upcoming magicians Angier and Borden become bitter rivals after Angier's wife dies during an onstage incident. Borden, who was responsible for tying the knots in the water tank trick, claims to not know which knot he tied, infuriating Angier. They go solo, and Angier re-hires the engineer, Cutter, to help with his act. Meanwhile, Borden hires a previously unknown engineer called Fallon.             
+                </summary>
+                <year>2006</year>
+                <language>English</language>
+                <country>UK, USA</country>
+                <budget>$40 million</budget>
             </details>
 
         </movie>
@@ -355,7 +400,7 @@
                 <last_name>Nolan </last_name>
                 <age>54</age>
                 <gender>male</gender>
-                <involvement movie_refs="m005"></involvement>
+                <involvement movie_refs="m005 m007"></involvement>
             </person>
         </director>
 
@@ -385,6 +430,16 @@
                 <age>39</age>
                 <gender>male</gender>
                 <involvement movie_refs="m006"></involvement>
+            </person>
+        </director>
+        
+        <director id="director008">
+            <person> 
+                <first_name>Jonathan </first_name>
+                <last_name>Nolan</last_name>
+                <age>43</age>
+                <gender>male</gender>
+                <involvement movie_refs="m007"></involvement>
             </person>
         </director>
     </directors>
@@ -434,7 +489,7 @@
                 <last_name>Nolan </last_name>
                 <age>54</age>
                 <gender>male</gender>
-                <involvement movie_refs="m005"></involvement>
+                <involvement movie_refs="m005 m007"></involvement>
             </person>
         </writer>
 
@@ -448,7 +503,7 @@
             </person>
         </writer> 
 
-        <writer id="writer008">
+        <writer id="writer007">
             <person>
                 <first_name>Gerald </first_name>
                 <last_name>R. Molen</last_name>
@@ -457,13 +512,23 @@
                 <involvement movie_refs="m006"></involvement>
             </person>
         </writer> 
-        <writer id="writer007">
+        <writer id="writer008">
             <person>
                 <first_name>Branko </first_name>
                 <last_name>Lustig</last_name>
                 <age>87 (passed away on 14 november 2019)</age>
                 <gender>male</gender>
                 <involvement movie_refs="m006"></involvement>
+            </person>
+        </writer>
+
+        <writer id="writer009">
+            <person>
+                <first_name>Jonathan </first_name>
+                <last_name>Nolan </last_name>
+                <age>43</age>
+                <gender>male</gender>
+                <involvement movie_refs="m007"></involvement>
             </person>
         </writer>
     </writers>
@@ -559,7 +624,7 @@
                 <last_name>Nolan </last_name>
                 <age>54</age>
                 <gender>male</gender> 
-                <involvement movie_refs="m005"></involvement>
+                <involvement movie_refs="m005 m007"></involvement>
             </person>
         </producer>
         <producer id="producer011">
@@ -568,7 +633,7 @@
                 <last_name>Thomas </last_name>
                 <age>52</age>
                 <gender>male</gender> 
-                <involvement movie_refs="m005"></involvement>
+                <involvement movie_refs="m005 m007"></involvement>
             </person>
         </producer>
         
@@ -588,6 +653,16 @@
                 <age>67</age>
                 <gender>male</gender> 
                 <involvement movie_refs="m006"></involvement>
+            </person>
+        </producer>
+        
+        <producer id="producer014">
+            <person>
+                <first_name>Aaron </first_name>
+                <last_name>Ryder</last_name>
+                <age>no info</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m007"></involvement>
             </person>
         </producer>
         
@@ -665,7 +740,7 @@
                 <last_name>Pfister </last_name>
                 <age>63</age>
                 <gender>male</gender> 
-                <involvement movie_refs="m005"></involvement>
+                <involvement movie_refs="m005 m007"></involvement>
             </person>
         </other_creator>
         <other_creator id="editor003" type="Editor">
@@ -674,16 +749,16 @@
                 <last_name>Smith </last_name>
                 <age>64</age>
                 <gender>male</gender> 
-                <involvement movie_refs="m005"></involvement>
+                <involvement movie_refs="m005 m007"></involvement>
             </person>
         </other_creator>
         
         <other_creator id="composer004" type="Composer">
             <person>
-                    <first_name>Hans  </first_name>
-                    <last_name>Zimmer </last_name>
-                    <age>67</age>
-                    <gender>male</gender>
+                    <first_name>Germaine </first_name>
+                    <last_name>Franco </last_name>
+                    <age>no info</age>
+                    <gender>female</gender>
                     <involvement movie_refs="m006"></involvement>
             </person>
         </other_creator>
@@ -703,6 +778,16 @@
                 <age>93</age>
                 <gender>male</gender> 
                 <involvement movie_refs="m006"></involvement>
+            </person>
+        </other_creator>
+
+        <other_creator id="composer005" type="Composer">
+            <person>
+                    <first_name>David </first_name>
+                    <last_name>Julyan </last_name>
+                    <age>no info</age>
+                    <gender>male</gender>
+                    <involvement movie_refs="m007"></involvement>
             </person>
         </other_creator>
     </other_creators>
@@ -946,7 +1031,7 @@
                 <last_name>Serkis</last_name>
                 <age>60</age>
                 <gender>male</gender>
-                <involvement movie_refs="m002"></involvement>
+                <involvement movie_refs="m002 m007"></involvement>
             </person>
         </actor>
         <actor id="actor025">
@@ -1118,7 +1203,7 @@
                 <last_name>Caine</last_name>
                 <age>90</age>
                 <gender>male</gender> 
-                <involvement movie_refs="m005"></involvement>
+                <involvement movie_refs="m005 m007"></involvement>
             </person>
         </actor>
        
@@ -1233,7 +1318,77 @@
             </person>
         </actor>
 
-        
+        <actor id="actor053">
+            <character>Robert Angier</character>
+            <person>
+                <first_name>Hugh </first_name>
+                <last_name>Jackman</last_name>
+                <age>56</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m007"></involvement>
+            </person>
+        </actor>
+        <actor id="actor054">
+            <character>Alfred Borden</character>
+            <person>
+                <first_name>Christian </first_name>
+                <last_name>Bale</last_name>
+                <age>50</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m007"></involvement>
+            </person>
+        </actor>
+        <actor id="actor055">
+            <character>John Cutter</character>
+            <person>
+                <first_name>Michael </first_name>
+                <last_name>Cane</last_name>
+                <age>91</age>
+                <gender>male</gender> 
+                <involvement movie_refs="m007 m005"></involvement>
+            </person>
+        </actor>
+        <actor id="actor056">
+            <character>Olivia Wenscombe</character>
+            <person>
+                <first_name>Scarlett </first_name>
+                <last_name>Johansson</last_name>
+                <age>40</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m007"></involvement>
+            </person>
+        </actor>
+        <actor id="actor057">
+            <character>Sarah Borden</character>
+            <person>
+                <first_name>Rebecca </first_name>
+                <last_name>Hall </last_name>
+                <age>42</age>
+                <gender>female</gender> 
+                <involvement movie_refs="m007"></involvement>
+            </person>
+        </actor>
+        <actor id="actor058">
+            <character>Mr. Alley</character>
+            <person>
+                <first_name>Andy   </first_name>
+                <last_name>Serkis</last_name>
+                <age>60</age>
+                <gender>male</gender>
+                <involvement movie_refs="m002 m007"></involvement>
+            </person>
+        </actor>
+        <actor id="actor059">
+            <character>Nikola Tesla</character>
+            <person>
+                <first_name>David </first_name>
+                <last_name>Bowie</last_name>
+                <age>69 (passed away in january 2016)</age>
+                <gender>male</gender>
+                <involvement movie_refs="m007"></involvement>
+            </person>
+        </actor>
+
     </actors>
 
     <studios>
@@ -1247,6 +1402,7 @@
         <studio id="st008">Working Title Films</studio>
         <studio id="st009">StudioCanal</studio>
         <studio id="st010">Focus Features</studio>
+        <studio id="st011">Touchstone Pictures</studio>
     </studios>
 
 </movie_catalog>

@@ -378,9 +378,12 @@
                             <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/country" />
                         </p>
                         <div>
+                        <p>
+                            <span class="font-weight-600"><xsl:text>Studio: </xsl:text></span>
                             <xsl:call-template name="process-studios">
                                 <xsl:with-param name="studios" select="/movie_catalog/movies/movie[@id=$showId]/@studio" />
                             </xsl:call-template>
+                        </p>
                         </div>
                         <p>
                             <span class="font-weight-600"><xsl:text>Budget: </xsl:text></span>
@@ -451,10 +454,8 @@
         <xsl:param name="studios" />
         <xsl:if test="string-length($studios) > 0">
             <xsl:variable name="currentStudio" select="substring-before(concat($studios, ' '), ' ')" />
-            <p>
-                <span class="font-weight-600"><xsl:text>Studio: </xsl:text></span>
                 <xsl:value-of select="/movie_catalog/studios/studio[@id=$currentStudio]" />
-            </p>
+                <xsl:text>; </xsl:text>
             <xsl:call-template name="process-studios">
                 <xsl:with-param name="studios" select="normalize-space(substring-after($studios, ' '))" />
             </xsl:call-template>
