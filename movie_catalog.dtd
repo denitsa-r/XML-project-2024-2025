@@ -1,19 +1,18 @@
-<!ELEMENT movie_catalog (movies, genres, movie-series, directors, writers, producers, other_creators, actors, studios)>
+<!ELEMENT movie_catalog (movies, genres, movie-series, directors, writers, producers,
+                         other_creators, actors, studios)>
 
 <!ELEMENT movies (movie+)>
-<!-- можем да добавим в началото каталогът да бъде разделен на филми, филмови поредици и жанрове -->
 <!ELEMENT movie (media, details)>
-<!ATTLIST movie id ID #REQUIRED>
-<!ATTLIST movie genre IDREFS #REQUIRED>
-<!ATTLIST movie movie-series IDREF #IMPLIED>
-<!ATTLIST movie director IDREFS #REQUIRED>
-<!ATTLIST movie writer IDREFS #REQUIRED>
-<!ATTLIST movie producer IDREFS #REQUIRED>
-<!ATTLIST movie other_creator IDREFS #REQUIRED>
-<!ATTLIST movie actor IDREFS #REQUIRED>
-<!ATTLIST movie studio IDREFS #REQUIRED>
+<!ATTLIST movie id ID #REQUIRED
+                genre IDREFS #REQUIRED
+                movie-series IDREF #IMPLIED
+                director IDREFS #REQUIRED
+                writer IDREFS #REQUIRED
+                producer IDREFS #REQUIRED
+                other_creator IDREFS #REQUIRED
+                actor IDREFS #REQUIRED
+                studio IDREFS #REQUIRED>
 
-<!ELEMENT title (#PCDATA)>
 
 <!ELEMENT media (cover, trailer, gallery)>
 <!ELEMENT cover EMPTY>
@@ -23,9 +22,10 @@
 <!ELEMENT gallery (image+)>
 <!ELEMENT image EMPTY>
 <!ATTLIST image source ENTITY #REQUIRED>
-<!-- image има source, май трябва да е entity. тези май всички са entities -->
+<!-- image има source, трябва да е entity. -->
 
 <!ELEMENT details (title, duration, rating, summary, year, language, country, budget)>
+<!ELEMENT title (#PCDATA)>
 <!ELEMENT duration (#PCDATA)>
 <!ELEMENT rating (#PCDATA)>
 <!ELEMENT summary (#PCDATA)>
@@ -37,14 +37,15 @@
 <!-- Top-Level Genres Section -->
 <!ELEMENT genres (genre+)>
 <!ELEMENT genre (#PCDATA)>
-<!ATTLIST genre id ID #REQUIRED>
-<!ATTLIST genre genre_type (Action|Adventure|Animation|Biography|Comedy|Crime|Drama|Fantasy|Historical|Horror|Mystery|Musical|Romance|Sci-Fi|Thriller|War|Western) #REQUIRED>
+<!ATTLIST genre id ID #REQUIRED
+                genre_type (Action|Adventure|Animation|Biography|Comedy|Crime|Drama|Fantasy|Historical|
+                            Horror|Mystery|Musical|Romance|Sci-Fi|Thriller|War|Western) #REQUIRED>
 
 <!-- Top-Level Movie Series Section -->
 <!ELEMENT movie-series (series*)>
 <!ELEMENT series (#PCDATA)>
-<!ATTLIST series id ID #REQUIRED>
-<!ATTLIST series movies-id IDREFS #IMPLIED>
+<!ATTLIST series id ID #REQUIRED
+                    movies-id IDREFS #IMPLIED>
 
 <!-- person -->
 <!ELEMENT person (first_name, last_name, age, gender, involvement)>
@@ -73,8 +74,8 @@
 <!-- Top-Level Other Creators Section -->
 <!ELEMENT other_creators (other_creator+)>
 <!ELEMENT other_creator (person)>
-<!ATTLIST other_creator type (Composer|Cinematographer|Editor) #REQUIRED>
-<!ATTLIST other_creator id ID #REQUIRED>
+<!ATTLIST other_creator type (Composer|Cinematographer|Editor) #REQUIRED
+                        id ID #REQUIRED>
 
 <!-- Top-Level Actors Section -->
 <!ELEMENT actors (actor+)>

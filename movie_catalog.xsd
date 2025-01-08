@@ -111,13 +111,7 @@
     <xs:complexType name="movieDetailsType">
         <xs:sequence>
             <xs:element name="title" type="xs:string" />
-            <xs:element name="duration">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:pattern value="[0-9]+"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
+            <xs:element name="duration" type="xs:int" />
             <xs:element name="rating">
                 <xs:simpleType>
                     <xs:restriction base="xs:decimal">

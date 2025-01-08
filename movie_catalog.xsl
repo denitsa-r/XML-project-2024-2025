@@ -156,14 +156,14 @@
                     updateContent();
                 };
 
-                const showHotelInfo = (showId) => {
+                const showMovieInfo = (showId) => {
                     state.showAll = "false";
                     state.showId = showId;
 
                     updateContent();
                 };
 
-                const showAllHotels = () => {
+                const showAllMovies = () => {
                     state.showAll = "true";
                     state.showId = "";
 
@@ -290,7 +290,7 @@
                                 <xsl:text> / 10</xsl:text>
                             </p>
                             <div class="align-bottom-right">
-                                <button class="btn btn-primary showMoreBut" onclick="showHotelInfo('{@id}')">Show more info</button>
+                                <button class="btn btn-primary showMoreBut" onclick="showMovieInfo('{@id}')">Show more info</button>
                             </div>
                         </div>
                     </div>
@@ -390,7 +390,7 @@
                             <xsl:value-of select="/movie_catalog/movies/movie[@id=$showId]/details/budget" />
                         </p>
                         <div class="d-flex justify-content-end">
-                            <button class="btn btn-primary" onclick="showAllHotels()">Show all movies</button>
+                            <button class="btn btn-primary" onclick="showAllMovies()">Show all movies</button>
                         </div>
 
                     </div>
