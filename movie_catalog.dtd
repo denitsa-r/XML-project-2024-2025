@@ -1,18 +1,32 @@
-<!ELEMENT movie_catalog (movie+, person+, genre_enum?, language_enum?, country_enum?)>
+<!ELEMENT movie_catalog (movies, genres, movie-series, directors, writers, producers,
+                         other_creators, actors, studios)>
 
-<!ELEMENT movie (title, media, details, production, people)>
+<!ELEMENT movies (movie+)>
+<!ELEMENT movie (media, details)>
+<!ATTLIST movie id ID #REQUIRED
+                genre IDREFS #REQUIRED
+                movie-series IDREF #IMPLIED
+                director IDREFS #REQUIRED
+                writer IDREFS #REQUIRED
+                producer IDREFS #REQUIRED
+                other_creator IDREFS #REQUIRED
+                actor IDREFS #REQUIRED
+                studio IDREFS #REQUIRED>
 
-<!ELEMENT title (#PCDATA)>
 
 <!ELEMENT media (cover, trailer, gallery)>
-<!ELEMENT cover (#PCDATA)>
-<!ELEMENT trailer (#PCDATA)>
+<!ELEMENT cover EMPTY>
+<!ATTLIST cover source ENTITY #REQUIRED>
+<!ELEMENT trailer EMPTY>
+<!ATTLIST trailer source ENTITY #REQUIRED>
 <!ELEMENT gallery (image+)>
-<!ELEMENT image (#PCDATA)>
+<!ELEMENT image EMPTY>
+<!ATTLIST image source ENTITY #REQUIRED>
+<!-- image има source, трябва да е entity. -->
 
-<!ELEMENT details (duration, genre, rating, summary, year, language, country, budget)>
+<!ELEMENT details (title, duration, rating, summary, year, language, country, budget)>
+<!ELEMENT title (#PCDATA)>
 <!ELEMENT duration (#PCDATA)>
-<!ELEMENT genre (#PCDATA)>
 <!ELEMENT rating (#PCDATA)>
 <!ELEMENT summary (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
@@ -20,33 +34,56 @@
 <!ELEMENT country (#PCDATA)>
 <!ELEMENT budget (#PCDATA)>
 
-<!ELEMENT production (studio)>
-<!ELEMENT studio (#PCDATA)>
+<!-- Top-Level Genres Section -->
+<!ELEMENT genres (genre+)>
+<!ELEMENT genre (#PCDATA)>
+<!ATTLIST genre id ID #REQUIRED
+                genre_type (Action|Adventure|Animation|Biography|Comedy|Crime|Drama|Fantasy|Historical|
+                            Horror|Mystery|Musical|Romance|Sci-Fi|Thriller|War|Western) #REQUIRED>
 
-<!ELEMENT people (creators, cast)>
-<!ELEMENT creators (creator+)>
-<!ELEMENT creator (person_ref, role)>
-<!ELEMENT person_ref (#PCDATA)>
-<!ELEMENT role (#PCDATA)>
+<!-- Top-Level Movie Series Section -->
+<!ELEMENT movie-series (series*)>
+<!ELEMENT series (#PCDATA)>
+<!ATTLIST series id ID #REQUIRED
+                    movies-id IDREFS #IMPLIED>
 
-<!ELEMENT cast (actor+)>
-<!ELEMENT actor (person_ref, role)>
-
-<!ELEMENT person (id, name, involvement)>
-<!ELEMENT id (#PCDATA)>
-
-<!ELEMENT name (first_name, last_name)>
+<!-- person -->
+<!ELEMENT person (first_name, last_name, age, gender, involvement)>
 <!ELEMENT first_name (#PCDATA)>
 <!ELEMENT last_name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT involvement EMPTY>
+<!ATTLIST involvement movie_refs IDREFS #REQUIRED>
 
-<!ELEMENT involvement (movie_ref+)>
-<!ELEMENT movie_ref (#PCDATA)>
+<!-- Top-Level Directors Section -->
+<!ELEMENT directors (director+)>
+<!ELEMENT director (person)>
+<!ATTLIST director id ID #REQUIRED>
 
-<!ELEMENT genre_enum (genre+)>
-<!ELEMENT genre (#PCDATA)>
+<!-- Top-Level Writers Section -->
+<!ELEMENT writers (writer+)>
+<!ELEMENT writer (person)>
+<!ATTLIST writer id ID #REQUIRED>
 
-<!ELEMENT language_enum (language+)>
-<!ELEMENT language (#PCDATA)>
+<!-- Top-Level Producers Section -->
+<!ELEMENT producers (producer+)>
+<!ELEMENT producer (person)>
+<!ATTLIST producer id ID #REQUIRED>
 
-<!ELEMENT country_enum (country+)>
-<!ELEMENT country (#PCDATA)>
+<!-- Top-Level Other Creators Section -->
+<!ELEMENT other_creators (other_creator+)>
+<!ELEMENT other_creator (person)>
+<!ATTLIST other_creator type (Composer|Cinematographer|Editor) #REQUIRED
+                        id ID #REQUIRED>
+
+<!-- Top-Level Actors Section -->
+<!ELEMENT actors (actor+)>
+<!ELEMENT actor (character, person)>
+<!ATTLIST actor id ID #REQUIRED>
+<!ELEMENT character (#PCDATA)>
+
+<!-- Top-Level Studio Section -->
+<!ELEMENT studios (studio+)>
+<!ELEMENT studio (#PCDATA)>
+<!ATTLIST studio id ID #REQUIRED>

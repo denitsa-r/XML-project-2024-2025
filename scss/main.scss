@@ -1,0 +1,113 @@
+@import "config";
+@import "utilities";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 1rem;
+  line-height: 1.6;
+  @include set-background($dark_color);
+}
+
+a {
+  text-decoration: none;
+  color: $primary_color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+#sortOptionsMenu {
+  width: 50%;
+  margin: auto;
+}
+
+.cover {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trailer {
+  margin: 2rem 0;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 3%;
+  grid-row-gap: 1.5rem;
+
+  .movie-card {
+    height: 650px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 4.5fr 1.5fr;
+    align-items: center;
+    color: $light_color;
+    text-align: center;
+    background-color: #fbeccb10;
+    small {
+      color: #fbeccb90;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.single-movie-holder {
+  width: 95%;
+  margin: auto;
+  padding: 2rem;
+  @include set-background($light_color);
+
+  .info {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .carousel {
+    background-color: $dark_color;
+    margin: auto;
+  }
+
+  .genre {
+    @include set-background($grey_color);
+    border-radius: 15px;
+  }
+}
+
+.carousel-item {
+  height: 70vh;
+  .cover {
+    background-size: contain;
+  }
+}
